@@ -1,4 +1,117 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort Hotel - Kinsley Header Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+</head>
+<body>
+
+<header class="site-header-wrapper">
+    <nav class="site-navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#" class="site-logo">
+            <span class="logo-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                </svg>
+            </span>
+            <span class="logo-text">Kinsley</span>
+        </a>
+
+        <!-- Desktop & Mobile Navigation Links -->
+        <div class="site-navigation">
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link is-active">
+                        <span>Home</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Home 1</a></li>
+                        <li><a href="#">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span>About</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#about">About Hotel</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#rooms" class="nav-link">
+                        <span>Rooms</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#deluxe">Deluxe Room</a></li>
+                        <li><a href="#suite">Ocean Suite</a></li>
+                        <li><a href="#penthouse">Luxury Penthouse</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">
+                        <span>Blog</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="#news">Hotel News</a></li>
+                        <li><a href="#guide">Travel Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link">
+                        <span>Shop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Header Actions: Book Now & Shopping Bag -->
+        <div class="header-actions">
+            <a href="#book" class="btn-book-now">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Book Now</span>
+            </a>
+
+            <a href="#cart" class="cart-button-link" aria-label="View Shopping Bag">
+                <svg class="cart-icon" viewBox="0 0 24 24">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
 
 <main id="primary" class="site-main">
     <!-- Hero Banner Section with 2-Slide Background Animation -->
@@ -6,10 +119,10 @@
         <!-- Background Slideshow -->
         <div class="hero-slideshow" aria-hidden="true">
             <div class="hero-slide active">
-                <div class="hero-slide-bg" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-i-1-1.jpg'); ?>');"></div>
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-i-1-1.jpg');"></div>
             </div>
             <div class="hero-slide">
-                <div class="hero-slide-bg" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/hero-i-2-1.jpg'); ?>');"></div>
+                <div class="hero-slide-bg" style="background-image: url('assets/images/hero-i-2-1.jpg');"></div>
             </div>
         </div>
 
@@ -106,7 +219,7 @@
         <div class="hero-bottom-curve"></div>
     </section>
 
-    <!-- Next Section Container -->
+    <!-- Next Section Container (Content to allow scrolling) -->
     <section class="site-content-start" style="background: #ffffff; min-height: 1200px; padding: 60px 40px; max-width: 1380px; margin: 0 auto;">
         <div style="text-align: center; max-width: 600px; margin: 0 auto; padding-top: 40px;">
             <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #ebb02d;">Discover Luxury</span>
@@ -116,4 +229,7 @@
     </section>
 </main>
 
-<?php get_footer(); ?>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/hero-slider.js"></script>
+</body>
+</html>

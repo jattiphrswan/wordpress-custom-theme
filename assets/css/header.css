@@ -1,0 +1,481 @@
+/* ==========================================================================
+   Header Styles - Resort Hotel / Kinsley Luxury Theme
+   ========================================================================== */
+
+:root {
+  --primary-gold: #ebb02d;
+  --primary-gold-hover: #dc9f1b;
+  --cyan-brand: #13b5ea;
+  --text-dark: #27303f;
+  --text-nav: #4b5563;
+  --badge-green: #3ab879;
+  --navbar-bg: #ffffff;
+  --navbar-shadow: 0 14px 40px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03);
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-brand: 'Caveat', cursive, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header Container - Floating with generous top margin */
+.site-header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 38px 40px 0 40px;
+  pointer-events: none;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* WordPress Admin Bar Compatibility */
+body.admin-bar .site-header-wrapper {
+  top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .site-header-wrapper {
+    top: 46px;
+  }
+}
+
+/* Sticky State - On top with NO top margin */
+.site-header-wrapper.is-sticky {
+  padding: 0 40px 0 40px;
+}
+
+.site-header-wrapper.is-sticky .site-navbar {
+  padding: 12px 36px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.09), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 768px) {
+  .site-header-wrapper {
+    padding: 20px 16px 0 16px;
+  }
+  .site-header-wrapper.is-sticky {
+    padding: 0 16px 0 16px;
+  }
+  .site-header-wrapper.is-sticky .site-navbar {
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+/* Floating Navigation Card */
+.site-navbar {
+  max-width: 1380px;
+  margin: 0 auto;
+  background: var(--navbar-bg);
+  border-radius: 18px;
+  padding: 16px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--navbar-shadow);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  position: relative;
+  pointer-events: auto;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* Brand Logo */
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.logo-circle {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, #15bceb 0%, #0c9ed1 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(19, 181, 234, 0.3);
+  flex-shrink: 0;
+}
+
+.logo-circle svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.logo-text {
+  font-family: var(--font-brand);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #2b3543;
+  line-height: 1;
+}
+
+/* Navigation Links - Centered Absolutely so it stays fixed when button collapses */
+.site-navigation {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 961px) {
+  .site-navigation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-nav);
+  text-decoration: none;
+  padding: 22px 2px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+.chevron-icon {
+  width: 10px;
+  height: 10px;
+  stroke: #9ca3af;
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+.nav-item:hover .chevron-icon {
+  stroke: #374151;
+  transform: translateY(1px);
+}
+
+/* Active Indicator (Golden underline bar) */
+.nav-item.active .nav-link,
+.nav-link.is-active {
+  color: #111827;
+}
+
+.nav-item.active::after,
+.nav-link.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--primary-gold);
+  border-radius: 3px 3px 0 0;
+}
+
+/* Submenu Dropdown */
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  padding: 10px 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.nav-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 9px 20px;
+  color: #4b5563;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sub-menu li a:hover {
+  background: #fef9ee;
+  color: var(--primary-gold);
+}
+
+/* Right Actions Area */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: auto;
+}
+
+/* Book Now Golden Pill Button */
+.btn-book-now {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-gold);
+  color: #ffffff;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 14px rgba(235, 176, 45, 0.35);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  white-space: nowrap;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.btn-book-now:hover {
+  background-color: var(--primary-gold-hover);
+  box-shadow: 0 6px 18px rgba(235, 176, 45, 0.45);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+.btn-book-now span {
+  display: inline-block;
+  max-width: 140px;
+  opacity: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-book-now svg {
+  width: 15px;
+  height: 15px;
+  stroke: #ffffff;
+  stroke-width: 2.2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  transition: transform 0.35s ease;
+}
+
+/* Sticky State Button Collapse: becomes small round circle button with only the icon (smooth & slow) */
+.site-header-wrapper.is-sticky .btn-book-now {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  padding: 0;
+  gap: 0;
+  border-radius: 50%;
+}
+
+.site-header-wrapper.is-sticky .btn-book-now span {
+  max-width: 0;
+  opacity: 0;
+  margin: 0;
+}
+
+/* Shopping Cart / Bag */
+.cart-button-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #374151;
+  padding: 6px;
+  transition: color 0.2s ease;
+}
+
+.cart-button-link:hover {
+  color: #111827;
+}
+
+.cart-icon {
+  width: 22px;
+  height: 22px;
+  stroke: #374151;
+  stroke-width: 1.85;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cart-badge {
+  position: absolute;
+  top: 1px;
+  right: -2px;
+  background-color: var(--badge-green);
+  color: #ffffff;
+  font-size: 10.5px;
+  font-weight: 700;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1.5px solid #ffffff;
+}
+
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  color: #374151;
+}
+
+.mobile-nav-toggle svg {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1120px) {
+  .nav-menu {
+    gap: 20px;
+  }
+  .btn-book-now {
+    padding: 11px 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .site-navigation {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+
+  .site-navigation.is-open {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    justify-content: space-between;
+  }
+
+  .nav-item.active::after {
+    display: none;
+  }
+
+  .nav-item.active .nav-link {
+    color: var(--primary-gold);
+  }
+
+  .sub-menu {
+    position: static;
+    box-shadow: none;
+    padding: 6px 0 12px 14px;
+    border: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-navbar {
+    padding: 10px 16px;
+  }
+  .btn-book-now span {
+    display: none;
+  }
+  .btn-book-now {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .logo-text {
+    font-size: 26px;
+  }
+}

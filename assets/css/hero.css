@@ -1,0 +1,315 @@
+/* ==========================================================================
+   Hero Section - Resort Hotel / Kinsley
+   ========================================================================== */
+
+.hero-banner-section {
+  position: relative;
+  width: 100%;
+  min-height: 850px;
+  background-color: #f7fafc;
+  display: flex;
+  align-items: center;
+  padding: 185px 48px 100px 48px;
+  overflow: hidden;
+}
+
+/* Background Slideshow */
+.hero-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1.4s ease-in-out, visibility 1.4s ease-in-out;
+  transition: opacity 1.4s ease-in-out, visibility 1.4s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.hero-slide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  -webkit-transition: transform 6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hero-slide.active .hero-slide-bg {
+  transform: scale(1.045);
+}
+
+/* Slide Indicator Dots */
+.hero-slider-pagination {
+  position: absolute;
+  bottom: 48px;
+  right: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 20;
+}
+
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(30, 41, 59, 0.25);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.hero-dot:hover {
+  background: rgba(30, 41, 59, 0.5);
+}
+
+.hero-dot.active {
+  width: 26px;
+  border-radius: 9999px;
+  background-color: var(--primary-gold, #ebb02d);
+}
+
+@media (max-width: 1200px) {
+  .hero-banner-section {
+    min-height: 750px;
+    padding: 140px 32px 80px 32px;
+  }
+  .hero-slide-bg {
+    background-position: 70% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner-section {
+    min-height: auto;
+    padding: 130px 20px 60px 20px;
+  }
+  .hero-slide-bg {
+    background-position: 80% center;
+  }
+  .hero-slider-pagination {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+.hero-banner-container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-left-content {
+  max-width: 820px;
+}
+
+/* Welcome Friend Badge */
+.hero-badge {
+  display: inline-block;
+  background-color: #e3f6f9;
+  color: #169bb8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+/* Hero Main Heading */
+.hero-title {
+  font-size: clamp(38px, 4.8vw, 68px);
+  font-weight: 800;
+  line-height: 1.12;
+  color: #1b2534;
+  letter-spacing: -0.025em;
+  margin-bottom: 38px;
+}
+
+/* Booking Bar Floating Card */
+.hero-booking-bar {
+  display: inline-flex;
+  align-items: flex-end;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 16px 20px;
+  box-shadow: 0 16px 45px rgba(22, 45, 75, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03);
+  gap: 12px;
+  flex-wrap: nowrap;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 960px) {
+  .hero-booking-bar {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.booking-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #5d6f85;
+}
+
+.booking-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #eef8f9;
+  border-radius: 12px;
+  padding: 0 14px;
+  height: 48px;
+  transition: all 0.2s ease;
+}
+
+.booking-input-wrapper.field-date {
+  width: 155px;
+}
+
+.booking-input-wrapper.field-count {
+  width: 95px;
+}
+
+@media (max-width: 960px) {
+  .booking-input-wrapper.field-date,
+  .booking-input-wrapper.field-count {
+    width: 100%;
+  }
+  .booking-field-group {
+    flex: 1 1 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 520px) {
+  .booking-field-group {
+    flex: 1 1 100%;
+  }
+}
+
+.booking-input-wrapper:focus-within {
+  background-color: #e5f4f6;
+  box-shadow: 0 0 0 2px rgba(20, 183, 236, 0.25);
+}
+
+.booking-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3b4b5e;
+  width: 100%;
+  cursor: pointer;
+}
+
+.booking-input::placeholder {
+  color: #627488;
+  font-weight: 500;
+}
+
+.booking-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 18px;
+}
+
+.booking-field-icon {
+  width: 15px;
+  height: 15px;
+  stroke: #728499;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+/* Booking Search Button */
+.booking-submit-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #14b7ec;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(20, 183, 236, 0.35);
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
+
+.booking-submit-btn:hover {
+  background-color: #0da3d4;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(20, 183, 236, 0.45);
+}
+
+.booking-submit-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
+  stroke-width: 2.3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Bottom Curve Transition */
+.hero-bottom-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 36px 36px 0 0;
+  z-index: 5;
+}
