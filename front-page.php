@@ -111,6 +111,9 @@
 
     <!-- Features Section -->
     <?php get_template_part('template-parts/section-features'); ?>
+
+    <!-- Rooms & Accommodations Section -->
+    <?php get_template_part('template-parts/section-rooms'); ?>
 </main>
 
 <?php get_footer(); ?>

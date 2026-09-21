@@ -1,0 +1,375 @@
+/**
+ * Kinsley Resort Hotel — Rooms & Accommodations Section Stylesheet
+ * Replicates the "Our best rooms" showcase grid with interactive category filtering,
+ * specs badges, and ambient watercolor backdrop.
+ */
+
+:root {
+    --knsl-dark-teal: #204f5e;
+    --knsl-muted-teal: #5a8695;
+    --knsl-mint-badge: #eafbfb;
+    --knsl-cyan-badge: #23bcec;
+    --knsl-cyan-hover: #1ea5d0;
+    --knsl-divider-dotted: #ccebf0;
+    --knsl-card-shadow: 0 4px 20px rgba(32, 79, 94, 0.05);
+    --knsl-card-shadow-hover: 0 14px 34px rgba(32, 79, 94, 0.11);
+}
+
+/* ==========================================================================
+   1. Section Wrapper & Ambient Backdrop
+   ========================================================================== */
+.knsl-rooms-section {
+    position: relative;
+    background-color: #ffffff;
+    padding: 100px 20px 120px 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Ambient Watercolor Splash Backdrop on Right (pat4.png) */
+.knsl-rooms-pat-bg {
+    position: absolute;
+    top: -50px;
+    right: -140px;
+    width: 820px;
+    height: 820px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.85;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   2. Centered Container (1360px)
+   ========================================================================== */
+.knsl-rooms-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   3. Section Header & Category Filter Pills
+   ========================================================================== */
+.knsl-rooms-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.knsl-rooms-badge {
+    display: inline-block;
+    padding: 4px 18px;
+    background-color: #dcf3f4;
+    color: var(--knsl-dark-teal);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    margin-bottom: 18px;
+}
+
+.knsl-rooms-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin: 0 0 35px 0;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+}
+
+/* Filter Navigation */
+.knsl-rooms-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.knsl-filter-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--knsl-dark-teal);
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-filter-btn:hover {
+    background-color: #eafbfb;
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-filter-btn.is-active {
+    background-color: var(--knsl-cyan-badge);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(35, 188, 236, 0.3);
+}
+
+/* ==========================================================================
+   4. Room Cards Grid
+   ========================================================================== */
+.knsl-rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.knsl-room-card {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.knsl-room-card.is-hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+.knsl-room-card-inner {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: var(--knsl-card-shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0, 0, 0.3642, 1), box-shadow 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-room-card:hover .knsl-room-card-inner {
+    transform: translateY(-6px);
+    box-shadow: var(--knsl-card-shadow-hover);
+}
+
+/* Cover Image */
+.knsl-room-cover {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.knsl-room-cover a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.knsl-room-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.knsl-room-card:hover .knsl-room-cover img {
+    transform: scale(1.06);
+}
+
+/* Specs Strip (Adults & Size) */
+.knsl-room-specs {
+    background-color: #edf9fa;
+    padding: 13px 28px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    border-bottom: 1px solid rgba(32, 79, 94, 0.04);
+}
+
+.knsl-room-spec-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-spec-icon {
+    width: 17px;
+    height: 17px;
+    fill: var(--knsl-dark-teal);
+    flex-shrink: 0;
+}
+
+/* Body Content */
+.knsl-room-body {
+    padding: 28px 28px 26px 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.knsl-room-card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 12px 0;
+}
+
+.knsl-room-card-title a {
+    color: var(--knsl-dark-teal);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.knsl-room-card-title a:hover {
+    color: var(--knsl-cyan-badge);
+}
+
+.knsl-room-card-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--knsl-muted-teal);
+    margin: 0 0 22px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Dotted Divider */
+.knsl-room-divider {
+    border-bottom: 1.5px dotted var(--knsl-divider-dotted);
+    margin-top: auto;
+    margin-bottom: 22px;
+    width: 100%;
+}
+
+/* Footer: Price & Book Button */
+.knsl-room-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 44px;
+}
+
+.knsl-room-footer.knsl-footer-left-btn {
+    justify-content: flex-start;
+}
+
+.knsl-room-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.knsl-price-amount {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-price-period {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--knsl-dark-teal);
+}
+
+/* Book Button (Cyan pill with bookmark icon) */
+.knsl-book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--knsl-cyan-badge);
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+    box-shadow: 0 4px 15px rgba(35, 188, 236, 0.25);
+}
+
+.knsl-book-btn:hover {
+    background-color: var(--knsl-cyan-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(35, 188, 236, 0.38);
+    color: #ffffff;
+}
+
+.knsl-book-icon {
+    width: 12px;
+    height: 15px;
+    fill: #ffffff;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   5. Responsive Breakpoints
+   ========================================================================== */
+@media screen and (max-width: 1100px) {
+    .knsl-rooms-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+
+    .knsl-rooms-pat-bg {
+        width: 600px;
+        height: 600px;
+        right: -180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .knsl-rooms-section {
+        padding: 70px 15px 80px 15px;
+    }
+
+    .knsl-rooms-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .knsl-rooms-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .knsl-room-cover {
+        height: 220px;
+    }
+
+    .knsl-room-specs {
+        padding: 12px 20px;
+    }
+
+    .knsl-room-body {
+        padding: 22px 20px 20px 20px;
+    }
+}

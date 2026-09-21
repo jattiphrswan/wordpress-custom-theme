@@ -68,12 +68,20 @@ function resort_hotel_scripts() {
         '1.0.3'
     );
 
+    // Rooms stylesheet
+    wp_enqueue_style(
+        'resort-hotel-rooms',
+        get_template_directory_uri() . '/assets/css/rooms.css',
+        ['resort-hotel-style'],
+        '1.0.4'
+    );
+
     // Footer stylesheet
     wp_enqueue_style(
         'resort-hotel-footer',
         get_template_directory_uri() . '/assets/css/footer.css',
         ['resort-hotel-style'],
-        '1.0.3'
+        '1.0.4'
     );
 
     // Header JS
@@ -81,7 +89,7 @@ function resort_hotel_scripts() {
         'resort-hotel-header-script',
         get_template_directory_uri() . '/assets/js/header.js',
         [],
-        '1.0.3',
+        '1.0.4',
         true
     );
 
@@ -90,7 +98,16 @@ function resort_hotel_scripts() {
         'resort-hotel-hero-slider',
         get_template_directory_uri() . '/assets/js/hero-slider.js',
         [],
-        '1.0.3',
+        '1.0.4',
+        true
+    );
+
+    // Rooms Filter JS
+    wp_enqueue_script(
+        'resort-hotel-rooms-script',
+        get_template_directory_uri() . '/assets/js/rooms.js',
+        [],
+        '1.0.4',
         true
     );
 }
