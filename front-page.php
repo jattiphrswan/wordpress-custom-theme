@@ -108,6 +108,9 @@
 
     <!-- Services & Touch of Nature Section -->
     <?php get_template_part('template-parts/section-services'); ?>
+
+    <!-- Features Section -->
+    <?php get_template_part('template-parts/section-features'); ?>
 </main>
 
 <?php get_footer(); ?>

@@ -60,6 +60,14 @@ function resort_hotel_scripts() {
         '1.0.3'
     );
 
+    // Features stylesheet
+    wp_enqueue_style(
+        'resort-hotel-features',
+        get_template_directory_uri() . '/assets/css/features.css',
+        ['resort-hotel-style'],
+        '1.0.3'
+    );
+
     // Footer stylesheet
     wp_enqueue_style(
         'resort-hotel-footer',
