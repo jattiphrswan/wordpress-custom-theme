@@ -117,6 +117,9 @@
 
     <!-- Call to Action Section -->
     <?php get_template_part('template-parts/section-cta'); ?>
+
+    <!-- Benefits Section ("Why more than a million visitors chose us") -->
+    <?php get_template_part('template-parts/section-benefits'); ?>
 </main>
 
 <?php get_footer(); ?>

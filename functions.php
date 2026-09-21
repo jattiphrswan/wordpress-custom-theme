@@ -81,7 +81,15 @@ function resort_hotel_scripts() {
         'resort-hotel-cta',
         get_template_directory_uri() . '/assets/css/cta.css',
         ['resort-hotel-style'],
-        '1.0.5'
+        '1.0.6'
+    );
+
+    // Benefits stylesheet
+    wp_enqueue_style(
+        'resort-hotel-benefits',
+        get_template_directory_uri() . '/assets/css/benefits.css',
+        ['resort-hotel-style'],
+        '1.0.6'
     );
 
     // Footer stylesheet
@@ -89,7 +97,7 @@ function resort_hotel_scripts() {
         'resort-hotel-footer',
         get_template_directory_uri() . '/assets/css/footer.css',
         ['resort-hotel-style'],
-        '1.0.5'
+        '1.0.6'
     );
 
     // Header JS
