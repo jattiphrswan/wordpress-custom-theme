@@ -374,4 +374,66 @@
     .knsl-room-body {
         padding: 22px 20px 20px 20px;
     }
+
+    .knsl-rooms-bottom-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 45px;
+        gap: 24px;
+    }
 }
+
+/* ==========================================================================
+   6. Bottom Bar: Description & Golden View All Button
+   ========================================================================== */
+.knsl-rooms-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 75px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.knsl-rooms-bottom-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--knsl-muted-teal);
+    max-width: 580px;
+    margin: 0;
+}
+
+.knsl-rooms-bottom-action {
+    flex-shrink: 0;
+}
+
+/* Golden View All Pill Button */
+.knsl-view-all-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EBA744;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+    box-shadow: 0 6px 22px rgba(235, 167, 68, 0.35);
+    box-sizing: border-box;
+}
+
+.knsl-view-all-btn:hover {
+    background-color: #df972f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(235, 167, 68, 0.48);
+    color: #ffffff;
+}
+
