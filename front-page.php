@@ -114,6 +114,9 @@
 
     <!-- Rooms & Accommodations Section -->
     <?php get_template_part('template-parts/section-rooms'); ?>
+
+    <!-- Call to Action Section -->
+    <?php get_template_part('template-parts/section-cta'); ?>
 </main>
 
 <?php get_footer(); ?>

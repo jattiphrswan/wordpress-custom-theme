@@ -1,0 +1,191 @@
+/**
+ * Kinsley Resort Hotel — Call to Action Section Stylesheet
+ * Replicates the floating island CTA card with "Do you have any questions? We are available 24/7"
+ */
+
+:root {
+    --knsl-dark-teal: #204f5e;
+    --knsl-muted-teal: #5a8695;
+    --knsl-gold-accent: #EBA744;
+    --knsl-gold-hover: #df972f;
+    --knsl-cyan-badge: #23bcec;
+}
+
+/* ==========================================================================
+   1. Section Wrapper
+   ========================================================================== */
+.knsl-cta-section {
+    position: relative;
+    padding: 30px 20px 100px 20px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.knsl-cta-container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. Floating Island Card
+   ========================================================================== */
+.knsl-cta-card {
+    background-color: #FAFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(32, 79, 94, 0.05);
+    padding: 95px 40px 105px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: box-shadow 0.4s ease;
+}
+
+.knsl-cta-card:hover {
+    box-shadow: 0 10px 32px rgba(32, 79, 94, 0.08);
+}
+
+/* Badge */
+.knsl-cta-badge-wrapper {
+    margin-bottom: 22px;
+}
+
+.knsl-cta-badge {
+    display: inline-block;
+    padding: 4px 18px;
+    background-color: #dcf3f4;
+    color: var(--knsl-dark-teal);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 40px;
+}
+
+/* Title */
+.knsl-cta-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    line-height: 1.25;
+    letter-spacing: -1px;
+    margin: 0 0 35px 0;
+}
+
+/* Action Buttons */
+.knsl-cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+/* Primary Button (Get in Touch - Gold Pill) */
+.knsl-cta-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--knsl-gold-accent);
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+    box-shadow: 0 6px 20px rgba(235, 167, 68, 0.32);
+    box-sizing: border-box;
+}
+
+.knsl-cta-btn-primary:hover {
+    background-color: var(--knsl-gold-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(235, 167, 68, 0.45);
+    color: #ffffff;
+}
+
+/* Secondary Button (Book Now - Text Link with Arrow) */
+.knsl-cta-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--knsl-dark-teal);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 18px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+    box-sizing: border-box;
+}
+
+.knsl-cta-btn-secondary:hover {
+    color: var(--knsl-cyan-badge);
+    transform: translateX(4px);
+}
+
+.knsl-cta-icon {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   3. Responsive Breakpoints
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    .knsl-cta-card {
+        padding: 70px 30px 80px 30px;
+    }
+
+    .knsl-cta-title {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .knsl-cta-section {
+        padding: 20px 15px 70px 15px;
+    }
+
+    .knsl-cta-card {
+        padding: 55px 20px 65px 20px;
+        border-radius: 16px;
+    }
+
+    .knsl-cta-title {
+        font-size: 30px;
+        letter-spacing: -0.5px;
+        margin-bottom: 25px;
+    }
+
+    .knsl-cta-buttons {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .knsl-cta-btn-primary,
+    .knsl-cta-btn-secondary {
+        width: 100%;
+    }
+}
