@@ -9,7 +9,7 @@
   background-color: #f7fafc;
   display: flex;
   align-items: center;
-  padding: 185px 48px 100px 48px;
+  padding: 185px 20px 100px 20px;
   overflow: hidden;
 }
 
@@ -64,12 +64,18 @@
 /* Slide Indicator Dots */
 .hero-slider-pagination {
   position: absolute;
-  bottom: 48px;
-  right: 52px;
+  bottom: 112px;
+  right: calc(50% - 680px + 20px);
   display: flex;
   align-items: center;
   gap: 10px;
   z-index: 20;
+}
+
+@media (max-width: 1440px) {
+  .hero-slider-pagination {
+    right: 48px;
+  }
 }
 
 .hero-dot {
@@ -119,7 +125,7 @@
 }
 
 .hero-banner-container {
-  max-width: 1380px;
+  max-width: 1360px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -302,14 +308,7 @@
   stroke-linejoin: round;
 }
 
-/* Bottom Curve Transition */
+/* Bottom Curve Transition - disabled for island overlap */
 .hero-bottom-curve {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 36px;
-  background: #ffffff;
-  border-radius: 36px 36px 0 0;
-  z-index: 5;
+  display: none;
 }

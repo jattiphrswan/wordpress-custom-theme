@@ -106,14 +106,8 @@
         <div class="hero-bottom-curve"></div>
     </section>
 
-    <!-- Next Section Container -->
-    <section class="site-content-start" style="background: #ffffff; min-height: 1200px; padding: 60px 40px; max-width: 1380px; margin: 0 auto;">
-        <div style="text-align: center; max-width: 600px; margin: 0 auto; padding-top: 40px;">
-            <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #ebb02d;">Discover Luxury</span>
-            <h2 style="font-size: 36px; font-weight: 800; color: #1b2534; margin-top: 10px; margin-bottom: 16px;">Our Luxurious Amenities</h2>
-            <p style="color: #64748b; font-size: 15px; line-height: 1.6;">Immerse yourself in world-class hospitality, tranquil oceanfront suites, and fine culinary experiences crafted for memorable stays.</p>
-        </div>
-    </section>
+    <!-- Services & Touch of Nature Section -->
+    <?php get_template_part('template-parts/section-services'); ?>
 </main>
 
 <?php get_footer(); ?>

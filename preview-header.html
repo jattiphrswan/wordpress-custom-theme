@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/hero.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 <body>
 
@@ -219,15 +221,248 @@
         <div class="hero-bottom-curve"></div>
     </section>
 
-    <!-- Next Section Container (Content to allow scrolling) -->
-    <section class="site-content-start" style="background: #ffffff; min-height: 1200px; padding: 60px 40px; max-width: 1380px; margin: 0 auto;">
-        <div style="text-align: center; max-width: 600px; margin: 0 auto; padding-top: 40px;">
-            <span style="font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: #ebb02d;">Discover Luxury</span>
-            <h2 style="font-size: 36px; font-weight: 800; color: #1b2534; margin-top: 10px; margin-bottom: 16px;">Our Luxurious Amenities</h2>
-            <p style="color: #64748b; font-size: 15px; line-height: 1.6;">Immerse yourself in world-class hospitality, tranquil oceanfront suites, and fine culinary experiences crafted for memorable stays.</p>
+    <!-- Services & Touch of Nature Section -->
+    <section class="knsl-services-section" id="services">
+        <!-- Background Watercolor Patterns -->
+        <div class="knsl-pat-bg-splash" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+        
+        <!-- Floating Starfish Illustrations -->
+        <img src="assets/images/pat-1.png" alt="" class="knsl-pat-star star-top-left" aria-hidden="true">
+        <img src="assets/images/pat-2.png" alt="" class="knsl-pat-star star-bottom-right" aria-hidden="true">
+        <img src="assets/images/pat-3.png" alt="" class="knsl-pat-star star-mid-right" aria-hidden="true">
+
+        <div class="knsl-services-island">
+            <div class="knsl-services-inner">
+                <!-- Section Header -->
+                <div class="knsl-services-header">
+                <span class="knsl-subtitle-badge">Services</span>
+                <h2 class="knsl-section-title">Discover the touch of nature</h2>
+            </div>
+
+            <!-- 4-Column Staggered Service Cards Grid -->
+            <div class="knsl-services-grid">
+                <!-- Card 1: Surfing -->
+                <div class="knsl-service-col">
+                    <div class="knsl-ath-card">
+                        <div class="knsl-cover-frame">
+                            <a href="#surfing" class="knsl-card-link" aria-label="Surfing Service">
+                                <img src="assets/images/ser/serv1-950x1425.jpg" alt="Surfing" loading="lazy">
+                            </a>
+                            <div class="knsl-badge">
+                                <span class="mphb-price">Free</span>
+                            </div>
+                        </div>
+                        <div class="knsl-card-description">
+                            <a href="#surfing" class="knsl-card-btn-link">
+                                <h3 class="knsl-card-title">Surfing</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Beach Vacation (Offset Down) -->
+                <div class="knsl-service-col knsl-stagger-down">
+                    <div class="knsl-ath-card">
+                        <div class="knsl-cover-frame">
+                            <a href="#beach-vacation" class="knsl-card-link" aria-label="Beach Vacation Service">
+                                <img src="assets/images/ser/serv2-950x1267.jpg" alt="Beach Vacation" loading="lazy">
+                            </a>
+                            <div class="knsl-badge knsl-badge-left">
+                                <span class="mphb-price">&euro;9.99</span> / Per Day / Per Accommodation
+                            </div>
+                        </div>
+                        <div class="knsl-card-description">
+                            <a href="#beach-vacation" class="knsl-card-btn-link">
+                                <h3 class="knsl-card-title">Beach Vacation</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Beach Restaurant -->
+                <div class="knsl-service-col">
+                    <div class="knsl-ath-card">
+                        <div class="knsl-cover-frame">
+                            <a href="#beach-restaurant" class="knsl-card-link" aria-label="Beach Restaurant Service">
+                                <img src="assets/images/ser/serv3-950x1273.jpg" alt="Beach Restaurant" loading="lazy">
+                            </a>
+                            <div class="knsl-badge">
+                                <span class="mphb-price">Free</span>
+                            </div>
+                        </div>
+                        <div class="knsl-card-description">
+                            <a href="#beach-restaurant" class="knsl-card-btn-link">
+                                <h3 class="knsl-card-title">Beach Restaurant</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Swimming Pools (Offset Down) -->
+                <div class="knsl-service-col knsl-stagger-down">
+                    <div class="knsl-ath-card">
+                        <div class="knsl-cover-frame">
+                            <a href="#swimming-pools" class="knsl-card-link" aria-label="Swimming Pools Service">
+                                <img src="assets/images/ser/serv4-950x1238.jpg" alt="Swimming Pools" loading="lazy">
+                            </a>
+                            <div class="knsl-badge">
+                                <span class="mphb-price">&euro;10</span> / Per Instance / Per Guest
+                            </div>
+                        </div>
+                        <div class="knsl-card-description">
+                            <a href="#swimming-pools" class="knsl-card-btn-link">
+                                <h3 class="knsl-card-title">Swimming Pools</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Summary & CTA Action Bar -->
+            <div class="knsl-services-bottom-bar">
+                <p class="knsl-services-bottom-text">
+                    At Kinsley’s resort hotel in Goleta city, we are proud to offer a wide range of services designed to make your stay unforgettable. Your Comfort and Well-being Are Our Priority.
+                </p>
+                <div class="knsl-services-bottom-action">
+                    <a href="#services" class="knsl-btn-gold">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 </main>
+
+<footer class="knsl-footer-section" id="colophon">
+    <!-- Ambient Watercolor Splash Backdrops -->
+    <div class="knsl-footer-pat-left" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+    <div class="knsl-footer-pat-right" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+
+    <!-- Main Footer Island (Full Width Container) -->
+    <div class="knsl-footer-island">
+        <div class="knsl-footer-inner">
+            <!-- Top Section: Brand, Newsletter, Navigation Links -->
+            <div class="knsl-footer-top">
+            <!-- Brand & Newsletter Column -->
+            <div class="knsl-footer-col-brand">
+                <a href="#" class="knsl-footer-logo" aria-label="Kinsley Resort Hotel">
+                    <span class="logo-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                            <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                            <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                        </svg>
+                    </span>
+                    <span class="logo-text">Kinsley</span>
+                </a>
+
+                <p class="knsl-newsletter-prompt">Subscribe our newsletter:</p>
+
+                <form class="knsl-newsletter-form" action="#newsletter" method="post">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        class="knsl-newsletter-input" 
+                        placeholder="Email" 
+                        required
+                        aria-label="Email Address"
+                    >
+                    <button type="submit" class="knsl-newsletter-btn" aria-label="Subscribe">
+                        <svg viewBox="0 0 448 512" aria-hidden="true">
+                            <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Primary Navigation Links Column -->
+            <div class="knsl-footer-col-nav">
+                <ul class="knsl-footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Hotel</a></li>
+                    <li><a href="#rooms">Search Rooms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal & Information Links Column -->
+            <div class="knsl-footer-col-legal">
+                <ul class="knsl-footer-legal-menu">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms and Conditions</a></li>
+                    <li><a href="#gallery">Photo Gallery</a></li>
+                    <li><a href="#restaurant">Restaurant</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dashed Divider -->
+        <hr class="knsl-footer-divider">
+
+        <!-- Bottom Section: Socials, Copyright, Addresses -->
+        <div class="knsl-footer-bottom">
+            <!-- Social Media & Copyright Column -->
+            <div class="knsl-footer-social-wrap">
+                <div class="knsl-footer-socials" role="list">
+                    <!-- Facebook -->
+                    <a href="https://facebook.com" class="knsl-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 320 512" aria-hidden="true">
+                            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                        </svg>
+                    </a>
+
+                    <!-- X (Twitter) -->
+                    <a href="https://x.com" class="knsl-social-btn" target="_blank" rel="noopener noreferrer" aria-label="X Twitter">
+                        <svg viewBox="0 0 512 512" aria-hidden="true">
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com" class="knsl-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 448 512" aria-hidden="true">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="knsl-copyright-text">&copy; Copyright 2025. All Rights Reserved.</p>
+            </div>
+
+            <!-- Address Column: United States -->
+            <div class="knsl-footer-address-col">
+                <h5 class="knsl-address-title">United States</h5>
+                <p class="knsl-address-text">
+                    Anacapa Hall, Santa Barbara,<br>
+                    CA 93117, +51 174 705 812
+                </p>
+            </div>
+
+            <!-- Address Column: Netherlands -->
+            <div class="knsl-footer-address-col">
+                <h5 class="knsl-address-title">Netherlands</h5>
+                <p class="knsl-address-text">
+                    De Hondert Margen 3, 2678<br>
+                    AC De Lier, +31 174 705 811
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Floating Scroll-To-Top Button -->
+    <button 
+        class="knsl-scroll-top-btn" 
+        id="knslScrollTopBtn" 
+        aria-label="Scroll to top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'});"
+    >
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+            <path d="M34.9 289.9l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.8z"/>
+        </svg>
+    </button>
+</footer>
 
 <script src="assets/js/header.js"></script>
 <script src="assets/js/hero-slider.js"></script>

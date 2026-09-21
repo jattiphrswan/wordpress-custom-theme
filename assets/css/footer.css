@@ -1,0 +1,450 @@
+/**
+ * Kinsley Resort Hotel — Footer Stylesheet
+ * Replicates Kinsley Luxury Resort Island Footer with Watercolor Ambience,
+ * Newsletter Subscription, Navigation Lists, Dashed Dividers, and Contact Info.
+ */
+
+:root {
+    --knsl-dark-teal: #204f5e;
+    --knsl-muted-teal: #5a8695;
+    --knsl-mint-badge: #d5f1f1;
+    --knsl-cyan-brand: #13b5ea;
+    --knsl-gold-accent: #ecb934;
+    --knsl-gold-hover: #dc9f1b;
+    --knsl-island-bg: #FAFFFF;
+    --knsl-social-bg: #EAFBFB;
+    --knsl-dashed: #D5F1F1;
+}
+
+/* ==========================================================================
+   1. Outer Footer Wrapper & Ambient Watercolor Backgrounds
+   ========================================================================== */
+.knsl-footer-section {
+    position: relative;
+    background-color: #eef7f8;
+    padding: 60px 20px 0 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Ambient Watercolor Splash Patterns (pat4.png) */
+.knsl-footer-pat-left {
+    position: absolute;
+    top: -40px;
+    left: -120px;
+    width: 680px;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: rotate(20deg);
+    opacity: 0.88;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.knsl-footer-pat-right {
+    position: absolute;
+    top: -20px;
+    right: -100px;
+    width: 620px;
+    height: 560px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: rotate(-25deg) scaleX(-1);
+    opacity: 0.78;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ==========================================================================
+   2. Main Footer Island Card
+   ========================================================================== */
+.knsl-footer-island {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--knsl-island-bg, #FAFFFF);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 4px 20px rgba(32, 79, 94, 0.05);
+    padding: 95px 0 75px;
+    box-sizing: border-box;
+}
+
+.knsl-footer-inner {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 45px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   3. Footer Top Row (Brand / Newsletter / Menus)
+   ========================================================================== */
+.knsl-footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Brand & Newsletter Column */
+.knsl-footer-col-brand {
+    flex: 0 0 32%;
+    max-width: 380px;
+}
+
+.knsl-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 26px;
+    transition: opacity 0.25s ease;
+}
+
+.knsl-footer-logo:hover {
+    opacity: 0.9;
+}
+
+.knsl-footer-logo .logo-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--knsl-cyan-brand, #13b5ea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(19, 181, 234, 0.28);
+}
+
+.knsl-footer-logo .logo-circle svg {
+    width: 24px;
+    height: 24px;
+    stroke: #ffffff;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.knsl-footer-logo .logo-text {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal, #204f5e);
+    letter-spacing: -0.5px;
+    line-height: 1;
+}
+
+.knsl-newsletter-prompt {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--knsl-dark-teal, #204f5e);
+    margin-bottom: 14px;
+    letter-spacing: -0.1px;
+}
+
+.knsl-newsletter-form {
+    display: flex;
+    align-items: center;
+    background: #eef9fa;
+    border-radius: 9999px;
+    padding: 5px 6px 5px 22px;
+    max-width: 320px;
+    border: 1px solid rgba(19, 181, 234, 0.12);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.knsl-newsletter-form:focus-within {
+    border-color: var(--knsl-cyan-brand, #13b5ea);
+    box-shadow: 0 0 0 3px rgba(19, 181, 234, 0.15);
+}
+
+.knsl-newsletter-input {
+    flex: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 14px;
+    color: var(--knsl-dark-teal, #204f5e);
+}
+
+.knsl-newsletter-input::placeholder {
+    color: var(--knsl-muted-teal, #5a8695);
+    opacity: 0.85;
+}
+
+.knsl-newsletter-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--knsl-gold-accent, #ecb934);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ffffff;
+    flex-shrink: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.knsl-newsletter-btn:hover {
+    background-color: var(--knsl-gold-hover, #dc9f1b);
+    transform: scale(1.05);
+}
+
+.knsl-newsletter-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* Primary Navigation Menu Column */
+.knsl-footer-col-nav {
+    flex: 0 0 28%;
+}
+
+.knsl-footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.knsl-footer-menu > li > a {
+    display: inline-block;
+    color: var(--knsl-dark-teal, #204f5e);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.8px;
+    text-decoration: none;
+    transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.knsl-footer-menu > li > a:hover {
+    color: var(--knsl-gold-accent, #ecb934);
+    transform: translateX(3px);
+}
+
+/* Legal & Secondary Links Column */
+.knsl-footer-col-legal {
+    flex: 0 0 22%;
+    padding-top: 6px;
+}
+
+.knsl-footer-legal-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.knsl-footer-legal-menu > li > a {
+    display: inline-block;
+    color: var(--knsl-dark-teal, #204f5e);
+    font-size: 11.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    line-height: 1.6;
+    text-decoration: none;
+    transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.knsl-footer-legal-menu > li > a:hover {
+    color: var(--knsl-gold-accent, #ecb934);
+    transform: translateX(2px);
+}
+
+/* ==========================================================================
+   4. Dashed Divider Line
+   ========================================================================== */
+.knsl-footer-divider {
+    border: none;
+    border-top: 2px dashed var(--knsl-dashed, #d5f1f1);
+    margin: 68px 0 52px;
+}
+
+/* ==========================================================================
+   5. Footer Bottom Row (Socials, Copyright, Addresses)
+   ========================================================================== */
+.knsl-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Socials & Copyright */
+.knsl-footer-social-wrap {
+    flex: 0 0 45%;
+}
+
+.knsl-footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.knsl-social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--knsl-social-bg, #eafbfb);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--knsl-dark-teal, #204f5e);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease;
+}
+
+.knsl-social-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    transition: fill 0.3s ease;
+}
+
+.knsl-social-btn:hover {
+    background-color: var(--knsl-dark-teal, #204f5e);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.knsl-social-btn:hover svg {
+    fill: #ffffff;
+}
+
+.knsl-copyright-text {
+    font-size: 13.5px;
+    color: var(--knsl-muted-teal, #5a8695);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* Location Address Columns */
+.knsl-footer-address-col {
+    flex: 0 0 22%;
+}
+
+.knsl-address-title {
+    font-size: 17.5px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal, #204f5e);
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+}
+
+.knsl-address-text {
+    font-size: 13.5px;
+    color: var(--knsl-muted-teal, #5a8695);
+    line-height: 1.65;
+    max-width: 210px;
+}
+
+/* ==========================================================================
+   6. Scroll To Top Button
+   ========================================================================== */
+.knsl-scroll-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--knsl-gold-accent, #ecb934);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(236, 185, 52, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 99;
+}
+
+.knsl-scroll-top-btn:hover {
+    background-color: var(--knsl-gold-hover, #dc9f1b);
+    transform: translateY(-4px);
+}
+
+.knsl-scroll-top-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+/* ==========================================================================
+   7. Responsive Adaptations
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .knsl-footer-island {
+        padding: 80px 36px 60px;
+    }
+    .knsl-footer-top {
+        gap: 30px;
+    }
+    .knsl-footer-col-nav > .knsl-footer-menu > li > a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 860px) {
+    .knsl-footer-top {
+        flex-direction: column;
+        gap: 36px;
+    }
+    .knsl-footer-col-brand,
+    .knsl-footer-col-nav,
+    .knsl-footer-col-legal {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .knsl-footer-bottom {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+    .knsl-footer-social-wrap {
+        flex: 0 0 100%;
+    }
+    .knsl-footer-address-col {
+        flex: 0 0 calc(50% - 14px);
+    }
+}
+
+@media (max-width: 580px) {
+    .knsl-footer-section {
+        padding: 40px 14px 0 14px;
+    }
+    .knsl-footer-island {
+        padding: 55px 22px 45px;
+        border-radius: 16px 16px 0 0;
+    }
+    .knsl-footer-divider {
+        margin: 45px 0 35px;
+    }
+    .knsl-footer-address-col {
+        flex: 0 0 100%;
+    }
+    .knsl-scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}

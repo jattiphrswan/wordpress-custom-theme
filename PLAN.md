@@ -14,7 +14,7 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 [✓] NODE 3 — 2-Slide Hero Slideshow & Booking Bar
 [ ] NODE 4 — "About Us" Resort Story & Image Collage
 [ ] NODE 5 — Rooms & Accommodations Showcase Grid
-[ ] NODE 6 — Resort Services & Amenities Grid
+[✓] NODE 6 — Resort Services & Amenities Grid ("Discover the touch of nature")
 [ ] NODE 7 — Full-Width Parallax Video Banner
 [ ] NODE 8 — Restaurant & Dining Menu Showcase
 [ ] NODE 9 — Guest Reviews / Testimonials Carousel

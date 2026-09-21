@@ -10,7 +10,7 @@ For full detailed plan, see **[`PLAN.md`](file:///PLAN.md)**.
 - [x] **Node 3:** 2-Slide hero background slideshow with Ken Burns parallax animation and booking search bar.
 - [ ] **Node 4:** About Us section with image collage & luxury stats badge.
 - [ ] **Node 5:** Accommodations & Rooms showcase grid with filters.
-- [ ] **Node 6:** Resort Services & Amenities 4-column cards.
+- [x] **Node 6:** Resort Services & Amenities 4-column cards ("Discover the touch of nature").
 - [ ] **Node 7:** Full-width Video tour & parallax banner.
 - [ ] **Node 8:** Restaurant & culinary menu.
 - [ ] **Node 9:** Testimonials & guest reviews carousel.

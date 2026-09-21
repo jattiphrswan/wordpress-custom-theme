@@ -35,7 +35,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
-  padding: 38px 40px 0 40px;
+  padding: 38px 20px 0 20px;
   pointer-events: none;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
@@ -54,7 +54,7 @@ body.admin-bar .site-header-wrapper {
 
 /* Sticky State - On top with NO top margin */
 .site-header-wrapper.is-sticky {
-  padding: 0 40px 0 40px;
+  padding: 0 20px 0 20px;
 }
 
 .site-header-wrapper.is-sticky .site-navbar {
@@ -80,7 +80,7 @@ body.admin-bar .site-header-wrapper {
 
 /* Floating Navigation Card */
 .site-navbar {
-  max-width: 1380px;
+  width: 100%;
   margin: 0 auto;
   background: var(--navbar-bg);
   border-radius: 18px;

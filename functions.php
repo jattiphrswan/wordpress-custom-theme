@@ -52,6 +52,22 @@ function resort_hotel_scripts() {
         '1.0.3'
     );
 
+    // Services stylesheet
+    wp_enqueue_style(
+        'resort-hotel-services',
+        get_template_directory_uri() . '/assets/css/services.css',
+        ['resort-hotel-style'],
+        '1.0.3'
+    );
+
+    // Footer stylesheet
+    wp_enqueue_style(
+        'resort-hotel-footer',
+        get_template_directory_uri() . '/assets/css/footer.css',
+        ['resort-hotel-style'],
+        '1.0.3'
+    );
+
     // Header JS
     wp_enqueue_script(
         'resort-hotel-header-script',
