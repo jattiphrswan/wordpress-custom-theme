@@ -42,6 +42,7 @@ Custom WordPress theme/
 │   ├── js/
 │   │   ├── header.js         # Sticky scroll listener & mobile drawer toggle
 │   │   ├── hero-slider.js    # 2-Slide background crossfade & autoplay logic
+│   │   ├── booking-bar.js    # Dual-month luxury calendar & custom select dropdowns
 │   │   ├── rooms.js          # Room showcase category filter logic
 │   │   └── reviews.js        # Customer reviews carousel & avatar selector logic
 │   │
@@ -104,3 +105,4 @@ Custom WordPress theme/
 | `assets/css/hero.css` | Handles Ken Burns background parallax, crossfade animation, and booking form layout. |
 | `assets/js/header.js` | Toggles `.is-sticky` class on scroll (>40px) and controls mobile navigation toggle. |
 | `assets/js/hero-slider.js` | Cycles slides 1 & 2 every 4.5s with interactive dot navigation. |
+| `assets/js/booking-bar.js` | Generates dual-month luxury calendar popup and custom guest count select dropdowns. |

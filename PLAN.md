@@ -51,7 +51,9 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 - 1.4s smooth crossfade + 6s Ken Burns zoom animation.
 - "WELCOME FRIEND" rounded pill badge.
 - "Life while traveling is a pure dream." heading.
-- Single-row desktop booking bar (Check-in, Check-out, Adults, Children, Search).
+- Upgraded wide booking bar (~860px) with custom components (`assets/js/booking-bar.js`):
+  - **Custom Dual-Month Datepicker:** Side-by-side calendar popup (September & October 2026), gold header (`#ebb02d`) with `<Prev`, `Today`, `Next>`, range selection, and `Clear`/`Close` actions.
+  - **Custom Guest Dropdowns:** Floating rounded dropdowns for Adults and Children with active value highlighted in solid gold (`#ebb02d`) and smooth chevron animation.
 - Autoplay every 4.5s with clickable pagination dots.
 
 ---

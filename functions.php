@@ -159,5 +159,14 @@ function resort_hotel_scripts() {
         '1.0.0',
         true
     );
+
+    // Hero Booking Bar Datepicker & Custom Select JS
+    wp_enqueue_script(
+        'resort-hotel-booking-bar',
+        get_template_directory_uri() . '/assets/js/booking-bar.js',
+        [],
+        '1.0.0',
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'resort_hotel_scripts');

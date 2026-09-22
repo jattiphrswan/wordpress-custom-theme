@@ -28,8 +28,8 @@
                     <!-- Check-in Field -->
                     <div class="booking-field-group">
                         <label class="booking-label" for="checkin">Check-in</label>
-                        <div class="booking-input-wrapper field-date">
-                            <input type="text" id="checkin" name="checkin" class="booking-input" placeholder="Check-in Date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                        <div class="booking-input-wrapper field-date" id="checkinWrapper">
+                            <input type="text" id="checkin" name="checkin" class="booking-input" placeholder="Check-in Date" readonly>
                             <svg class="booking-field-icon" viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                 <line x1="16" y1="2" x2="16" y2="6"></line>
@@ -42,8 +42,8 @@
                     <!-- Check-out Field -->
                     <div class="booking-field-group">
                         <label class="booking-label" for="checkout">Check-out</label>
-                        <div class="booking-input-wrapper field-date">
-                            <input type="text" id="checkout" name="checkout" class="booking-input" placeholder="Check-out Date" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'">
+                        <div class="booking-input-wrapper field-date" id="checkoutWrapper">
+                            <input type="text" id="checkout" name="checkout" class="booking-input" placeholder="Check-out Date" readonly>
                             <svg class="booking-field-icon" viewBox="0 0 24 24">
                                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                                 <line x1="16" y1="2" x2="16" y2="6"></line>
@@ -53,35 +53,41 @@
                         </div>
                     </div>
 
-                    <!-- Adults Field -->
+                    <!-- Adults Field (Custom Select) -->
                     <div class="booking-field-group">
-                        <label class="booking-label" for="adults">Adults</label>
-                        <div class="booking-input-wrapper field-count">
-                            <select id="adults" name="adults" class="booking-input booking-select">
-                                <option value="1" selected>1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4+</option>
-                            </select>
-                            <svg class="booking-field-icon" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6"></path>
-                            </svg>
+                        <label class="booking-label" for="adultsInput">Adults</label>
+                        <div class="booking-input-wrapper field-count knsl-custom-select" id="adultsSelect">
+                            <input type="hidden" id="adultsInput" name="adults" value="1">
+                            <div class="knsl-select-trigger" role="button" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                <span class="knsl-select-val">1</span>
+                                <svg class="knsl-select-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                            </div>
+                            <div class="knsl-dropdown-menu" role="listbox">
+                                <div class="knsl-dropdown-item active" data-value="1" role="option" aria-selected="true">1</div>
+                                <div class="knsl-dropdown-item" data-value="2" role="option" aria-selected="false">2</div>
+                                <div class="knsl-dropdown-item" data-value="3" role="option" aria-selected="false">3</div>
+                                <div class="knsl-dropdown-item" data-value="4" role="option" aria-selected="false">4</div>
+                                <div class="knsl-dropdown-item" data-value="4+" role="option" aria-selected="false">4+</div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Children Field -->
+                    <!-- Children Field (Custom Select) -->
                     <div class="booking-field-group">
-                        <label class="booking-label" for="children">Children</label>
-                        <div class="booking-input-wrapper field-count">
-                            <select id="children" name="children" class="booking-input booking-select">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3+</option>
-                            </select>
-                            <svg class="booking-field-icon" viewBox="0 0 24 24">
-                                <path d="M6 9l6 6 6-6"></path>
-                            </svg>
+                        <label class="booking-label" for="childrenInput">Children</label>
+                        <div class="booking-input-wrapper field-count knsl-custom-select" id="childrenSelect">
+                            <input type="hidden" id="childrenInput" name="children" value="0">
+                            <div class="knsl-select-trigger" role="button" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+                                <span class="knsl-select-val">0</span>
+                                <svg class="knsl-select-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                            </div>
+                            <div class="knsl-dropdown-menu" role="listbox">
+                                <div class="knsl-dropdown-item active" data-value="0" role="option" aria-selected="true">0</div>
+                                <div class="knsl-dropdown-item" data-value="1" role="option" aria-selected="false">1</div>
+                                <div class="knsl-dropdown-item" data-value="2" role="option" aria-selected="false">2</div>
+                                <div class="knsl-dropdown-item" data-value="3" role="option" aria-selected="false">3</div>
+                                <div class="knsl-dropdown-item" data-value="4" role="option" aria-selected="false">4</div>
+                            </div>
                         </div>
                     </div>
 
