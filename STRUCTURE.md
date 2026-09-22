@@ -14,7 +14,9 @@ Custom WordPress theme/
 ├── header.php                # Site header, HTML head, floating navigation bar
 ├── footer.php                # Site footer, copyright, scripts loader
 ├── front-page.php            # Homepage template (Hero slideshow, booking bar, content)
-├── preview-header.html       # Standalone HTML preview for browser testing
+├── page-contact.php          # Contact page template (Get in Touch, form, 3 cards, map)
+├── preview-header.html       # Standalone HTML preview for homepage browser testing
+├── preview-contact.html      # Standalone HTML preview for contact page browser testing
 │
 ├── README.md                 # Complete project documentation & setup
 ├── PLAN.md                   # Roadmap to build all remaining Kinsley sections
@@ -37,6 +39,7 @@ Custom WordPress theme/
 │   │   ├── benefits.css      # Benefits numbered list & circular collage
 │   │   ├── reviews.css       # Customer Voices reviews island, map bg & 7-avatar selector
 │   │   ├── blog.css          # Travel Blog 3-column cards, meta bars & View All CTA
+│   │   ├── contact.css       # Contact page banner, form island, 3 cards & map frame
 │   │   └── footer.css        # Island footer & newsletter subscribe
 │   │
 │   ├── js/
@@ -99,10 +102,12 @@ Custom WordPress theme/
 | `functions.php` | Hooks `after_setup_theme` (title-tag, thumbnails, custom-logo, html5, nav menus) and `wp_enqueue_scripts` (fonts, CSS, JS). |
 | `header.php` | Generates doctype, `<head>`, `wp_head()`, `<body>`, `wp_body_open()`, and the floating `.site-navbar`. |
 | `front-page.php` | Main homepage orchestrator rendering the hero slideshow, booking form, and content blocks. |
+| `page-contact.php` | Dedicated Contact Page template with Get in Touch hero, form island, 3 info cards & map frame. |
 | `footer.php` | Closes `<main>`, renders `<footer>`, invokes `wp_footer()`, and closes `</body></html>`. |
 | `index.php` | The required default fallback template for archives and standard posts. |
 | `assets/css/header.css` | Handles floating island styling, sticky top transition, and Book Now button collapse animation. |
 | `assets/css/hero.css` | Handles Ken Burns background parallax, crossfade animation, and booking form layout. |
+| `assets/css/contact.css` | Styles the subheader banner, breadcrumbs, contact form island, 3 cards, and map frame. |
 | `assets/js/header.js` | Toggles `.is-sticky` class on scroll (>40px) and controls mobile navigation toggle. |
 | `assets/js/hero-slider.js` | Cycles slides 1 & 2 every 4.5s with interactive dot navigation. |
 | `assets/js/booking-bar.js` | Generates dual-month luxury calendar popup and custom guest count select dropdowns. |

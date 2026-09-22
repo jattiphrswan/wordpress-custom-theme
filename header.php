@@ -79,8 +79,8 @@
                             <li><a href="#guide">Travel Guide</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">
+                    <li class="nav-item <?php echo is_page('contact') ? 'active' : ''; ?>">
+                        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="nav-link">
                             <span>Contact</span>
                         </a>
                     </li>

@@ -124,6 +124,14 @@ function resort_hotel_scripts() {
         '1.0.6'
     );
 
+    // Contact stylesheet
+    wp_enqueue_style(
+        'resort-hotel-contact',
+        get_template_directory_uri() . '/assets/css/contact.css',
+        ['resort-hotel-style'],
+        '1.0.0'
+    );
+
     // Header JS
     wp_enqueue_script(
         'resort-hotel-header-script',
