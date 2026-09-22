@@ -16,8 +16,8 @@ $reviews = [
         'quote'  => 'An unforgettable stay at aquarelle! The beachfront location provided breathtaking views, and the hotel\'s blend of luxury and a relaxed atmosphere was perfect. The attentive staff and excellent amenities, including a refreshing pool and superb dining options, made my experience truly exceptional. aquarelle is a haven for those seeking relaxation with a touch of indulgence. Already looking forward to my next visit to this seaside paradise!'
     ],
     [
-        'name'   => 'Emma Watson',
-        'source' => 'TRIPADVISOR',
+        'name'   => 'Emma Trueman',
+        'source' => 'ENVATO MARKET',
         'avatar' => 'face2.jpg',
         'quote'  => 'From the moment we arrived, we were welcomed like family. The ocean-view suite was impeccably clean with thoughtful details, and watching the sunset from our balcony was pure magic. The culinary experience at the seaside restaurant surpassed all expectations!'
     ],
