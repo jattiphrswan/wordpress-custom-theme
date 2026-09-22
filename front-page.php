@@ -123,6 +123,9 @@
     <!-- Benefits Section ("Why more than a million visitors chose us") -->
     <?php get_template_part('template-parts/section-benefits'); ?>
 
+    <!-- Travel Blog Section ("Latest blog publications") -->
+    <?php get_template_part('template-parts/section-blog'); ?>
+
     <!-- Call to Action Section -->
     <?php get_template_part('template-parts/section-cta'); ?>
 </main>

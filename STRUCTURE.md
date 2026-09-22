@@ -35,6 +35,7 @@ Custom WordPress theme/
 │   │   ├── rooms.css         # Room showcase grid & filter pills
 │   │   ├── cta.css           # Call to action 24/7 inquiry island
 │   │   ├── benefits.css      # Benefits numbered list & circular collage
+│   │   ├── blog.css          # Travel Blog 3-column cards, meta bars & View All CTA
 │   │   └── footer.css        # Island footer & newsletter subscribe
 │   │
 │   ├── js/
@@ -73,8 +74,9 @@ Custom WordPress theme/
     ├── section-features.php  # 6-card features with icons
     ├── section-about.php     # About Us traveler visual, watercolor splash & CTAs
     ├── section-rooms.php     # Rooms showcase with filter tabs
-    ├── section-cta.php       # Call to action 24/7 inquiry box
-    └── section-benefits.php  # Why visitors chose us numbered items & collage
+    ├── section-benefits.php  # Why visitors chose us numbered items & collage
+    ├── section-blog.php      # Travel blog 3-column cards & View All button
+    └── section-cta.php       # Call to action 24/7 inquiry box
 ```
 
 ---

@@ -18,8 +18,8 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 [ ] NODE 7 — Full-Width Parallax Video Banner
 [ ] NODE 8 — Restaurant & Dining Menu Showcase
 [ ] NODE 9 — Guest Reviews / Testimonials Carousel
-[ ] NODE 10 — Location & Blog Articles Section
-[ ] NODE 11 — Multi-Column Luxury Footer
+[✓] NODE 10 — Location & Blog Articles Section ("Latest blog publications")
+[✓] NODE 11 — Multi-Column Luxury Footer
 [ ] NODE 12 — Custom Post Types & Booking Integration
 ```
 
@@ -97,9 +97,15 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 ### [ ] NODE 9: Guest Testimonials Carousel
 - Client reviews slider with 5-star rating stars, quotation mark icon, avatar, guest name, and stay location.
 
-### [ ] NODE 10: Travel Blog & News Section
-- 3-column blog card grid using `assets/images/loaction/blog-1-950x633.jpg`.
-- Date badge, title, author, reading time, and "Read More" link.
+### [✓] NODE 10: Travel Blog Section ("Latest blog publications")
+- 3-column article card grid with image hover zoom and elevation:
+  - Card 1: `about-1-950x633.jpg` — "The ultimate guide to traveling when you have no money"
+  - Card 2: `blog-1-950x633.jpg` — "Explore the cultural wealth: temples, palaces and more"
+  - Card 3: `about-8-3-950x585.jpg` — "10 easy steps and tips for planning your next vacation"
+- Author & Date meta pill bar (`Hana Evans`, `December 21, 2021`) with custom SVG icons.
+- Excerpt typography, dotted divider line, and `READ MORE →` link with hover transition.
+- Top-right ambient watercolor splash backdrop (`assets/images/pat4.png`).
+- Bottom travel tips summary text on left, and golden pill `VIEW ALL` button on right.
 
 ### [ ] NODE 11: Multi-Column Luxury Footer
 - Column 1: Kinsley brand logo, brief description, social icons (Instagram, Facebook, Twitter, TripAdvisor).
