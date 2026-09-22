@@ -1,0 +1,361 @@
+/**
+ * Kinsley Resort Hotel — About Us Section Stylesheet ("Our goal and philosophy")
+ * Replicates the coastal resort About Us layout featuring traveler visual,
+ * ambient watercolor background, nautical starfish illustrations, and dual CTAs.
+ */
+
+:root {
+    --knsl-dark-teal: #204f5e;
+    --knsl-muted-teal: #5a8695;
+    --knsl-mint-badge: #dcf3f4;
+    --knsl-cyan-badge: #23bcec;
+    --knsl-gold-accent: #ebb02d;
+    --knsl-gold-hover: #dfa925;
+    --knsl-bezier: cubic-bezier(0, 0, 0.3642, 1);
+}
+
+/* ==========================================================================
+   1. Section Wrapper & Ambient Backdrop
+   ========================================================================== */
+.knsl-about-section {
+    position: relative;
+    background-color: #eef7f8;
+    padding: 90px 20px 80px 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* Ambient Watercolor Splash Backdrop Behind Traveler (pat4.png) */
+.knsl-about-pat-bg {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    width: 880px;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transform: translateY(-50%) rotate(8deg);
+    opacity: 0.92;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Floating Nautical Starfish / Stars (pat-1, pat-3) */
+.knsl-about-star {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    user-select: none;
+    animation: knslAboutFloat 6s ease-in-out infinite alternate;
+}
+
+.knsl-about-star.star-left {
+    top: 32%;
+    left: 8%;
+    width: 58px;
+    height: 58px;
+    animation-duration: 7s;
+}
+
+.knsl-about-star.star-center {
+    top: 62%;
+    left: 46%;
+    width: 48px;
+    height: 48px;
+    animation-duration: 6.5s;
+    animation-delay: 1.2s;
+}
+
+@keyframes knslAboutFloat {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(6deg);
+    }
+    100% {
+        transform: translateY(6px) rotate(-4deg);
+    }
+}
+
+/* ==========================================================================
+   2. Main Container & Two-Column Grid
+   ========================================================================== */
+.knsl-about-container {
+    position: relative;
+    z-index: 3;
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   3. Left Media Column (Traveler Visual)
+   ========================================================================== */
+.knsl-about-media {
+    flex: 1 1 50%;
+    max-width: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.knsl-about-image-wrap {
+    width: 100%;
+    max-width: 490px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.knsl-about-person-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-height: 620px;
+    filter: drop-shadow(0 12px 28px rgba(32, 79, 94, 0.09));
+    transition: transform 0.5s var(--knsl-bezier);
+}
+
+.knsl-about-person-img:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   4. Right Content Column (Story, Philosophy & CTAs)
+   ========================================================================== */
+.knsl-about-content {
+    flex: 1 1 50%;
+    max-width: 580px;
+    box-sizing: border-box;
+}
+
+/* Subtitle Pill Badge */
+.knsl-about-badge-wrap {
+    margin-bottom: 18px;
+}
+
+.knsl-about-badge {
+    display: inline-block;
+    background-color: var(--knsl-mint-badge, #dcf3f4);
+    color: var(--knsl-dark-teal, #204f5e);
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 40px;
+    line-height: 1.4;
+}
+
+/* Section Title */
+.knsl-about-title {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: clamp(30px, 3.2vw, 42px);
+    font-weight: 800;
+    color: var(--knsl-dark-teal, #204f5e);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0 0 24px 0;
+}
+
+/* Story Body Paragraphs */
+.knsl-about-text-group {
+    margin-bottom: 34px;
+}
+
+.knsl-about-text {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.72;
+    color: var(--knsl-muted-teal, #5a8695);
+    margin: 0 0 16px 0;
+    font-weight: 400;
+}
+
+.knsl-about-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Action Buttons Row */
+.knsl-about-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Primary Button: Get in Touch (Gold Pill) */
+.knsl-about-btn-gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--knsl-gold-accent, #ebb02d);
+    color: #ffffff !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 17px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(235, 176, 45, 0.32);
+    transition: all 0.35s var(--knsl-bezier);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.knsl-about-btn-gold:hover {
+    background-color: var(--knsl-gold-hover, #dfa925);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(235, 176, 45, 0.45);
+    color: #ffffff;
+}
+
+.knsl-about-btn-icon {
+    width: 15px;
+    height: 15px;
+    fill: #ffffff;
+    flex-shrink: 0;
+}
+
+/* Secondary Button: Book Now (Link with Arrow) */
+.knsl-about-btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--knsl-dark-teal, #204f5e);
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 17px 18px;
+    text-decoration: none;
+    transition: all 0.3s var(--knsl-bezier);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.knsl-about-btn-link:hover {
+    color: var(--knsl-cyan-badge, #23bcec);
+    transform: translateX(4px);
+}
+
+.knsl-about-link-icon {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   5. Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1200px) {
+    .knsl-about-pat-bg {
+        width: 720px;
+        height: 640px;
+        left: -80px;
+    }
+
+    .knsl-about-star.star-left {
+        left: 3%;
+    }
+
+    .knsl-about-star.star-center {
+        left: 44%;
+    }
+}
+
+@media (max-width: 991px) {
+    .knsl-about-section {
+        padding: 70px 20px 70px 20px;
+    }
+
+    .knsl-about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 0 15px;
+    }
+
+    .knsl-about-media {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .knsl-about-content {
+        max-width: 100%;
+    }
+
+    .knsl-about-pat-bg {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(8deg);
+        width: 600px;
+        height: 520px;
+        opacity: 0.7;
+    }
+
+    .knsl-about-actions {
+        justify-content: center;
+    }
+
+    .knsl-about-star.star-left {
+        top: 15%;
+        left: 10%;
+    }
+
+    .knsl-about-star.star-center {
+        top: 45%;
+        left: 82%;
+    }
+}
+
+@media (max-width: 640px) {
+    .knsl-about-section {
+        padding: 55px 15px 55px 15px;
+    }
+
+    .knsl-about-title {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+
+    .knsl-about-media {
+        max-width: 320px;
+    }
+
+    .knsl-about-text {
+        font-size: 14px;
+    }
+
+    .knsl-about-actions {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .knsl-about-btn-gold,
+    .knsl-about-btn-link {
+        width: 100%;
+        text-align: center;
+    }
+}

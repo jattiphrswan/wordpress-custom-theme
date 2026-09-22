@@ -28,7 +28,14 @@ Custom WordPress theme/
 ├── assets/
 │   ├── css/
 │   │   ├── header.css        # Island navbar, sticky collapse (0.4s ease-in-out)
-│   │   └── hero.css          # Ken Burns slideshow, booking bar, pagination
+│   │   ├── hero.css          # Ken Burns slideshow, booking bar, pagination
+│   │   ├── services.css      # Services 4-column staggered cards
+│   │   ├── features.css      # 6-card feature grid with icons
+│   │   ├── about.css         # About Us traveler visual, watercolor splash & CTAs
+│   │   ├── rooms.css         # Room showcase grid & filter pills
+│   │   ├── cta.css           # Call to action 24/7 inquiry island
+│   │   ├── benefits.css      # Benefits numbered list & circular collage
+│   │   └── footer.css        # Island footer & newsletter subscribe
 │   │
 │   ├── js/
 │   │   ├── header.js         # Sticky scroll listener & mobile drawer toggle
@@ -61,18 +68,13 @@ Custom WordPress theme/
 │           ├── about-8-3-950x585.jpg
 │           └── blog-1-950x633.jpg
 │
-└── template-parts/           # Reusable template components (Planned)
-    ├── header/
-    │   └── nav.php           # Primary navigation component
-    ├── hero/
-    │   ├── slider.php        # Background slider component
-    │   └── booking-bar.php   # Reservation search form
-    ├── about/
-    │   └── story.php         # About resort collage
-    ├── rooms/
-    │   └── card.php          # Individual room card component
-    └── footer/
-        └── widgets.php       # Footer column widgets
+└── template-parts/           # Reusable template components
+    ├── section-services.php  # Services staggered 4-card grid & pricing
+    ├── section-features.php  # 6-card features with icons
+    ├── section-about.php     # About Us traveler visual, watercolor splash & CTAs
+    ├── section-rooms.php     # Rooms showcase with filter tabs
+    ├── section-cta.php       # Call to action 24/7 inquiry box
+    └── section-benefits.php  # Why visitors chose us numbered items & collage
 ```
 
 ---

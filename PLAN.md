@@ -12,7 +12,7 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 [✓] NODE 1 — WordPress Theme Core & Junction Setup
 [✓] NODE 2 — Floating Island Header & Sticky Collapse
 [✓] NODE 3 — 2-Slide Hero Slideshow & Booking Bar
-[ ] NODE 4 — "About Us" Resort Story & Image Collage
+[✓] NODE 4 — "About Us" Resort Story & Philosophy ("Our goal and philosophy")
 [✓] NODE 5 — Rooms & Accommodations Showcase Grid & CTA Island
 [✓] NODE 6 — Resort Services & Amenities Grid ("Discover the touch of nature")
 [ ] NODE 7 — Full-Width Parallax Video Banner
@@ -56,13 +56,15 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 
 ---
 
-### [ ] NODE 4: About Us Section
-- **Visuals:** Image collage using `assets/images/about-01-950x1178.png` and `assets/images/loaction/about-1-950x633.jpg`.
+### [✓] NODE 4: About Us Section ("Our goal and philosophy")
+- **Visuals:** Cut-out traveler visual (`assets/images/about-01-950x1178.png`), ambient watercolor splash (`assets/images/pat4.png`), and floating nautical starfish (`assets/images/pat-1.png`, `assets/images/pat-3.png`).
 - **Text:**
-  - Badge: `ABOUT US`
-  - Heading: *"Relax in our Resort & Hotel"*
-  - Description copy, luxury bullet points, and Founder signature graphic.
-- **Floating Badge:** "5 Stars Luxury Experience" / Year established badge.
+  - Badge: `ABOUT US` in rounded mint pill.
+  - Heading: *"Our goal and philosophy"*
+  - Two story paragraphs describing Kinsley Hotel Goleta coastal experience.
+- **CTAs:**
+  - Primary: Golden pill button `GET IN TOUCH` with mail SVG icon.
+  - Secondary: Link `BOOK NOW` with right arrow icon.
 
 ### [ ] NODE 5: Rooms & Accommodations Grid
 - Category filter tabs: `All Rooms`, `Deluxe`, `Ocean Suite`, `Penthouse`.

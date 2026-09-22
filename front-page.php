@@ -112,6 +112,9 @@
     <!-- Features Section -->
     <?php get_template_part('template-parts/section-features'); ?>
 
+    <!-- About Section ("Our goal and philosophy") -->
+    <?php get_template_part('template-parts/section-about'); ?>
+
     <!-- Rooms & Accommodations Section -->
     <?php get_template_part('template-parts/section-rooms'); ?>
 

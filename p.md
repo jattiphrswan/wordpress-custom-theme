@@ -8,8 +8,8 @@ For full detailed plan, see **[`PLAN.md`](file:///PLAN.md)**.
 - [x] **Node 1:** Core WordPress theme structure & Junction connection to LocalWP (`localhost:10004`).
 - [x] **Node 2:** Floating header with Kinsley branding, active indicator, and collapsible sticky button.
 - [x] **Node 3:** 2-Slide hero background slideshow with Ken Burns parallax animation and booking search bar.
-- [ ] **Node 4:** About Us section with image collage & luxury stats badge.
-- [ ] **Node 5:** Accommodations & Rooms showcase grid with filters.
+- [x] **Node 4:** About Us section with traveler visual, watercolor splash, and dual CTAs ("Our goal and philosophy").
+- [x] **Node 5:** Accommodations & Rooms showcase grid with filters.
 - [x] **Node 6:** Resort Services & Amenities 4-column cards ("Discover the touch of nature").
 - [ ] **Node 7:** Full-width Video tour & parallax banner.
 - [ ] **Node 8:** Restaurant & culinary menu.
