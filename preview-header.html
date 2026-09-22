@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/rooms.css">
     <link rel="stylesheet" href="assets/css/cta.css">
     <link rel="stylesheet" href="assets/css/benefits.css">
+    <link rel="stylesheet" href="assets/css/reviews.css">
     <link rel="stylesheet" href="assets/css/blog.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 </head>
@@ -1078,6 +1079,192 @@
             </div>
     </section>
 
+    <!-- Customer Voices & Reviews Section ("Hear What They Say!") -->
+    <section class="knsl-reviews-section" id="reviews">
+        <div class="knsl-reviews-container">
+            <!-- Floating Island Card with Rounded Corners -->
+            <div class="knsl-reviews-card">
+                <!-- Subtle Dotted World Map Background (pat5.png) -->
+                <div class="knsl-reviews-map-bg" 
+                     aria-hidden="true" 
+                     style="background-image: url('assets/images/pat5.png');">
+                </div>
+
+                <!-- Section Content -->
+                <div class="knsl-reviews-inner">
+                    <!-- Header Badge & Title -->
+                    <div class="knsl-reviews-header">
+                        <div class="knsl-reviews-badge-wrap">
+                            <span class="knsl-reviews-badge">REVIEWS</span>
+                        </div>
+                        <h2 class="knsl-reviews-title">
+                            Customer Voices:<br>
+                            Hear What They Say!
+                        </h2>
+                    </div>
+
+                    <!-- 7-Avatar Selector Row -->
+                    <div class="knsl-reviews-avatars-wrap" role="tablist" aria-label="Customer Reviews Avatars">
+                        <div class="knsl-reviews-avatars">
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn active" 
+                                    data-index="0"
+                                    role="tab"
+                                    aria-selected="true"
+                                    aria-label="Sarah Newman review">
+                                <img src="assets/images/team/face1.jpg" 
+                                     alt="Sarah Newman" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="1"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="Emma Watson review">
+                                <img src="assets/images/team/face2.jpg" 
+                                     alt="Emma Watson" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="2"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="David Miller review">
+                                <img src="assets/images/team/face3.jpg" 
+                                     alt="David Miller" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="3"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="Sophia Clark review">
+                                <img src="assets/images/team/face4.jpg" 
+                                     alt="Sophia Clark" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="4"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="Marcus Johnson review">
+                                <img src="assets/images/team/face5.jpg" 
+                                     alt="Marcus Johnson" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="5"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="Oliver Bennett review">
+                                <img src="assets/images/team/face6.jpg" 
+                                     alt="Oliver Bennett" 
+                                     loading="lazy">
+                            </button>
+                            <button type="button" 
+                                    class="knsl-review-avatar-btn" 
+                                    data-index="6"
+                                    role="tab"
+                                    aria-selected="false"
+                                    aria-label="Liam Wilson review">
+                                <img src="assets/images/team/face7.jpg" 
+                                     alt="Liam Wilson" 
+                                     loading="lazy">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial Slider Stage with Prev/Next Controls -->
+                    <div class="knsl-reviews-stage">
+                        <!-- Left Prev Arrow Button (Mint circle) -->
+                        <button type="button" class="knsl-reviews-nav-btn knsl-nav-prev" id="knslReviewPrevBtn" aria-label="Previous Review">
+                            <svg viewBox="0 0 448 512" aria-hidden="true">
+                                <path d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"/>
+                            </svg>
+                        </button>
+
+                        <!-- Active Review Content Box -->
+                        <div class="knsl-reviews-content-box" id="knslReviewsContent">
+                            <!-- Cyan Quotation Mark Icon -->
+                            <div class="knsl-reviews-quote-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+
+                            <!-- Reviewer Meta -->
+                            <h3 class="knsl-review-author" id="knslReviewAuthor">Sarah Newman</h3>
+                            <div class="knsl-review-source" id="knslReviewSource">ENVATO MARKET</div>
+
+                            <!-- Review Quote Text -->
+                            <p class="knsl-review-quote" id="knslReviewQuote">An unforgettable stay at aquarelle! The beachfront location provided breathtaking views, and the hotel's blend of luxury and a relaxed atmosphere was perfect. The attentive staff and excellent amenities, including a refreshing pool and superb dining options, made my experience truly exceptional. aquarelle is a haven for those seeking relaxation with a touch of indulgence. Already looking forward to my next visit to this seaside paradise!</p>
+                        </div>
+
+                        <!-- Right Next Arrow Button (Gold circle) -->
+                        <button type="button" class="knsl-reviews-nav-btn knsl-nav-next" id="knslReviewNextBtn" aria-label="Next Review">
+                            <svg viewBox="0 0 448 512" aria-hidden="true">
+                                <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Embedded Reviews Dataset for JavaScript Carousel -->
+        <script type="application/json" id="knslReviewsData">
+            [
+                {
+                    "name": "Sarah Newman",
+                    "source": "ENVATO MARKET",
+                    "avatar": "face1.jpg",
+                    "quote": "An unforgettable stay at aquarelle! The beachfront location provided breathtaking views, and the hotel's blend of luxury and a relaxed atmosphere was perfect. The attentive staff and excellent amenities, including a refreshing pool and superb dining options, made my experience truly exceptional. aquarelle is a haven for those seeking relaxation with a touch of indulgence. Already looking forward to my next visit to this seaside paradise!"
+                },
+                {
+                    "name": "Emma Watson",
+                    "source": "TRIPADVISOR",
+                    "avatar": "face2.jpg",
+                    "quote": "From the moment we arrived, we were welcomed like family. The ocean-view suite was impeccably clean with thoughtful details, and watching the sunset from our balcony was pure magic. The culinary experience at the seaside restaurant surpassed all expectations!"
+                },
+                {
+                    "name": "David Miller",
+                    "source": "BOOKING.COM",
+                    "avatar": "face3.jpg",
+                    "quote": "A truly five-star experience in Santa Barbara. The wellness spa, pristine cabanas, and private beach access made this the best vacation we have had in years. Highly recommended for couples looking for an intimate coastal getaway."
+                },
+                {
+                    "name": "Sophia Clark",
+                    "source": "LUXURY TRAVEL BLOG",
+                    "avatar": "face4.jpg",
+                    "quote": "The architectural beauty and coastal harmony here are unparalleled. Every amenity feels bespoke, from the heated infinity pool overlooking the cliffs to the artisan cocktails served at dusk. We will definitely return next summer!"
+                },
+                {
+                    "name": "Marcus Johnson",
+                    "source": "GOOGLE REVIEWS",
+                    "avatar": "face5.jpg",
+                    "quote": "Outstanding hospitality and attention to detail. The concierge arranged private sailing and surfing lessons for our family. The beds were exceptionally comfortable and the breakfast buffet was world-class."
+                },
+                {
+                    "name": "Oliver Bennett",
+                    "source": "TRAVEL & LEISURE",
+                    "avatar": "face6.jpg",
+                    "quote": "Kinsley Resort is the epitome of relaxed luxury. Peaceful mornings with ocean breezes, refined interior styling, and incredible service from every staff member. An absolute must-visit destination in California."
+                },
+                {
+                    "name": "Liam Wilson",
+                    "source": "EXPEDIA VERIFIED",
+                    "avatar": "face7.jpg",
+                    "quote": "Exceeded every expectation. The tranquil gardens, stunning coastal trail walks, and evening fireside wine tastings created memories we will cherish forever. Seamless booking and flawless service throughout."
+                }
+            ]
+        </script>
+    </section>
+
     <!-- Travel Blog Section ("Latest blog publications") -->
     <section class="knsl-blog-section" id="blog">
         <!-- Ambient Watercolor Splash Backdrop on Top-Right -->
@@ -1414,5 +1601,6 @@
 <script src="assets/js/header.js"></script>
 <script src="assets/js/hero-slider.js"></script>
 <script src="assets/js/rooms.js"></script>
+<script src="assets/js/reviews.js"></script>
 </body>
 </html>

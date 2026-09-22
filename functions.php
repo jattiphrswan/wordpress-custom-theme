@@ -100,6 +100,14 @@ function resort_hotel_scripts() {
         '1.0.6'
     );
 
+    // Customer Voices & Reviews stylesheet
+    wp_enqueue_style(
+        'resort-hotel-reviews',
+        get_template_directory_uri() . '/assets/css/reviews.css',
+        ['resort-hotel-style'],
+        '1.0.0'
+    );
+
     // Blog stylesheet
     wp_enqueue_style(
         'resort-hotel-blog',
@@ -140,6 +148,15 @@ function resort_hotel_scripts() {
         get_template_directory_uri() . '/assets/js/rooms.js',
         [],
         '1.0.4',
+        true
+    );
+
+    // Customer Reviews Carousel JS
+    wp_enqueue_script(
+        'resort-hotel-reviews-script',
+        get_template_directory_uri() . '/assets/js/reviews.js',
+        [],
+        '1.0.0',
         true
     );
 }

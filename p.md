@@ -13,7 +13,7 @@ For full detailed plan, see **[`PLAN.md`](file:///PLAN.md)**.
 - [x] **Node 6:** Resort Services & Amenities 4-column cards ("Discover the touch of nature").
 - [ ] **Node 7:** Full-width Video tour & parallax banner.
 - [ ] **Node 8:** Restaurant & culinary menu.
-- [ ] **Node 9:** Testimonials & guest reviews carousel.
+- [x] **Node 9:** Customer Voices & reviews carousel ("Hear What They Say!").
 - [x] **Node 10:** Travel blog & location highlights ("Latest blog publications").
 - [x] **Node 11:** Multi-column luxury footer.
 - [ ] **Node 12:** Dynamic custom post types & booking integration.

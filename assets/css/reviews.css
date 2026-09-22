@@ -1,0 +1,367 @@
+/**
+ * Kinsley Resort Hotel — Customer Voices / Reviews Section Stylesheet
+ * Replicates "Customer Voices: Hear What They Say!"
+ * with pat5.png dotted world map background, 7-person team/avatar carousel,
+ * cyan quote icon, author name, platform, and prev/next controls.
+ */
+
+:root {
+    --knsl-dark-teal: #204f5e;
+    --knsl-muted-teal: #5a8695;
+    --knsl-mint-badge: #dff2f5;
+    --knsl-cyan-badge: #14b7ec;
+    --knsl-gold-accent: #ebb02d;
+    --knsl-gold-hover: #dfa925;
+    --knsl-bezier: cubic-bezier(0, 0, 0.3642, 1);
+}
+
+/* ==========================================================================
+   1. Section Wrapper
+   ========================================================================== */
+.knsl-reviews-section {
+    position: relative;
+    padding: 70px 20px 80px 20px;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.knsl-reviews-container {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. Floating White Island Card
+   ========================================================================== */
+.knsl-reviews-card {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(32, 79, 94, 0.06);
+    padding: 85px 50px 95px 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Subtle Dotted World Map Background (pat5.png) */
+.knsl-reviews-map-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.18;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Content Inner */
+.knsl-reviews-inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* ==========================================================================
+   3. Header: Badge & Title
+   ========================================================================== */
+.knsl-reviews-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.knsl-reviews-badge-wrap {
+    margin-bottom: 16px;
+}
+
+.knsl-reviews-badge {
+    display: inline-block;
+    background-color: var(--knsl-mint-badge, #dff2f5);
+    color: var(--knsl-dark-teal, #204f5e);
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 40px;
+    line-height: 1.4;
+}
+
+.knsl-reviews-title {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: clamp(28px, 3.2vw, 42px);
+    font-weight: 800;
+    color: var(--knsl-dark-teal, #204f5e);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+/* ==========================================================================
+   4. 7-Avatar Selector Row
+   ========================================================================== */
+.knsl-reviews-avatars-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.knsl-reviews-avatars {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.knsl-review-avatar-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.35s var(--knsl-bezier), box-shadow 0.35s var(--knsl-bezier);
+    box-sizing: border-box;
+}
+
+.knsl-review-avatar-btn img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.knsl-review-avatar-btn:hover {
+    transform: scale(1.12);
+}
+
+/* Active Avatar: Golden Ring Border */
+.knsl-review-avatar-btn.active {
+    transform: scale(1.22);
+    box-shadow: 0 0 0 3px var(--knsl-gold-accent, #ebb02d), 0 6px 18px rgba(235, 176, 45, 0.4);
+    z-index: 3;
+}
+
+/* ==========================================================================
+   5. Testimonial Slider Stage & Arrows
+   ========================================================================== */
+.knsl-reviews-stage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Navigation Buttons */
+.knsl-reviews-nav-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    outline: none;
+    transition: all 0.3s var(--knsl-bezier);
+}
+
+.knsl-reviews-nav-btn svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Left Arrow Button: Soft Mint Circle */
+.knsl-nav-prev {
+    background-color: var(--knsl-mint-badge, #dff2f5);
+    color: var(--knsl-cyan-badge, #14b7ec);
+}
+
+.knsl-nav-prev svg {
+    fill: currentColor;
+}
+
+.knsl-nav-prev:hover {
+    background-color: var(--knsl-cyan-badge, #14b7ec);
+    color: #ffffff;
+    transform: translateX(-3px);
+    box-shadow: 0 6px 16px rgba(20, 183, 236, 0.35);
+}
+
+/* Right Arrow Button: Golden Circle */
+.knsl-nav-next {
+    background-color: var(--knsl-gold-accent, #ebb02d);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(235, 176, 45, 0.35);
+}
+
+.knsl-nav-next svg {
+    fill: currentColor;
+}
+
+.knsl-nav-next:hover {
+    background-color: var(--knsl-gold-hover, #dfa925);
+    transform: translateX(3px);
+    box-shadow: 0 8px 22px rgba(235, 176, 45, 0.5);
+}
+
+/* ==========================================================================
+   6. Active Review Content Box
+   ========================================================================== */
+.knsl-reviews-content-box {
+    max-width: 760px;
+    margin: 0 35px;
+    flex-grow: 1;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.knsl-reviews-content-box.fading {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+/* Cyan Quotation Mark Icon */
+.knsl-reviews-quote-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--knsl-cyan-badge, #14b7ec);
+    margin: 0 auto 16px auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.knsl-reviews-quote-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Reviewer Name */
+.knsl-review-author {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal, #204f5e);
+    margin: 0 0 6px 0;
+    line-height: 1.3;
+}
+
+/* Reviewer Source / Platform */
+.knsl-review-source {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--knsl-muted-teal, #5a8695);
+    margin: 0 0 24px 0;
+}
+
+/* Testimonial Quote */
+.knsl-review-quote {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    font-size: 14px;
+    line-height: 1.82;
+    color: var(--knsl-muted-teal, #5a8695);
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+/* ==========================================================================
+   7. Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 992px) {
+    .knsl-reviews-card {
+        padding: 65px 30px 75px 30px;
+    }
+
+    .knsl-reviews-stage {
+        max-width: 100%;
+    }
+
+    .knsl-reviews-content-box {
+        margin: 0 20px;
+    }
+
+    .knsl-reviews-avatars {
+        gap: 14px;
+    }
+
+    .knsl-review-avatar-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 680px) {
+    .knsl-reviews-section {
+        padding: 50px 15px 60px 15px;
+    }
+
+    .knsl-reviews-card {
+        padding: 45px 20px 55px 20px;
+        border-radius: 18px;
+    }
+
+    .knsl-reviews-title {
+        font-size: 26px;
+    }
+
+    .knsl-reviews-avatars {
+        gap: 10px;
+    }
+
+    .knsl-review-avatar-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .knsl-review-avatar-btn.active {
+        transform: scale(1.15);
+    }
+
+    .knsl-reviews-stage {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .knsl-reviews-content-box {
+        margin: 0;
+        order: 1;
+    }
+
+    .knsl-nav-prev,
+    .knsl-nav-next {
+        order: 2;
+        display: inline-flex;
+    }
+
+    /* Wrap arrows in a row on mobile */
+    .knsl-reviews-stage::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

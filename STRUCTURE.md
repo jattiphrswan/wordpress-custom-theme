@@ -35,12 +35,15 @@ Custom WordPress theme/
 │   │   ├── rooms.css         # Room showcase grid & filter pills
 │   │   ├── cta.css           # Call to action 24/7 inquiry island
 │   │   ├── benefits.css      # Benefits numbered list & circular collage
+│   │   ├── reviews.css       # Customer Voices reviews island, map bg & 7-avatar selector
 │   │   ├── blog.css          # Travel Blog 3-column cards, meta bars & View All CTA
 │   │   └── footer.css        # Island footer & newsletter subscribe
 │   │
 │   ├── js/
 │   │   ├── header.js         # Sticky scroll listener & mobile drawer toggle
-│   │   └── hero-slider.js    # 2-Slide background crossfade & autoplay logic
+│   │   ├── hero-slider.js    # 2-Slide background crossfade & autoplay logic
+│   │   ├── rooms.js          # Room showcase category filter logic
+│   │   └── reviews.js        # Customer reviews carousel & avatar selector logic
 │   │
 │   └── images/
 │       ├── hero-i-1-1.jpg    # Slide 1: Hotel facade & palm trees (1920x772)
@@ -49,6 +52,7 @@ Custom WordPress theme/
 │       ├── pat-1.png         # Decorative starfish accent 1
 │       ├── pat-3.png         # Decorative star accent 2
 │       ├── pat4.png          # Coastal background texture
+│       ├── pat5.png          # Dotted world map background
 │       │
 │       ├── room/             # Accommodation demo photos
 │       │   ├── room-demo-1-950x535.jpg
@@ -64,6 +68,11 @@ Custom WordPress theme/
 │       │   ├── serv3-950x1273.jpg (Luxury Spa)
 │       │   └── serv4-950x1238.jpg (Pool Lounge)
 │       │
+│       ├── team/             # Customer / team avatars (face1.jpg to face7.jpg)
+│       │   ├── face1.jpg (Sarah Newman)
+│       │   ├── face2.jpg (Emma Watson)
+│       │   └── ... (face3 to face7)
+│       │
 │       └── loaction/         # Location & blog demo photos
 │           ├── about-1-950x633.jpg
 │           ├── about-8-3-950x585.jpg
@@ -75,6 +84,7 @@ Custom WordPress theme/
     ├── section-about.php     # About Us traveler visual, watercolor splash & CTAs
     ├── section-rooms.php     # Rooms showcase with filter tabs
     ├── section-benefits.php  # Why visitors chose us numbered items & collage
+    ├── section-reviews.php   # Customer Voices reviews island & 7-avatar selector
     ├── section-blog.php      # Travel blog 3-column cards & View All button
     └── section-cta.php       # Call to action 24/7 inquiry box
 ```

@@ -123,6 +123,9 @@
     <!-- Benefits Section ("Why more than a million visitors chose us") -->
     <?php get_template_part('template-parts/section-benefits'); ?>
 
+    <!-- Customer Voices & Reviews Section ("Hear What They Say!") -->
+    <?php get_template_part('template-parts/section-reviews'); ?>
+
     <!-- Travel Blog Section ("Latest blog publications") -->
     <?php get_template_part('template-parts/section-blog'); ?>
 

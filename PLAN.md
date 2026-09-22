@@ -17,7 +17,7 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
 [✓] NODE 6 — Resort Services & Amenities Grid ("Discover the touch of nature")
 [ ] NODE 7 — Full-Width Parallax Video Banner
 [ ] NODE 8 — Restaurant & Dining Menu Showcase
-[ ] NODE 9 — Guest Reviews / Testimonials Carousel
+[✓] NODE 9 — Guest Reviews / Testimonials Carousel ("Customer Voices: Hear What They Say!")
 [✓] NODE 10 — Location & Blog Articles Section ("Latest blog publications")
 [✓] NODE 11 — Multi-Column Luxury Footer
 [ ] NODE 12 — Custom Post Types & Booking Integration
@@ -94,8 +94,14 @@ This plan outlines the staged implementation to build the full luxury Resort Hot
   - Starters, Main Courses, Coastal Seafood, Desserts.
   - Dish name, ingredients description, price, and dietary tags.
 
-### [ ] NODE 9: Guest Testimonials Carousel
-- Client reviews slider with 5-star rating stars, quotation mark icon, avatar, guest name, and stay location.
+### [✓] NODE 9: Customer Voices & Reviews Section ("Hear What They Say!")
+- White floating island card with `border-radius: 24px` and dotted world map pattern (`assets/images/pat5.png`).
+- Centered header with `REVIEWS` mint pill badge and `Customer Voices: Hear What They Say!` heading.
+- 7-avatar selector row using photos from `assets/images/team/` (`face1.jpg` to `face7.jpg`).
+- Prominent golden ring and glow on active reviewer avatar (`Sarah Newman` default).
+- Cyan quotation mark icon SVG (`#14b7ec`), reviewer name, source platform (`ENVATO MARKET`, `TRIPADVISOR`, etc.), and quote text.
+- Left mint navigation button (`#knslReviewPrevBtn`) and right gold navigation button (`#knslReviewNextBtn`).
+- Interactive JS carousel (`assets/js/reviews.js`) supporting direct avatar clicking, prev/next arrows, smooth crossfade, and autoplay with pause on hover.
 
 ### [✓] NODE 10: Travel Blog Section ("Latest blog publications")
 - 3-column article card grid with image hover zoom and elevation:
