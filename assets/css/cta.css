@@ -16,26 +16,29 @@
    ========================================================================== */
 .knsl-cta-section {
     position: relative;
-    padding: 30px 20px 100px 20px;
+    padding: 20px 20px 40px 20px;
     background-color: transparent;
     z-index: 10;
 }
 
 .knsl-cta-container {
-    max-width: 1360px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 /* ==========================================================================
-   2. Floating Island Card
+   2. Floating Island Card (Full Width with 20px Island Gutters)
    ========================================================================== */
 .knsl-cta-card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 auto;
     background-color: #FAFFFF;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(32, 79, 94, 0.05);
-    padding: 95px 40px 105px 40px;
+    padding: 95px 30px 105px 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
