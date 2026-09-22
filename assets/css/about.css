@@ -7,7 +7,7 @@
 :root {
     --knsl-dark-teal: #204f5e;
     --knsl-muted-teal: #5a8695;
-    --knsl-mint-badge: #dcf3f4;
+    --knsl-mint-badge: #d8edf1;
     --knsl-cyan-badge: #23bcec;
     --knsl-gold-accent: #ebb02d;
     --knsl-gold-hover: #dfa925;
@@ -20,23 +20,28 @@
 .knsl-about-section {
     position: relative;
     background-color: #eef7f8;
-    padding: 90px 20px 80px 20px;
+    min-height: 720px;
+    padding: 85px 20px 0 20px;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
     overflow: hidden;
     z-index: 10;
+    scroll-margin-top: 70px;
 }
 
 /* Ambient Watercolor Splash Backdrop Behind Traveler (pat4.png) */
 .knsl-about-pat-bg {
     position: absolute;
     top: 50%;
-    left: -40px;
-    width: 880px;
-    height: 780px;
+    left: -75px;
+    width: 1080px;
+    height: 840px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    transform: translateY(-50%) rotate(8deg);
-    opacity: 0.92;
+    transform: translateY(-50%);
+    opacity: 0.95;
     pointer-events: none;
     z-index: 1;
 }
@@ -51,18 +56,18 @@
 }
 
 .knsl-about-star.star-left {
-    top: 32%;
-    left: 8%;
-    width: 58px;
-    height: 58px;
+    top: 22%;
+    left: 8.5%;
+    width: 50px;
+    height: 50px;
     animation-duration: 7s;
 }
 
 .knsl-about-star.star-center {
-    top: 62%;
-    left: 46%;
-    width: 48px;
-    height: 48px;
+    top: 55%;
+    left: 49%;
+    width: 42px;
+    height: 42px;
     animation-duration: 6.5s;
     animation-delay: 1.2s;
 }
@@ -72,15 +77,15 @@
         transform: translateY(0px) rotate(0deg);
     }
     50% {
-        transform: translateY(-12px) rotate(6deg);
+        transform: translateY(-10px) rotate(5deg);
     }
     100% {
-        transform: translateY(6px) rotate(-4deg);
+        transform: translateY(5px) rotate(-3deg);
     }
 }
 
 /* ==========================================================================
-   2. Main Container & Two-Column Grid
+   2. Main Container & Two-Column Composition
    ========================================================================== */
 .knsl-about-container {
     position: relative;
@@ -88,32 +93,36 @@
     max-width: 1360px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 40px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
     box-sizing: border-box;
 }
 
 /* ==========================================================================
-   3. Left Media Column (Traveler Visual)
+   3. Left Media Column (Traveler Sitting on Suitcase)
    ========================================================================== */
 .knsl-about-media {
-    flex: 1 1 50%;
-    max-width: 560px;
+    flex: 1 1 48%;
+    max-width: 580px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     position: relative;
+    margin-bottom: 0;
+    line-height: 0;
 }
 
 .knsl-about-image-wrap {
     width: 100%;
-    max-width: 490px;
+    max-width: 535px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     position: relative;
+    line-height: 0;
 }
 
 .knsl-about-person-img {
@@ -121,39 +130,43 @@
     height: auto;
     display: block;
     object-fit: contain;
-    max-height: 620px;
-    filter: drop-shadow(0 12px 28px rgba(32, 79, 94, 0.09));
+    max-height: 655px;
+    filter: drop-shadow(0 10px 25px rgba(32, 79, 94, 0.08));
     transition: transform 0.5s var(--knsl-bezier);
+    margin-bottom: 0;
+    vertical-align: bottom;
 }
 
 .knsl-about-person-img:hover {
-    transform: scale(1.02);
+    transform: scale(1.015);
 }
 
 /* ==========================================================================
    4. Right Content Column (Story, Philosophy & CTAs)
    ========================================================================== */
 .knsl-about-content {
-    flex: 1 1 50%;
-    max-width: 580px;
+    flex: 1 1 52%;
+    max-width: 540px;
     box-sizing: border-box;
+    align-self: center;
+    padding-bottom: 65px;
 }
 
 /* Subtitle Pill Badge */
 .knsl-about-badge-wrap {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .knsl-about-badge {
     display: inline-block;
-    background-color: var(--knsl-mint-badge, #dcf3f4);
+    background-color: var(--knsl-mint-badge, #d8edf1);
     color: var(--knsl-dark-teal, #204f5e);
     font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    font-size: 11.5px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 6px 18px;
+    padding: 6px 16px;
     border-radius: 40px;
     line-height: 1.4;
 }
@@ -172,12 +185,13 @@
 /* Story Body Paragraphs */
 .knsl-about-text-group {
     margin-bottom: 34px;
+    max-width: 535px;
 }
 
 .knsl-about-text {
     font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    font-size: 15px;
-    line-height: 1.72;
+    font-size: 14.5px;
+    line-height: 1.74;
     color: var(--knsl-muted-teal, #5a8695);
     margin: 0 0 16px 0;
     font-weight: 400;
@@ -191,8 +205,9 @@
 .knsl-about-actions {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 28px;
     flex-wrap: wrap;
+    margin-top: 32px;
 }
 
 /* Primary Button: Get in Touch (Gold Pill) */
@@ -204,15 +219,15 @@
     background-color: var(--knsl-gold-accent, #ebb02d);
     color: #ffffff !important;
     font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     line-height: 1;
-    padding: 17px 36px;
+    padding: 16px 36px;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 6px 20px rgba(235, 176, 45, 0.32);
+    box-shadow: 0 6px 20px rgba(235, 176, 45, 0.28);
     transition: all 0.35s var(--knsl-bezier);
     box-sizing: border-box;
     white-space: nowrap;
@@ -221,13 +236,13 @@
 .knsl-about-btn-gold:hover {
     background-color: var(--knsl-gold-hover, #dfa925);
     transform: translateY(-2px);
-    box-shadow: 0 10px 28px rgba(235, 176, 45, 0.45);
+    box-shadow: 0 10px 26px rgba(235, 176, 45, 0.42);
     color: #ffffff;
 }
 
 .knsl-about-btn-icon {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     fill: #ffffff;
     flex-shrink: 0;
 }
@@ -237,16 +252,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 9px;
     background: transparent;
     color: var(--knsl-dark-teal, #204f5e);
     font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
-    font-size: 12.5px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     line-height: 1;
-    padding: 17px 18px;
+    padding: 16px 14px;
     text-decoration: none;
     transition: all 0.3s var(--knsl-bezier);
     box-sizing: border-box;
@@ -259,8 +274,8 @@
 }
 
 .knsl-about-link-icon {
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     fill: currentColor;
     flex-shrink: 0;
 }
@@ -269,49 +284,80 @@
    5. Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1200px) {
+    .knsl-about-section {
+        min-height: auto;
+        padding-top: 70px;
+    }
+
     .knsl-about-pat-bg {
-        width: 720px;
-        height: 640px;
+        width: 860px;
+        height: 720px;
         left: -80px;
     }
 
     .knsl-about-star.star-left {
-        left: 3%;
+        left: 4%;
     }
 
     .knsl-about-star.star-center {
-        left: 44%;
+        left: 46%;
+    }
+
+    .knsl-about-container {
+        padding: 0 25px;
+        gap: 30px;
+    }
+
+    .knsl-about-person-img {
+        max-height: 580px;
+    }
+
+    .knsl-about-content {
+        padding-bottom: 40px;
     }
 }
 
 @media (max-width: 991px) {
     .knsl-about-section {
-        padding: 70px 20px 70px 20px;
+        min-height: auto;
+        padding: 60px 20px 0 20px;
+        display: block;
     }
 
     .knsl-about-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        gap: 50px;
+        gap: 40px;
         padding: 0 15px;
     }
 
     .knsl-about-media {
-        max-width: 420px;
+        max-width: 440px;
         margin: 0 auto;
+        order: 2;
     }
 
     .knsl-about-content {
         max-width: 100%;
+        align-self: center;
+        padding-bottom: 0;
+        order: 1;
+    }
+
+    .knsl-about-text-group {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .knsl-about-pat-bg {
-        top: 30%;
+        top: 60%;
         left: 50%;
-        transform: translate(-50%, -50%) rotate(8deg);
-        width: 600px;
-        height: 520px;
-        opacity: 0.7;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 560px;
+        opacity: 0.65;
     }
 
     .knsl-about-actions {
@@ -319,19 +365,19 @@
     }
 
     .knsl-about-star.star-left {
-        top: 15%;
-        left: 10%;
+        top: 10%;
+        left: 8%;
     }
 
     .knsl-about-star.star-center {
-        top: 45%;
-        left: 82%;
+        top: 40%;
+        left: 85%;
     }
 }
 
 @media (max-width: 640px) {
     .knsl-about-section {
-        padding: 55px 15px 55px 15px;
+        padding: 50px 15px 0 15px;
     }
 
     .knsl-about-title {
@@ -345,11 +391,12 @@
 
     .knsl-about-text {
         font-size: 14px;
+        line-height: 1.68;
     }
 
     .knsl-about-actions {
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
         width: 100%;
     }
 
