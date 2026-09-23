@@ -552,7 +552,8 @@ body, .site-main {
 
 .knsl-services-page-inner {
     width: 100%;
-    max-width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 /* 3-Column Services Grid */
@@ -570,14 +571,14 @@ body, .site-main {
 .knsl-service-card-item .knsl-ath-card {
     margin-bottom: 0;
     padding: 0;
-    border-radius: 16px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 18px rgba(32, 79, 94, 0.06);
 }
 
 .knsl-service-card-item .knsl-cover-frame {
-    border-radius: 16px;
-    padding-bottom: 125%;
+    border-radius: 20px;
+    padding-bottom: 128%;
 }
 
 .knsl-service-card-item .knsl-card-description {
