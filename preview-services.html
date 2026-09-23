@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services &ndash; Kinsley &ndash; Resort Hotel Live Demo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Theme Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body class="page-template-services">
+
+<!-- Floating Island Header Component -->
+<header class="site-header-wrapper">
+    <nav class="site-navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="preview-header.html" class="site-logo">
+            <span class="logo-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                </svg>
+            </span>
+            <span class="logo-text">Kinsley</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="site-navigation">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="preview-header.html" class="nav-link">
+                        <span>Home</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html">Home 1</a></li>
+                        <li><a href="preview-header.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a href="preview-services.html" class="nav-link is-active">
+                        <span>About</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#about">About Us</a></li>
+                        <li><a href="preview-services.html" class="active">Services</a></li>
+                        <li><a href="#service-single">Service Single</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                        <li><a href="#menu-1">Menu #1</a></li>
+                        <li><a href="#menu-2">Menu #2</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="404.html">404</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#rooms" class="nav-link">
+                        <span>Rooms</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#deluxe">Deluxe Room</a></li>
+                        <li><a href="preview-header.html#suite">Ocean Suite</a></li>
+                        <li><a href="preview-header.html#penthouse">Luxury Penthouse</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#blog" class="nav-link">
+                        <span>Blog</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#news">Hotel News</a></li>
+                        <li><a href="preview-header.html#guide">Travel Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-contact.html" class="nav-link">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link">
+                        <span>Shop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Header Actions: Book Now & Shopping Bag -->
+        <div class="header-actions">
+            <a href="#book" class="btn-book-now">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Book Now</span>
+            </a>
+
+            <a href="#cart" class="cart-button-link" aria-label="View Shopping Bag">
+                <svg class="cart-icon" viewBox="0 0 24 24">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main id="primary" class="site-main knsl-services-page">
+
+    <!-- Ambient Watercolor Splash Backdrops spanning across the page -->
+    <div class="knsl-services-ambient-pat pat-left" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+    <div class="knsl-services-ambient-pat pat-right" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+    <div class="knsl-services-ambient-pat pat-bottom-right" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+
+    <!-- 1. Subheader Hero Banner ("Our Services") -->
+    <section class="knsl-services-banner">
+        <!-- Floating Starfish Accents -->
+        <img src="assets/images/pat-1.png" alt="" class="knsl-services-star star-top-center" aria-hidden="true">
+        <img src="assets/images/pat-3.png" alt="" class="knsl-services-star star-mid-left" aria-hidden="true">
+        <img src="assets/images/pat-1.png" alt="" class="knsl-services-star star-bottom-right" aria-hidden="true">
+
+        <div class="knsl-services-banner-content">
+            <h1 class="knsl-services-title">Our Services</h1>
+            <div class="knsl-breadcrumbs">
+                <a href="preview-header.html">Home</a>
+                <span class="knsl-breadcrumbs-sep">&gt;</span>
+                <span class="knsl-breadcrumbs-current">Services</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Services 6-Card Grid Island -->
+    <section class="knsl-services-page-section">
+        <div class="knsl-services-page-island">
+            <div class="knsl-services-page-inner">
+
+                <div class="knsl-services-grid-3col">
+                    <!-- Card 1: Surfing -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Surfing Service">
+                                    <img 
+                                        src="assets/images/ser/serv1-950x1425.jpg" 
+                                        alt="Surfing" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">Free</span>
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Surfing</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Beach Vacation -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Beach Vacation Service">
+                                    <img 
+                                        src="assets/images/ser/serv2-950x1267.jpg" 
+                                        alt="Beach Vacation" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">&euro;9.99</span> / Per Day / Per Accommodation
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Beach Vacation</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Beach Restaurant -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Beach Restaurant Service">
+                                    <img 
+                                        src="assets/images/ser/serv3-950x1273.jpg" 
+                                        alt="Beach Restaurant" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">Free</span>
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Beach Restaurant</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Swimming Pools -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Swimming Pools Service">
+                                    <img 
+                                        src="assets/images/ser/serv4-950x1238.jpg" 
+                                        alt="Swimming Pools" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">&euro;30</span> / Per Instance / Per Guest
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Swimming Pools</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Spa Salon -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Spa Salon Service">
+                                    <img 
+                                        src="assets/images/ser/service-5-950x1489.jpg" 
+                                        alt="Spa Salon" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">Free</span>
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Spa Salon</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Gym -->
+                    <div class="knsl-service-card-item">
+                        <div class="knsl-ath-card">
+                            <div class="knsl-cover-frame">
+                                <a href="#service-single" class="knsl-card-link" aria-label="Gym Service">
+                                    <img 
+                                        src="assets/images/ser/service-6-950x1473.jpg" 
+                                        alt="Gym" 
+                                        loading="lazy"
+                                    >
+                                </a>
+                                <div class="knsl-badge">
+                                    <span class="mphb-price">Free</span>
+                                </div>
+                                <div class="knsl-card-description">
+                                    <a href="#service-single" class="knsl-card-btn-link">
+                                        <h3 class="knsl-card-title">Gym</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Summary & Contact Action Bar -->
+                <div class="knsl-services-bottom-bar">
+                    <p class="knsl-services-bottom-text">
+                        At Kinsley’s resort hotel in Goleta city, we are proud to offer a wide range of services designed to make your stay unforgettable. Your Comfort and Well-being Are Our Priority.
+                    </p>
+                    <div class="knsl-services-bottom-action">
+                        <a href="preview-contact.html" class="knsl-btn-gold">
+                            <span>Contact Us</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer Component -->
+<footer class="knsl-footer-section" id="colophon">
+    <div class="knsl-footer-pat-left" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+    <div class="knsl-footer-pat-right" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+
+    <div class="knsl-footer-island">
+        <div class="knsl-footer-inner">
+            <div class="knsl-footer-top">
+                <div class="knsl-footer-col-brand">
+                    <a href="preview-header.html" class="knsl-footer-logo">
+                        <span class="logo-circle" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                                <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                                <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                            </svg>
+                        </span>
+                        <span class="logo-text">Kinsley</span>
+                    </a>
+
+                    <p class="knsl-newsletter-prompt">Subscribe our newsletter:</p>
+
+                    <form class="knsl-newsletter-form" action="#newsletter" method="post">
+                        <input type="email" name="email" class="knsl-newsletter-input" placeholder="Email" required>
+                        <button type="submit" class="knsl-newsletter-btn" aria-label="Subscribe">
+                            <svg viewBox="0 0 448 512" aria-hidden="true">
+                                <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="knsl-footer-col-nav">
+                    <ul class="knsl-footer-menu">
+                        <li><a href="preview-header.html">Home</a></li>
+                        <li><a href="preview-header.html#about">About Hotel</a></li>
+                        <li><a href="preview-header.html#rooms">Search Rooms</a></li>
+                        <li><a href="preview-contact.html">Contact</a></li>
+                        <li><a href="preview-header.html#blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="knsl-footer-col-legal">
+                    <ul class="knsl-footer-legal-menu">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms and Conditions</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="knsl-footer-divider">
+
+            <div class="knsl-footer-bottom">
+                <div class="knsl-footer-social-wrap">
+                    <p class="knsl-copyright-text">&copy; Copyright 2026. All Rights Reserved.</p>
+                </div>
+                <div class="knsl-footer-address-col">
+                    <h5 class="knsl-address-title">United States</h5>
+                    <p class="knsl-address-text">Anacapa Hall, Santa Barbara, CA 93117, +51 174 705 812</p>
+                </div>
+                <div class="knsl-footer-address-col">
+                    <h5 class="knsl-address-title">Netherlands</h5>
+                    <p class="knsl-address-text">De Hondert Margen 3, 2678 AC De Lier, +31 174 705 811</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
