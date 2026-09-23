@@ -437,3 +437,299 @@
     color: #ffffff;
 }
 
+/* ==========================================================================
+   7. Dedicated Rooms Carousel Section (page-services.php)
+   ========================================================================== */
+.knsl-rooms-carousel-section {
+    position: relative;
+    background-color: transparent;
+    padding: 60px 20px 90px 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.knsl-rooms-carousel-container {
+    position: relative;
+    z-index: 3;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.knsl-rooms-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 4px 25px 4px;
+    box-sizing: border-box;
+}
+
+.knsl-rooms-carousel-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+    box-sizing: border-box;
+}
+
+.knsl-carousel-card {
+    flex: 0 0 calc((100% - 90px) / 4);
+    max-width: calc((100% - 90px) / 4);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.knsl-carousel-card-inner {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 22px rgba(32, 79, 94, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.4s cubic-bezier(0, 0, 0.3642, 1), box-shadow 0.4s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-carousel-card:hover .knsl-carousel-card-inner {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 34px rgba(32, 79, 94, 0.12);
+}
+
+.knsl-carousel-card-cover {
+    position: relative;
+    width: 100%;
+    height: 205px;
+    overflow: hidden;
+}
+
+.knsl-carousel-card-cover a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.knsl-carousel-card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.knsl-carousel-card:hover .knsl-carousel-card-cover img {
+    transform: scale(1.06);
+}
+
+.knsl-carousel-specs {
+    background-color: #edf9fa;
+    padding: 11px 22px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    border-bottom: 1px solid rgba(32, 79, 94, 0.04);
+}
+
+.knsl-carousel-spec-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-carousel-spec-item .knsl-spec-icon {
+    width: 15px;
+    height: 15px;
+    fill: var(--knsl-dark-teal);
+    flex-shrink: 0;
+}
+
+.knsl-carousel-card-body {
+    padding: 24px 22px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.knsl-carousel-card-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 10px 0;
+}
+
+.knsl-carousel-card-title a {
+    color: var(--knsl-dark-teal);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.knsl-carousel-card-title a:hover {
+    color: var(--knsl-cyan-badge);
+}
+
+.knsl-carousel-card-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--knsl-muted-teal);
+    margin: 0 0 20px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.knsl-carousel-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px dotted var(--knsl-divider-dotted);
+    gap: 12px;
+}
+
+.knsl-carousel-price {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.knsl-price-val {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    letter-spacing: -0.5px;
+}
+
+.knsl-price-lbl {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    color: var(--knsl-muted-teal);
+    font-weight: 500;
+}
+
+.knsl-carousel-book-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: var(--knsl-cyan-badge);
+    color: #ffffff !important;
+    padding: 9px 20px;
+    border-radius: 30px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(35, 188, 236, 0.3);
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+    flex-shrink: 0;
+}
+
+.knsl-carousel-book-btn:hover {
+    background-color: var(--knsl-cyan-hover);
+    box-shadow: 0 6px 18px rgba(35, 188, 236, 0.45);
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+.knsl-carousel-book-btn .knsl-book-icon {
+    width: 11px;
+    height: 14px;
+    fill: #ffffff;
+}
+
+/* Bottom Controls */
+.knsl-rooms-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+
+.knsl-rooms-carousel-counter {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 7px 18px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    box-shadow: 0 4px 15px rgba(32, 79, 94, 0.05);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.knsl-counter-sep {
+    color: var(--knsl-muted-teal);
+    opacity: 0.6;
+}
+
+.knsl-rooms-carousel-nav {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 15px rgba(32, 79, 94, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.knsl-carousel-arrow {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--knsl-dark-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    outline: none;
+    padding: 0;
+}
+
+.knsl-carousel-arrow:hover {
+    background-color: #edf9fa;
+    color: var(--knsl-cyan-badge);
+}
+
+.knsl-carousel-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+@media (max-width: 1200px) {
+    .knsl-carousel-card {
+        flex: 0 0 calc((100% - 60px) / 3);
+        max-width: calc((100% - 60px) / 3);
+    }
+}
+
+@media (max-width: 900px) {
+    .knsl-carousel-card {
+        flex: 0 0 calc((100% - 30px) / 2);
+        max-width: calc((100% - 30px) / 2);
+    }
+}
+
+@media (max-width: 580px) {
+    .knsl-carousel-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+

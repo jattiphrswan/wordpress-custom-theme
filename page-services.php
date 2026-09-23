@@ -196,6 +196,9 @@ get_header(); ?>
     <!-- 3. Features Section ("Features that will make your vacation unforgettable") -->
     <?php get_template_part('template-parts/section', 'features'); ?>
 
+    <!-- 4. Rooms Carousel Section ("Our best rooms") -->
+    <?php get_template_part('template-parts/section', 'rooms-carousel'); ?>
+
 </main>
 
 <?php get_footer(); ?>
