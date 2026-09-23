@@ -65,7 +65,7 @@ function resort_hotel_scripts() {
         'resort-hotel-features',
         get_template_directory_uri() . '/assets/css/features.css',
         ['resort-hotel-style'],
-        '1.0.3'
+        '1.0.4'
     );
 
     // About stylesheet

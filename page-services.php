@@ -193,6 +193,9 @@ get_header(); ?>
         </div>
     </section>
 
+    <!-- 3. Features Section ("Features that will make your vacation unforgettable") -->
+    <?php get_template_part('template-parts/section', 'features'); ?>
+
 </main>
 
 <?php get_footer(); ?>
