@@ -10,12 +10,14 @@ get_header(); ?>
 
 <main id="primary" class="site-main knsl-contact-page">
 
+    <!-- Ambient Watercolor Splash Backdrops spanning across the page -->
+    <div class="knsl-contact-ambient-pat pat-left" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat4.png'); ?>');" aria-hidden="true"></div>
+    <div class="knsl-contact-ambient-pat pat-right" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat4.png'); ?>');" aria-hidden="true"></div>
+    <div class="knsl-contact-ambient-pat pat-bottom-right" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat4.png'); ?>');" aria-hidden="true"></div>
+
     <!-- 1. Subheader Hero Banner -->
     <section class="knsl-contact-banner">
-        <!-- Ambient Watercolor Splash Backdrop -->
-        <div class="knsl-contact-banner-bg" style="background-image: url('<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat4.png'); ?>');" aria-hidden="true"></div>
-
-        <!-- Floating Starfish Accents -->
+        <!-- Floating Starfish & Sparkle Accents (Banner) -->
         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-1.png'); ?>" alt="" class="knsl-contact-star star-top-center" aria-hidden="true">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-3.png'); ?>" alt="" class="knsl-contact-star star-mid-left" aria-hidden="true">
         <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-1.png'); ?>" alt="" class="knsl-contact-star star-bottom-right" aria-hidden="true">
@@ -61,10 +63,17 @@ get_header(); ?>
                 </div>
             </form>
         </div>
+
+        <!-- Mid-Section Floating Starfish & Sparkles (Between Form and Cards) -->
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-3.png'); ?>" alt="" class="knsl-contact-star star-mid-left-2" aria-hidden="true">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-1.png'); ?>" alt="" class="knsl-contact-star star-mid-center-2" aria-hidden="true">
     </section>
 
     <!-- 3. Contact Information Cards Grid -->
     <section class="knsl-contact-cards-section">
+        <!-- Floating Starfish on the right of cards -->
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/pat-2.png'); ?>" alt="" class="knsl-contact-star star-cards-right" aria-hidden="true">
+
         <div class="knsl-contact-cards-grid">
             <!-- Card 1: Phone -->
             <div class="knsl-contact-card">
@@ -112,8 +121,34 @@ get_header(); ?>
     <!-- 4. Interactive Map Section -->
     <section class="knsl-contact-map-section">
         <div class="knsl-contact-map-frame">
+            <!-- Google Maps Info Card Overlay (matches Image 2) -->
+            <div class="knsl-map-info-card">
+                <div class="knsl-map-card-header">
+                    <div class="knsl-map-card-text">
+                        <h4 class="knsl-map-card-title">Anacapa Hall</h4>
+                        <p class="knsl-map-card-desc">Anacapa Hall, Santa Barbara, CA 93117, USA</p>
+                    </div>
+                </div>
+                <div class="knsl-map-card-actions">
+                    <a href="https://maps.google.com/?q=Anacapa+Hall,+Santa+Barbara,+CA+93117" target="_blank" rel="noopener noreferrer" class="knsl-map-btn-open">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Open in Maps</span>
+                    </a>
+                    <a href="https://maps.google.com/?daddr=Anacapa+Hall,+Santa+Barbara,+CA+93117" target="_blank" rel="noopener noreferrer" class="knsl-map-btn-directions" aria-label="Directions">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Embedded Google Map -->
             <iframe 
-                src="https://maps.google.com/maps?q=Anacapa%20Residence%20Hall,%20Santa%20Barbara,%20CA&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.0044593466184!2d-119.84803972364431!3d34.41384877302257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f6696dbf5c3%3A0x6b447781b0ff4ea2!2sAnacapa%20Residence%20Hall!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
                 loading="lazy" 
                 allowfullscreen 
                 referrerpolicy="no-referrer-when-downgrade"

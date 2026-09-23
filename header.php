@@ -38,8 +38,8 @@
             } else {
             ?>
                 <ul class="nav-menu">
-                    <li class="nav-item active">
-                        <a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link is-active">
+                    <li class="nav-item <?php echo (is_front_page() || is_home()) ? 'active' : ''; ?>">
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="nav-link <?php echo (is_front_page() || is_home()) ? 'is-active' : ''; ?>">
                             <span>Home</span>
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
@@ -49,38 +49,38 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">
+                        <a href="<?php echo esc_url(home_url('/#about')); ?>" class="nav-link">
                             <span>About</span>
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="#about">About Hotel</a></li>
-                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#about')); ?>">About Hotel</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#team')); ?>">Our Team</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#rooms" class="nav-link">
+                        <a href="<?php echo esc_url(home_url('/#rooms')); ?>" class="nav-link">
                             <span>Rooms</span>
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="#deluxe">Deluxe Room</a></li>
-                            <li><a href="#suite">Ocean Suite</a></li>
-                            <li><a href="#penthouse">Luxury Penthouse</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#deluxe')); ?>">Deluxe Room</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#suite')); ?>">Ocean Suite</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#penthouse')); ?>">Luxury Penthouse</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link">
+                        <a href="<?php echo esc_url(home_url('/#blog')); ?>" class="nav-link">
                             <span>Blog</span>
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="#news">Hotel News</a></li>
-                            <li><a href="#guide">Travel Guide</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#news')); ?>">Hotel News</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#guide')); ?>">Travel Guide</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item <?php echo is_page('contact') ? 'active' : ''; ?>">
-                        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="nav-link">
+                    <li class="nav-item <?php echo (is_page('contact') || is_page_template('page-contact.php')) ? 'active' : ''; ?>">
+                        <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="nav-link <?php echo (is_page('contact') || is_page_template('page-contact.php')) ? 'is-active' : ''; ?>">
                             <span>Contact</span>
                         </a>
                     </li>
