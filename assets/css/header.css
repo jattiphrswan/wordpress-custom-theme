@@ -223,18 +223,18 @@ body.admin-bar .site-header-wrapper {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 200px;
+  min-width: 185px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-  padding: 10px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 14px 0;
   list-style: none;
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 100;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 .nav-item:hover .sub-menu {
@@ -243,19 +243,27 @@ body.admin-bar .site-header-wrapper {
   transform: translateY(0);
 }
 
-.sub-menu li a {
-  display: block;
-  padding: 9px 20px;
-  color: #4b5563;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background 0.15s ease, color 0.15s ease;
+.sub-menu li {
+  margin: 0;
+  padding: 0;
 }
 
-.sub-menu li a:hover {
-  background: #fef9ee;
-  color: var(--primary-gold);
+.sub-menu li a {
+  display: block;
+  padding: 7px 24px;
+  color: #4b5563;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.sub-menu li a:hover,
+.sub-menu li.current-menu-item a,
+.sub-menu li.active a {
+  background: transparent;
+  color: var(--primary-gold, #ecb934);
 }
 
 /* Right Actions Area */

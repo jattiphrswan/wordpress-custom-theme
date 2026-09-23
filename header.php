@@ -54,8 +54,15 @@
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="<?php echo esc_url(home_url('/#about')); ?>">About Hotel</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/#team')); ?>">Our Team</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#about')); ?>">About Us</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#services')); ?>">Services</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/service-single/')); ?>">Service Single</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/restaurant/')); ?>">Restaurant</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/menu-1/')); ?>">Menu #1</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/menu-2/')); ?>">Menu #2</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/gallery/')); ?>">Gallery</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/faq/')); ?>">FAQ</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/404/')); ?>">404</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
