@@ -27,7 +27,7 @@
                     <div class="knsl-carousel-card-inner">
                         <div class="knsl-carousel-card-cover">
                             <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" aria-label="<?php esc_attr_e('Economy classic room', 'resort-hotel'); ?>">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-1-950x535.jpg'); ?>" alt="<?php esc_attr_e('Economy classic room', 'resort-hotel'); ?>" loading="lazy">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-1-950x535.jpg'); ?>" alt="<?php esc_attr_e('Economy classic room', 'resort-hotel'); ?>">
                             </a>
                         </div>
                         <div class="knsl-carousel-specs">
@@ -72,7 +72,7 @@
                     <div class="knsl-carousel-card-inner">
                         <div class="knsl-carousel-card-cover">
                             <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" aria-label="<?php esc_attr_e('Triple classic room', 'resort-hotel'); ?>">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-7-950x633.jpg'); ?>" alt="<?php esc_attr_e('Triple classic room', 'resort-hotel'); ?>" loading="lazy">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-7-950x633.jpg'); ?>" alt="<?php esc_attr_e('Triple classic room', 'resort-hotel'); ?>">
                             </a>
                         </div>
                         <div class="knsl-carousel-specs">
@@ -117,7 +117,7 @@
                     <div class="knsl-carousel-card-inner">
                         <div class="knsl-carousel-card-cover">
                             <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" aria-label="<?php esc_attr_e('Standard room', 'resort-hotel'); ?>">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-4-950x633.jpg'); ?>" alt="<?php esc_attr_e('Standard room', 'resort-hotel'); ?>" loading="lazy">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-4-950x633.jpg'); ?>" alt="<?php esc_attr_e('Standard room', 'resort-hotel'); ?>">
                             </a>
                         </div>
                         <div class="knsl-carousel-specs">
@@ -162,7 +162,7 @@
                     <div class="knsl-carousel-card-inner">
                         <div class="knsl-carousel-card-cover">
                             <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" aria-label="<?php esc_attr_e('Double room', 'resort-hotel'); ?>">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-6-950x633.jpg'); ?>" alt="<?php esc_attr_e('Double room', 'resort-hotel'); ?>" loading="lazy">
+                                <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-6-950x633.jpg'); ?>" alt="<?php esc_attr_e('Double room', 'resort-hotel'); ?>">
                             </a>
                         </div>
                         <div class="knsl-carousel-specs">

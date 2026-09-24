@@ -30,7 +30,7 @@
             <div class="knsl-service-col">
                 <div class="knsl-ath-card">
                     <div class="knsl-cover-frame">
-                        <a href="<?php echo esc_url(home_url('/services/surfing/')); ?>" class="knsl-card-link" aria-label="Surfing Service">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'surfing', home_url('/service-single/'))); ?>" class="knsl-card-link" aria-label="Surfing Service">
                             <img 
                                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ser/serv1-950x1425.jpg'); ?>" 
                                 alt="Surfing" 
@@ -42,7 +42,7 @@
                         </div>
                     </div>
                     <div class="knsl-card-description">
-                        <a href="<?php echo esc_url(home_url('/services/surfing/')); ?>" class="knsl-card-btn-link">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'surfing', home_url('/service-single/'))); ?>" class="knsl-card-btn-link">
                             <h3 class="knsl-card-title">Surfing</h3>
                         </a>
                     </div>
@@ -53,7 +53,7 @@
             <div class="knsl-service-col knsl-stagger-down">
                 <div class="knsl-ath-card">
                     <div class="knsl-cover-frame">
-                        <a href="<?php echo esc_url(home_url('/services/beach-vacation/')); ?>" class="knsl-card-link" aria-label="Beach Vacation Service">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'beach-vacation', home_url('/service-single/'))); ?>" class="knsl-card-link" aria-label="Beach Vacation Service">
                             <img 
                                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ser/serv2-950x1267.jpg'); ?>" 
                                 alt="Beach Vacation" 
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="knsl-card-description">
-                        <a href="<?php echo esc_url(home_url('/services/beach-vacation/')); ?>" class="knsl-card-btn-link">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'beach-vacation', home_url('/service-single/'))); ?>" class="knsl-card-btn-link">
                             <h3 class="knsl-card-title">Beach Vacation</h3>
                         </a>
                     </div>
@@ -76,7 +76,7 @@
             <div class="knsl-service-col">
                 <div class="knsl-ath-card">
                     <div class="knsl-cover-frame">
-                        <a href="<?php echo esc_url(home_url('/services/beach-restaurant/')); ?>" class="knsl-card-link" aria-label="Beach Restaurant Service">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'beach-restaurant', home_url('/service-single/'))); ?>" class="knsl-card-link" aria-label="Beach Restaurant Service">
                             <img 
                                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ser/serv3-950x1273.jpg'); ?>" 
                                 alt="Beach Restaurant" 
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <div class="knsl-card-description">
-                        <a href="<?php echo esc_url(home_url('/services/beach-restaurant/')); ?>" class="knsl-card-btn-link">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'beach-restaurant', home_url('/service-single/'))); ?>" class="knsl-card-btn-link">
                             <h3 class="knsl-card-title">Beach Restaurant</h3>
                         </a>
                     </div>
@@ -99,7 +99,7 @@
             <div class="knsl-service-col knsl-stagger-down">
                 <div class="knsl-ath-card">
                     <div class="knsl-cover-frame">
-                        <a href="<?php echo esc_url(home_url('/services/swimming-pools/')); ?>" class="knsl-card-link" aria-label="Swimming Pools Service">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'swimming-pools', home_url('/service-single/'))); ?>" class="knsl-card-link" aria-label="Swimming Pools Service">
                             <img 
                                 src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ser/serv4-950x1238.jpg'); ?>" 
                                 alt="Swimming Pools" 
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                     <div class="knsl-card-description">
-                        <a href="<?php echo esc_url(home_url('/services/swimming-pools/')); ?>" class="knsl-card-btn-link">
+                        <a href="<?php echo esc_url(add_query_arg('service', 'swimming-pools', home_url('/service-single/'))); ?>" class="knsl-card-btn-link">
                             <h3 class="knsl-card-title">Swimming Pools</h3>
                         </a>
                     </div>

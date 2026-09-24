@@ -198,10 +198,19 @@ $services_catalog = [
 $service_key = 'surfing';
 if (isset($_GET['service']) && array_key_exists(sanitize_key($_GET['service']), $services_catalog)) {
     $service_key = sanitize_key($_GET['service']);
+} elseif (get_query_var('service') && array_key_exists(sanitize_key(get_query_var('service')), $services_catalog)) {
+    $service_key = sanitize_key(get_query_var('service'));
 } elseif (is_singular('service')) {
     $post_slug = get_post_field('post_name', get_the_ID());
     if (array_key_exists($post_slug, $services_catalog)) {
         $service_key = $post_slug;
+    }
+} else {
+    $path = trim(parse_url(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '', PHP_URL_PATH), '/');
+    $parts = explode('/', $path);
+    $last_slug = sanitize_key(end($parts));
+    if (array_key_exists($last_slug, $services_catalog)) {
+        $service_key = $last_slug;
     }
 }
 

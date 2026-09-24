@@ -225,3 +225,82 @@ function resort_hotel_register_post_types() {
 }
 add_action('init', 'resort_hotel_register_post_types');
 
+/**
+ * Single Service Page Route & Template Redirect
+ * Ensures /service-single/ and /service-single/<slug>/ always load page-service-single.php without 404
+ */
+function resort_hotel_handle_service_single_route() {
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+    $path = trim(parse_url($request_uri, PHP_URL_PATH), '/');
+    $home_path = trim(parse_url(home_url(), PHP_URL_PATH), '/');
+
+    if (!empty($home_path) && strpos($path, $home_path) === 0) {
+        $path = trim(substr($path, strlen($home_path)), '/');
+    }
+
+    $is_match = false;
+    $service_slug = '';
+
+    // Match /service-single or /service-single/<slug>
+    if ($path === 'service-single' || strpos($path, 'service-single/') === 0) {
+        $is_match = true;
+        if (strpos($path, 'service-single/') === 0) {
+            $parts = explode('/', $path);
+            $service_slug = isset($parts[1]) ? sanitize_key($parts[1]) : '';
+        }
+    } 
+    // Also match /services/<slug> or /service/<slug> if not a resolved post
+    elseif (preg_match('#^(?:services|service)/([^/]+)/?$#', $path, $matches)) {
+        $catalog = ['surfing', 'swimming-pools', 'beach-restaurant', 'beach-vacation', 'spa-salon', 'gym'];
+        if (in_array(sanitize_key($matches[1]), $catalog, true)) {
+            $is_match = true;
+            $service_slug = sanitize_key($matches[1]);
+        }
+    }
+
+    if ($is_match) {
+        if (!empty($service_slug) && empty($_GET['service'])) {
+            $_GET['service'] = $service_slug;
+        }
+
+        global $wp_query;
+        if (isset($wp_query)) {
+            $wp_query->is_404 = false;
+            $wp_query->is_page = true;
+        }
+        status_header(200);
+
+        $template = locate_template(['page-service-single.php', 'single-service.php']);
+        if ($template) {
+            include $template;
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'resort_hotel_handle_service_single_route', 1);
+
+function resort_hotel_service_single_rewrites() {
+    add_rewrite_rule('^service-single/?$', 'index.php?pagename=service-single', 'top');
+    add_rewrite_rule('^service-single/([^/]+)/?$', 'index.php?pagename=service-single&service=$matches[1]', 'top');
+}
+add_action('init', 'resort_hotel_service_single_rewrites');
+
+function resort_hotel_query_vars($vars) {
+    $vars[] = 'service';
+    return $vars;
+}
+add_filter('query_vars', 'resort_hotel_query_vars');
+
+function resort_hotel_service_template_include($template) {
+    if (get_query_var('pagename') === 'service-single' || is_page('service-single')) {
+        $single_template = locate_template(['page-service-single.php', 'single-service.php']);
+        if (!empty($single_template)) {
+            return $single_template;
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'resort_hotel_service_template_include');
+
+
+
