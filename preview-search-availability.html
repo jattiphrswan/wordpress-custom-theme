@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Availability &ndash; Accommodations &ndash; Kinsley Resort Hotel Live Demo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Theme Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <link rel="stylesheet" href="assets/css/cta.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body class="page-template-search-availability">
+
+<!-- Floating Island Header Component -->
+<header class="site-header-wrapper">
+    <nav class="site-navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="preview-header.html" class="site-logo">
+            <span class="logo-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                </svg>
+            </span>
+            <span class="logo-text">Kinsley</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="site-navigation">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="preview-header.html" class="nav-link">
+                        <span>Home</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html">Home 1 (Default)</a></li>
+                        <li><a href="preview-header.html#hero">Home 2 (Minimal)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#about" class="nav-link">
+                        <span>About</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#about">About Us</a></li>
+                        <li><a href="preview-services.html">Services</a></li>
+                        <li><a href="preview-service-single.html">Service Single</a></li>
+                        <li><a href="preview-header.html#restaurant">Restaurant</a></li>
+                        <li><a href="preview-header.html#faq">FAQ</a></li>
+                    </ul>
+                </li>
+                <!-- Rooms Active -->
+                <li class="nav-item active">
+                    <a href="preview-search-availability.html" class="nav-link is-active">
+                        <span>Rooms</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-room-single.html?room=business-class-room">Business class room</a></li>
+                        <li><a href="preview-room-single.html?room=standard-room">Standard room</a></li>
+                        <li><a href="preview-room-single.html?room=triple-classic-room">Triple classic room</a></li>
+                        <li><a href="preview-room-single.html?room=royal-class-room">Royal class room</a></li>
+                        <li><a href="preview-search-availability.html" style="color: #ecb934; font-weight: 700;">Search Availability</a></li>
+                        <li><a href="preview-header.html#rooms">All Rooms</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#blog" class="nav-link">
+                        <span>Blog</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#blog">Hotel News</a></li>
+                        <li><a href="preview-header.html#blog">Travel Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-contact.html" class="nav-link">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link">
+                        <span>Shop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Header Actions: Book Now & Shopping Bag -->
+        <div class="header-actions">
+            <a href="preview-search-availability.html" class="btn-book-now">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Book Now</span>
+            </a>
+
+            <a href="#cart" class="cart-button-link" aria-label="View Shopping Bag">
+                <svg class="cart-icon" viewBox="0 0 24 24">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Search Availability Content -->
+<main id="primary" class="site-main knsl-search-page">
+
+    <!-- Ambient Watercolor Splashes Background -->
+    <div class="knsl-search-ambient-pat pat-left" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+    <div class="knsl-search-ambient-pat pat-right" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+
+    <!-- 1. Header Banner (Title & Breadcrumbs) -->
+    <section class="knsl-search-header-container">
+        <div class="knsl-search-title-wrap">
+            <h1 class="knsl-search-page-title">Search Availability</h1>
+        </div>
+        <div class="knsl-search-breadcrumbs">
+            <a href="preview-header.html">HOME</a>
+            <span class="knsl-sep">&gt;</span>
+            <span class="knsl-current">SEARCH AVAILABILITY</span>
+        </div>
+    </section>
+
+    <!-- 2. Main Search Card -->
+    <section class="knsl-search-card-container">
+        <div class="knsl-search-card">
+            <form class="knsl-search-form" id="searchAvailabilityForm" action="preview-search-availability.html" method="GET">
+
+                <!-- Check-in Date -->
+                <div class="knsl-search-field-group">
+                    <label for="searchCheckin" class="knsl-search-label">Check-in</label>
+                    <div class="knsl-search-input-wrap">
+                        <input 
+                            type="text" 
+                            id="searchCheckin" 
+                            name="check_in" 
+                            class="knsl-search-input" 
+                            placeholder="Check-in Date"
+                            value="2026-09-24"
+                            required
+                        >
+                        <svg class="knsl-search-icon" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Check-out Date -->
+                <div class="knsl-search-field-group">
+                    <label for="searchCheckout" class="knsl-search-label">Check-out</label>
+                    <div class="knsl-search-input-wrap">
+                        <input 
+                            type="text" 
+                            id="searchCheckout" 
+                            name="check_out" 
+                            class="knsl-search-input" 
+                            placeholder="Check-out Date"
+                            value="2026-09-27"
+                            required
+                        >
+                        <svg class="knsl-search-icon" viewBox="0 0 24 24">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Adults & Children Row -->
+                <div class="knsl-search-grid-2">
+                    <div class="knsl-search-field-group" style="margin-bottom:0;">
+                        <label for="searchAdults" class="knsl-search-label">Adults</label>
+                        <div class="knsl-search-input-wrap">
+                            <select id="searchAdults" name="adults" class="knsl-search-select">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                            <svg class="knsl-search-select-arrow" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="knsl-search-field-group" style="margin-bottom:0;">
+                        <label for="searchChildren" class="knsl-search-label">Children</label>
+                        <div class="knsl-search-input-wrap">
+                            <select id="searchChildren" name="children" class="knsl-search-select">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <svg class="knsl-search-select-arrow" viewBox="0 0 24 24">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Centered Gold Search Button -->
+                <div class="knsl-search-action">
+                    <button type="submit" class="knsl-search-submit-btn">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span>SEARCH</span>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- 3. Available Rooms Section -->
+    <section class="knsl-search-results-wrap" id="searchResultsSection">
+        <div class="knsl-results-header">
+            <div>
+                <h2 class="knsl-results-heading">Available Accommodations</h2>
+                <span class="knsl-results-count" id="resultsCount">6 Available Rooms</span>
+            </div>
+            <div class="knsl-results-filter-pills">
+                <button type="button" class="knsl-results-pill-btn is-active" data-filter="all">All Rooms</button>
+                <button type="button" class="knsl-results-pill-btn" data-filter="business">Business</button>
+                <button type="button" class="knsl-results-pill-btn" data-filter="standard">Standard</button>
+                <button type="button" class="knsl-results-pill-btn" data-filter="suite">Suites</button>
+                <button type="button" class="knsl-results-pill-btn" data-filter="luxury">Luxury</button>
+            </div>
+        </div>
+
+        <div class="knsl-results-grid" id="searchResultsContainer">
+            
+            <!-- Room 1 -->
+            <div class="knsl-result-card" data-slug="business-class-room" data-adults="2" data-category="business">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-15-950x633.jpg" alt="Business class room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;59 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=business-class-room">Business class room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 2
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 35ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Tailored specifically for executive travelers and couples seeking uncompromised luxury and ergonomic workstations.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=business-class-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=business-class-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 2 -->
+            <div class="knsl-result-card" data-slug="standard-room" data-adults="2" data-category="standard">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-4-950x633.jpg" alt="Standard room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;19 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=standard-room">Standard room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 2
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 50ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Spacious and tranquil, our Standard room offers exceptional value with premium linen bedding and garden views.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=standard-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=standard-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 3 -->
+            <div class="knsl-result-card" data-slug="economy-classic-room" data-adults="2" data-category="standard">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-1-950x535.jpg" alt="Economy classic room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;27 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=standard-room">Economy classic room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 2
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 26ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Compact yet delightfully designed with bright interiors, desk setup, and modern comfort amenities.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=standard-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=standard-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 4 -->
+            <div class="knsl-result-card" data-slug="triple-classic-room" data-adults="3" data-category="suite">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-7-950x633.jpg" alt="Triple classic room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;79 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=triple-classic-room">Triple classic room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 3
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 42ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Designed for small families or friend groups, featuring flexible bedding configurations and generous space.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=triple-classic-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=triple-classic-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 5 -->
+            <div class="knsl-result-card" data-slug="royal-class-room" data-adults="4" data-category="luxury">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-10-950x633.jpg" alt="Royal class room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;119 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=royal-class-room">Royal class room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 4
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 68ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Our crowning jewel accommodation featuring master suite quarters, private plunge pool, and panoramic vistas.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=royal-class-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=royal-class-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Room 6 -->
+            <div class="knsl-result-card" data-slug="deluxe-suite" data-adults="3" data-category="luxury">
+                <div class="knsl-result-media">
+                    <img src="assets/images/room/room-demo-14-950x633.jpg" alt="Deluxe suite room" loading="lazy">
+                    <div class="knsl-result-price-badge">
+                        &euro;89 <span>/ night</span>
+                    </div>
+                </div>
+                <div class="knsl-result-body">
+                    <h3 class="knsl-result-title">
+                        <a href="preview-room-single.html?room=business-class-room">Deluxe suite room</a>
+                    </h3>
+                    <div class="knsl-result-specs">
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Adults: 3
+                        </span>
+                        <span class="knsl-result-spec-item">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><path d="M9 3v18"></path></svg>
+                            Size: 48ft²
+                        </span>
+                    </div>
+                    <p style="font-size: 13px; line-height: 1.6; color: #5a8695; margin: 0 0 16px 0;">
+                        Indulge in spacious coastal elegance with handcrafted furnishings, luxury bathroom, and private sun terrace.
+                    </p>
+                    <div class="knsl-result-footer">
+                        <a href="preview-room-single.html?room=business-class-room" class="knsl-result-link-btn">
+                            VIEW DETAILS &rarr;
+                        </a>
+                        <a href="preview-room-single.html?room=business-class-room" class="knsl-result-book-btn">
+                            BOOK NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="knsl-no-results" id="knslNoResults" style="display: none;">
+            <svg class="knsl-no-results-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+            <h3 class="knsl-no-results-title">No Accommodations Found</h3>
+            <p class="knsl-no-results-text">No rooms match your specific guest count or category filter. Try changing your search options.</p>
+            <button type="button" class="knsl-reset-search-btn" id="resetSearchBtn">Reset Search Filter</button>
+        </div>
+    </section>
+
+    <!-- 4. Call to Action Banner -->
+    <section class="knsl-cta-section" id="cta" style="margin-top: 90px;">
+        <div class="knsl-cta-container">
+            <span class="knsl-cta-badge">CALL TO ACTION</span>
+            <h2 class="knsl-cta-title">
+                Do you have any questions?<br>
+                We are available 24/7
+            </h2>
+            <div class="knsl-cta-buttons">
+                <a href="preview-contact.html" class="knsl-cta-btn-primary">
+                    <svg class="knsl-cta-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                    <span>GET IN TOUCH</span>
+                </a>
+                <a href="tel:+12345678" class="knsl-cta-btn-secondary">
+                    <svg class="knsl-cta-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>+1 234 5678</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer Component -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-widgets-grid">
+            <div class="footer-widget about-widget">
+                <div class="footer-logo">
+                    <span class="logo-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" /><path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" /><path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" /></svg>
+                    </span>
+                    <span class="logo-text">Kinsley</span>
+                </div>
+                <p class="footer-about-text">Experience unparalleled luxury, serene oceanfront accommodations, and world-class hospitality tailored to create unforgettable moments.</p>
+            </div>
+            <div class="footer-widget links-widget">
+                <h4 class="widget-title">Explore</h4>
+                <ul class="footer-nav">
+                    <li><a href="preview-header.html">Home</a></li>
+                    <li><a href="preview-header.html#about">About Us</a></li>
+                    <li><a href="preview-search-availability.html">Accommodations</a></li>
+                    <li><a href="preview-services.html">Services</a></li>
+                    <li><a href="preview-contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-widget contact-widget">
+                <h4 class="widget-title">Contact</h4>
+                <p class="contact-item">Paradise Coastal Highway, Miami FL</p>
+                <p class="contact-item"><a href="tel:+12345678">+1 (234) 567-8900</a></p>
+                <p class="contact-item"><a href="mailto:info@kinsleyresort.com">info@kinsleyresort.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kinsley Resort Hotel. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/header.js"></script>
+<script src="assets/js/search.js"></script>
+</body>
+</html>

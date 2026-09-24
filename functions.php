@@ -84,6 +84,14 @@ function resort_hotel_scripts() {
         '1.0.8'
     );
 
+    // Search Availability stylesheet
+    wp_enqueue_style(
+        'resort-hotel-search',
+        get_template_directory_uri() . '/assets/css/search.css',
+        ['resort-hotel-style'],
+        '1.0.0'
+    );
+
     // Call to Action stylesheet
     wp_enqueue_style(
         'resort-hotel-cta',
@@ -156,6 +164,15 @@ function resort_hotel_scripts() {
         get_template_directory_uri() . '/assets/js/rooms.js',
         [],
         '1.0.8',
+        true
+    );
+
+    // Search Availability JS
+    wp_enqueue_script(
+        'resort-hotel-search-script',
+        get_template_directory_uri() . '/assets/js/search.js',
+        [],
+        '1.0.0',
         true
     );
 
