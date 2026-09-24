@@ -40,7 +40,7 @@
             <article class="knsl-room-card" data-category="luxe">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Deluxe room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" aria-label="<?php esc_attr_e('Deluxe room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-1-950x535.jpg'); ?>" alt="<?php esc_attr_e('Deluxe room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -62,7 +62,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Deluxe room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>"><?php esc_html_e('Deluxe room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -70,7 +70,7 @@
                         <div class="knsl-room-divider"></div>
                         <!-- Footer: Single BOOK Button on Left -->
                         <div class="knsl-room-footer knsl-footer-left-btn">
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -85,7 +85,7 @@
             <article class="knsl-room-card" data-category="economy">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Standard room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" aria-label="<?php esc_attr_e('Standard room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-4-950x633.jpg'); ?>" alt="<?php esc_attr_e('Standard room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -107,7 +107,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Standard room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>"><?php esc_html_e('Standard room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -119,7 +119,7 @@
                                 <span class="knsl-price-amount">&euro;19</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -134,7 +134,7 @@
             <article class="knsl-room-card" data-category="economy">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Double room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/double-room/')); ?>" aria-label="<?php esc_attr_e('Double room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-6-950x633.jpg'); ?>" alt="<?php esc_attr_e('Double room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -156,7 +156,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Double room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/double-room/')); ?>"><?php esc_html_e('Double room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -168,7 +168,7 @@
                                 <span class="knsl-price-amount">&euro;39</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/double-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -183,7 +183,7 @@
             <article class="knsl-room-card" data-category="standard">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Classic room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>" aria-label="<?php esc_attr_e('Classic room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-10-950x633.jpg'); ?>" alt="<?php esc_attr_e('Classic room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -205,7 +205,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Classic room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>"><?php esc_html_e('Classic room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -217,7 +217,7 @@
                                 <span class="knsl-price-amount">&euro;35</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -232,7 +232,7 @@
             <article class="knsl-room-card" data-category="standard">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Triple classic room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/triple-classic-room/')); ?>" aria-label="<?php esc_attr_e('Triple classic room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-7-950x633.jpg'); ?>" alt="<?php esc_attr_e('Triple classic room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -254,7 +254,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Triple classic room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/triple-classic-room/')); ?>"><?php esc_html_e('Triple classic room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -266,7 +266,7 @@
                                 <span class="knsl-price-amount">&euro;79</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/triple-classic-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -281,7 +281,7 @@
             <article class="knsl-room-card" data-category="luxe">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Business class room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" aria-label="<?php esc_attr_e('Business class room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-14-950x633.jpg'); ?>" alt="<?php esc_attr_e('Business class room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -303,7 +303,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Business class room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>"><?php esc_html_e('Business class room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -315,7 +315,7 @@
                                 <span class="knsl-price-amount">&euro;59</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -330,7 +330,7 @@
             <article class="knsl-room-card" data-category="luxe">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Royal class room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/royal-class-room/')); ?>" aria-label="<?php esc_attr_e('Royal class room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-15-950x633.jpg'); ?>" alt="<?php esc_attr_e('Royal class room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -352,7 +352,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Royal class room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/royal-class-room/')); ?>"><?php esc_html_e('Royal class room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -364,7 +364,7 @@
                                 <span class="knsl-price-amount">&euro;119</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/royal-class-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -379,7 +379,7 @@
             <article class="knsl-room-card" data-category="standard">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Superior ocean room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/superior-ocean-room/')); ?>" aria-label="<?php esc_attr_e('Superior ocean room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-13-950x633.jpg'); ?>" alt="<?php esc_attr_e('Superior ocean room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -401,7 +401,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Superior ocean room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/superior-ocean-room/')); ?>"><?php esc_html_e('Superior ocean room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -413,7 +413,7 @@
                                 <span class="knsl-price-amount">&euro;19</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/superior-ocean-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -428,7 +428,7 @@
             <article class="knsl-room-card" data-category="economy">
                 <div class="knsl-room-card-inner">
                     <div class="knsl-room-cover">
-                        <a href="#booking" aria-label="<?php esc_attr_e('Economy classic room details', 'resort-hotel'); ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>" aria-label="<?php esc_attr_e('Economy classic room details', 'resort-hotel'); ?>">
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/room/room-demo-3-950x633.jpg'); ?>" alt="<?php esc_attr_e('Economy classic room', 'resort-hotel'); ?>" loading="lazy">
                         </a>
                     </div>
@@ -450,7 +450,7 @@
                     <!-- Body Content -->
                     <div class="knsl-room-body">
                         <h3 class="knsl-room-card-title">
-                            <a href="#booking"><?php esc_html_e('Economy classic room', 'resort-hotel'); ?></a>
+                            <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>"><?php esc_html_e('Economy classic room', 'resort-hotel'); ?></a>
                         </h3>
                         <p class="knsl-room-card-text">
                             <?php esc_html_e('Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit...', 'resort-hotel'); ?>
@@ -462,7 +462,7 @@
                                 <span class="knsl-price-amount">&euro;27</span>
                                 <span class="knsl-price-period"><?php esc_html_e('per night', 'resort-hotel'); ?></span>
                             </div>
-                            <a href="#booking" class="knsl-book-btn">
+                            <a href="<?php echo esc_url(home_url('/accommodation/economy-classic-room/')); ?>" class="knsl-book-btn">
                                 <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
                                     <path d="M0,0 L0,23 L1.594,21.813 L9,16.25 L16.406,21.813 L18,23 L18,0 L0,0 Z M2,2 L16,2 L16,19 L9.594,14.188 L9,13.75 L8.406,14.188 L2,19 L2,2 Z"/>
                                 </svg>
@@ -480,7 +480,7 @@
                 <?php esc_html_e('Our rooms are spaces carefully designed to provide you with comfort and luxury. Each of our rooms is designed to provide you with maximum comfort and style during your stay.', 'resort-hotel'); ?>
             </p>
             <div class="knsl-rooms-bottom-action">
-                <a href="#accommodations" class="knsl-view-all-btn">
+                <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" class="knsl-view-all-btn">
                     <span><?php esc_html_e('View All', 'resort-hotel'); ?></span>
                 </a>
             </div>

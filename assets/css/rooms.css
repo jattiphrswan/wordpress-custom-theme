@@ -732,4 +732,921 @@
     }
 }
 
+/* ==========================================================================
+   9. Single Room & Accommodation Detail Page Styles
+   ========================================================================== */
+
+.knsl-single-room-page {
+    position: relative;
+    background-color: #f3fdfd;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--knsl-dark-teal);
+}
+
+/* Ambient Watercolor Splashes */
+.knsl-room-ambient-pat {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.65;
+}
+
+.knsl-room-ambient-pat.pat-left {
+    top: 60px;
+    left: -180px;
+    width: 650px;
+    height: 650px;
+}
+
+.knsl-room-ambient-pat.pat-right {
+    top: 300px;
+    right: -200px;
+    width: 750px;
+    height: 750px;
+}
+
+.knsl-room-ambient-pat.pat-bottom-right {
+    bottom: 200px;
+    right: -150px;
+    width: 700px;
+    height: 700px;
+}
+
+/* Starfish Ambient Accents */
+.knsl-room-star {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+.knsl-room-star.star-top-center {
+    top: 140px;
+    left: 54%;
+    width: 38px;
+    height: 38px;
+    transform: rotate(18deg);
+}
+
+.knsl-room-star.star-mid-left {
+    top: 760px;
+    left: 40px;
+    width: 32px;
+    height: 32px;
+    transform: rotate(-15deg);
+}
+
+.knsl-room-star.star-bottom-right {
+    bottom: 350px;
+    right: 60px;
+    width: 36px;
+    height: 36px;
+    transform: rotate(25deg);
+}
+
+/* 1. Subheader Hero & Breadcrumbs */
+.knsl-room-banner {
+    position: relative;
+    z-index: 3;
+    max-width: 1360px;
+    margin: 0 auto 35px auto;
+    padding: 0 30px;
+}
+
+.knsl-room-banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.knsl-room-single-title {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    margin: 0;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.knsl-room-breadcrumbs {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 40px;
+    box-shadow: 0 4px 18px rgba(32, 79, 94, 0.06);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.knsl-room-breadcrumbs a {
+    color: var(--knsl-dark-teal);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.knsl-room-breadcrumbs a:hover {
+    color: #ecb934;
+}
+
+.knsl-room-breadcrumbs-sep {
+    color: var(--knsl-muted-teal);
+    opacity: 0.5;
+    font-size: 10px;
+}
+
+.knsl-room-breadcrumbs-current {
+    color: var(--knsl-muted-teal);
+}
+
+/* 2. Room Gallery Showcase Slider (3 visible images) */
+.knsl-room-gallery-section {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.knsl-room-gallery-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.knsl-room-gallery-viewport {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    border-radius: 24px;
+}
+
+.knsl-room-gallery-track {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: transform;
+}
+
+.knsl-room-gallery-slide {
+    flex: 0 0 calc((100% - 48px) / 3);
+    max-width: calc((100% - 48px) / 3);
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(32, 79, 94, 0.08);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.knsl-room-gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.knsl-room-gallery-slide:hover img {
+    transform: scale(1.05);
+}
+
+/* Gallery Controls (Counter & Arrows) */
+.knsl-room-gallery-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+
+.knsl-room-gallery-counter {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 8px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    box-shadow: 0 4px 18px rgba(32, 79, 94, 0.06);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.knsl-room-gallery-nav {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 6px 12px;
+    box-shadow: 0 4px 18px rgba(32, 79, 94, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.knsl-room-gallery-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--knsl-dark-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+    outline: none;
+    padding: 0;
+}
+
+.knsl-room-gallery-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.knsl-room-gallery-btn:hover {
+    background-color: #edf9fa;
+    color: #23bcec;
+}
+
+/* 3. Main Two-Column Layout (Content & Sidebar) */
+.knsl-room-detail-container {
+    position: relative;
+    z-index: 3;
+    max-width: 1360px;
+    margin: 0 auto 90px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.knsl-room-detail-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 50px;
+    align-items: start;
+}
+
+/* Section Headings */
+.knsl-room-block-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    margin: 0 0 24px 0;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+}
+
+/* Left Column: Description */
+.knsl-room-block {
+    margin-bottom: 50px;
+}
+
+.knsl-room-desc-text {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #5a8695;
+    margin: 0 0 20px 0;
+}
+
+/* Left Column: Amenities (3x2 Grid) */
+.knsl-room-amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.knsl-room-amenity-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 4px 18px rgba(32, 79, 94, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.knsl-room-amenity-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(32, 79, 94, 0.1);
+}
+
+.knsl-room-amenity-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background-color: #eafbfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #23bcec;
+}
+
+.knsl-room-amenity-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.8;
+}
+
+.knsl-room-amenity-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    line-height: 1.3;
+}
+
+/* Left Column: Location Map */
+.knsl-room-map-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(32, 79, 94, 0.06);
+    position: relative;
+    height: 340px;
+    border: 1px solid rgba(32, 79, 94, 0.05);
+}
+
+.knsl-room-map-card iframe,
+.knsl-room-map-card .knsl-map-canvas {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.knsl-map-overlay-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.knsl-map-pin-pulse {
+    width: 44px;
+    height: 44px;
+    background: rgba(35, 188, 236, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: knslMapPulse 2s infinite ease-out;
+}
+
+.knsl-map-pin-icon {
+    width: 32px;
+    height: 32px;
+    background: #204f5e;
+    color: #ffffff;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(32, 79, 94, 0.3);
+}
+
+.knsl-map-pin-icon svg {
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    fill: currentColor;
+}
+
+@keyframes knslMapPulse {
+    0% { transform: scale(0.8); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 0.3; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Left Column: Around The Hotel (2 Cards) */
+.knsl-room-around-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.knsl-room-around-card {
+    position: relative;
+    height: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(32, 79, 94, 0.08);
+    display: block;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.knsl-room-around-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 34px rgba(32, 79, 94, 0.15);
+}
+
+.knsl-room-around-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.knsl-room-around-card:hover img {
+    transform: scale(1.06);
+}
+
+.knsl-room-around-badge {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: var(--knsl-dark-teal);
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 32px;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.knsl-room-around-card:hover .knsl-room-around-badge {
+    background-color: #ecb934;
+    color: #ffffff;
+}
+
+/* Left Column: Availability Calendar */
+.knsl-room-calendar-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(32, 79, 94, 0.06);
+    border: 1px solid rgba(32, 79, 94, 0.05);
+}
+
+.knsl-calendar-toolbar {
+    background: linear-gradient(135deg, #ecb934 0%, #e0aa26 100%);
+    color: #ffffff;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.knsl-cal-btn {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.knsl-cal-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.knsl-calendar-months-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid #edf4f5;
+}
+
+.knsl-calendar-month-pane {
+    padding: 20px;
+}
+
+.knsl-calendar-month-pane:first-child {
+    border-right: 1px solid #edf4f5;
+}
+
+.knsl-month-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin-bottom: 16px;
+}
+
+.knsl-cal-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.knsl-cal-table th {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    padding: 6px 2px;
+    opacity: 0.85;
+}
+
+.knsl-cal-table td {
+    padding: 6px 2px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5a8695;
+    position: relative;
+    cursor: pointer;
+}
+
+.knsl-cal-table td span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.knsl-cal-table td.is-available span {
+    background-color: #cae8d5;
+    color: #1a5632;
+    font-weight: 700;
+}
+
+.knsl-cal-table td.is-available:hover span {
+    background-color: #b5dec3;
+    transform: scale(1.08);
+}
+
+.knsl-cal-table td.is-selected span {
+    background-color: #f7a8a8 !important;
+    color: #ffffff !important;
+    font-weight: 800;
+    box-shadow: 0 2px 8px rgba(247, 168, 168, 0.5);
+}
+
+.knsl-cal-table td.is-in-range span {
+    background-color: #daf2e4;
+    color: #1a5632;
+}
+
+.knsl-cal-table td.is-disabled {
+    cursor: default;
+    color: #c4d7dc;
+}
+
+.knsl-calendar-footer {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fafdfd;
+    font-size: 13px;
+    font-weight: 600;
+    color: #5a8695;
+}
+
+.knsl-cal-clear-btn {
+    background: transparent;
+    border: none;
+    color: #ecb934;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.knsl-cal-clear-btn:hover {
+    color: #d19f20;
+}
+
+/* Left Column: FAQ & Write a Review Form */
+.knsl-room-review-sub {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin: 0 0 20px 0;
+}
+
+.knsl-review-form-group {
+    margin-bottom: 20px;
+}
+
+.knsl-review-textarea,
+.knsl-review-input {
+    width: 100%;
+    background-color: #eafbfb;
+    border: 1px solid rgba(32, 79, 94, 0.08);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--knsl-dark-teal);
+    outline: none;
+    transition: border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+    box-sizing: border-box;
+}
+
+.knsl-review-textarea:focus,
+.knsl-review-input:focus {
+    background-color: #ffffff;
+    border-color: #23bcec;
+    box-shadow: 0 0 0 3px rgba(35, 188, 236, 0.15);
+}
+
+.knsl-review-textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.knsl-review-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #5a8695;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.knsl-review-checkbox-label input[type="checkbox"] {
+    accent-color: #ecb934;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.knsl-review-submit-btn {
+    background-color: #ecb934;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 40px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(236, 185, 52, 0.35);
+    transition: all 0.3s ease;
+}
+
+.knsl-review-submit-btn:hover {
+    background-color: #dfaa22;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(236, 185, 52, 0.45);
+}
+
+/* Right Column: Sticky Sidebar Widgets */
+.knsl-room-sidebar-sticky {
+    position: sticky;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 1. Price Card */
+.knsl-room-price-widget {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(32, 79, 94, 0.06);
+    border: 1px solid rgba(32, 79, 94, 0.04);
+}
+
+.knsl-price-widget-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin-bottom: 8px;
+    text-transform: none;
+}
+
+.knsl-price-widget-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.knsl-room-price-val {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2e9e6b;
+    line-height: 1;
+}
+
+.knsl-room-price-period {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--knsl-dark-teal);
+}
+
+/* 2. Specs Pill Widget */
+.knsl-room-specs-widget {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 6px 22px rgba(32, 79, 94, 0.05);
+    border: 1px solid rgba(32, 79, 94, 0.04);
+}
+
+.knsl-room-spec-entry {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-room-spec-entry svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    color: var(--knsl-dark-teal);
+}
+
+/* 3. Booking Form Widget */
+.knsl-room-booking-widget {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 35px rgba(32, 79, 94, 0.08);
+    border: 1px solid rgba(32, 79, 94, 0.04);
+}
+
+.knsl-booking-input-group {
+    margin-bottom: 22px;
+}
+
+.knsl-booking-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin-bottom: 10px;
+}
+
+.knsl-booking-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.knsl-booking-input {
+    width: 100%;
+    background-color: #eafbfb;
+    border: 1px solid rgba(32, 79, 94, 0.08);
+    border-radius: 12px;
+    padding: 14px 44px 14px 18px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--knsl-dark-teal);
+    outline: none;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.knsl-booking-input:focus {
+    background-color: #ffffff;
+    border-color: #23bcec;
+    box-shadow: 0 0 0 3px rgba(35, 188, 236, 0.15);
+}
+
+.knsl-booking-icon {
+    position: absolute;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    color: #5a8695;
+    pointer-events: none;
+}
+
+.knsl-booking-submit-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #ecb934 0%, #e2aa24 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    padding: 16px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(236, 185, 52, 0.35);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.knsl-booking-submit-btn:hover {
+    background: linear-gradient(135deg, #dfa822 0%, #d49c18 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(236, 185, 52, 0.45);
+}
+
+/* Responsive Media Queries for Single Room */
+@media (max-width: 1200px) {
+    .knsl-room-gallery-slide {
+        flex: 0 0 calc((100% - 24px) / 2);
+        max-width: calc((100% - 24px) / 2);
+        height: 420px;
+    }
+
+    .knsl-room-detail-grid {
+        grid-template-columns: minmax(0, 1fr) 340px;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .knsl-room-single-page {
+        padding-top: 110px;
+    }
+
+    .knsl-room-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .knsl-room-sidebar-sticky {
+        position: static;
+        margin-top: 40px;
+    }
+
+    .knsl-room-amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .knsl-room-single-title {
+        font-size: 38px;
+    }
+
+    .knsl-room-banner-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .knsl-room-gallery-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 340px;
+    }
+
+    .knsl-room-amenities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .knsl-room-around-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .knsl-calendar-months-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .knsl-calendar-month-pane:first-child {
+        border-right: none;
+        border-bottom: 1px solid #edf4f5;
+    }
+}
+
+
 

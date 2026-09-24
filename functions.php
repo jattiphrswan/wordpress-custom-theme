@@ -81,7 +81,7 @@ function resort_hotel_scripts() {
         'resort-hotel-rooms',
         get_template_directory_uri() . '/assets/css/rooms.css',
         ['resort-hotel-style'],
-        '1.0.6'
+        '1.0.8'
     );
 
     // Call to Action stylesheet
@@ -150,12 +150,12 @@ function resort_hotel_scripts() {
         true
     );
 
-    // Rooms Filter JS
+    // Rooms Filter & Single Room JS
     wp_enqueue_script(
         'resort-hotel-rooms-script',
         get_template_directory_uri() . '/assets/js/rooms.js',
         [],
-        '1.0.6',
+        '1.0.8',
         true
     );
 
@@ -219,6 +219,38 @@ function resort_hotel_register_post_types() {
         'hierarchical'       => false,
         'menu_position'      => 6,
         'menu_icon'          => 'dashicons-palmtree',
+        'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'show_in_rest'       => true,
+    ]);
+
+    // Register Room / Accommodation Custom Post Type
+    register_post_type('room', [
+        'labels' => [
+            'name'               => __('Rooms', 'resort-hotel'),
+            'singular_name'      => __('Room', 'resort-hotel'),
+            'menu_name'          => __('Rooms', 'resort-hotel'),
+            'name_admin_bar'     => __('Room', 'resort-hotel'),
+            'add_new'            => __('Add New', 'resort-hotel'),
+            'add_new_item'       => __('Add New Room', 'resort-hotel'),
+            'new_item'           => __('New Room', 'resort-hotel'),
+            'edit_item'          => __('Edit Room', 'resort-hotel'),
+            'view_item'          => __('View Room', 'resort-hotel'),
+            'all_items'          => __('All Rooms', 'resort-hotel'),
+            'search_items'       => __('Search Rooms', 'resort-hotel'),
+            'not_found'          => __('No rooms found.', 'resort-hotel'),
+            'not_found_in_trash' => __('No rooms found in Trash.', 'resort-hotel'),
+        ],
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => ['slug' => 'accommodation'],
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 7,
+        'menu_icon'          => 'dashicons-building',
         'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
         'show_in_rest'       => true,
     ]);
@@ -287,6 +319,7 @@ add_action('init', 'resort_hotel_service_single_rewrites');
 
 function resort_hotel_query_vars($vars) {
     $vars[] = 'service';
+    $vars[] = 'room';
     return $vars;
 }
 add_filter('query_vars', 'resort_hotel_query_vars');
@@ -301,6 +334,77 @@ function resort_hotel_service_template_include($template) {
     return $template;
 }
 add_filter('template_include', 'resort_hotel_service_template_include');
+
+/**
+ * Single Room & Accommodation Route & Template Redirect
+ * Ensures /accommodation/<slug>/, /room/<slug>/, and /accommodation/ always load page-room-single.php without 404
+ */
+function resort_hotel_handle_accommodation_single_route() {
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
+    $path = trim(parse_url($request_uri, PHP_URL_PATH), '/');
+    $home_path = trim(parse_url(home_url(), PHP_URL_PATH), '/');
+
+    if (!empty($home_path) && strpos($path, $home_path) === 0) {
+        $path = trim(substr($path, strlen($home_path)), '/');
+    }
+
+    $is_match = false;
+    $room_slug = 'business-class-room';
+
+    // Match /accommodation, /accommodation/<slug>, /room/<slug>, /room-single, etc.
+    if ($path === 'accommodation' || strpos($path, 'accommodation/') === 0) {
+        $is_match = true;
+        if (strpos($path, 'accommodation/') === 0) {
+            $parts = explode('/', $path);
+            if (!empty($parts[1])) {
+                $room_slug = sanitize_key($parts[1]);
+            }
+        }
+    } elseif ($path === 'room-single' || strpos($path, 'room-single/') === 0) {
+        $is_match = true;
+        if (strpos($path, 'room-single/') === 0) {
+            $parts = explode('/', $path);
+            if (!empty($parts[1])) {
+                $room_slug = sanitize_key($parts[1]);
+            }
+        }
+    } elseif (preg_match('#^(?:rooms|room)/([^/]+)/?$#', $path, $matches)) {
+        $catalog = ['business-class-room', 'standard-room', 'economy-classic-room', 'triple-classic-room', 'royal-class-room', 'superior-ocean-room', 'double-room', 'classic-room'];
+        if (in_array(sanitize_key($matches[1]), $catalog, true)) {
+            $is_match = true;
+            $room_slug = sanitize_key($matches[1]);
+        }
+    }
+
+    if ($is_match) {
+        if (!empty($room_slug) && empty($_GET['room'])) {
+            $_GET['room'] = $room_slug;
+        }
+
+        global $wp_query;
+        if (isset($wp_query)) {
+            $wp_query->is_404 = false;
+            $wp_query->is_page = true;
+        }
+        status_header(200);
+
+        $template = locate_template(['page-room-single.php', 'single-room.php', 'single-accommodation.php']);
+        if ($template) {
+            include $template;
+            exit;
+        }
+    }
+}
+add_action('template_redirect', 'resort_hotel_handle_accommodation_single_route', 1);
+
+function resort_hotel_accommodation_rewrites() {
+    add_rewrite_rule('^accommodation/?$', 'index.php?pagename=room-single', 'top');
+    add_rewrite_rule('^accommodation/([^/]+)/?$', 'index.php?pagename=room-single&room=$matches[1]', 'top');
+    add_rewrite_rule('^room-single/?$', 'index.php?pagename=room-single', 'top');
+    add_rewrite_rule('^room-single/([^/]+)/?$', 'index.php?pagename=room-single&room=$matches[1]', 'top');
+}
+add_action('init', 'resort_hotel_accommodation_rewrites');
+
 
 
 

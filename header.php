@@ -71,15 +71,23 @@
                             <li><a href="<?php echo esc_url(home_url('/404/')); ?>">404</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="<?php echo esc_url(home_url('/#rooms')); ?>" class="nav-link">
+                    <?php 
+                    $is_room_active = is_page('room-single') 
+                        || is_page_template('page-room-single.php') 
+                        || is_singular(['room', 'mphb_room_type']) 
+                        || (isset($_SERVER['REQUEST_URI']) && (strpos($_SERVER['REQUEST_URI'], 'accommodation') !== false || strpos($_SERVER['REQUEST_URI'], 'room-single') !== false));
+                    ?>
+                    <li class="nav-item <?php echo $is_room_active ? 'active' : ''; ?>">
+                        <a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>" class="nav-link <?php echo $is_room_active ? 'is-active' : ''; ?>">
                             <span>Rooms</span>
                             <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="<?php echo esc_url(home_url('/#deluxe')); ?>">Deluxe Room</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/#suite')); ?>">Ocean Suite</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/#penthouse')); ?>">Luxury Penthouse</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/accommodation/business-class-room/')); ?>">Business class room</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/accommodation/standard-room/')); ?>">Standard room</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/accommodation/triple-classic-room/')); ?>">Triple classic room</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/accommodation/royal-class-room/')); ?>">Royal class room</a></li>
+                            <li><a href="<?php echo esc_url(home_url('/#rooms')); ?>">All Rooms</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
