@@ -539,11 +539,11 @@ if (is_singular(['room', 'mphb_room_type'])) {
 
                     <!-- Widget 3: Check-in / Check-out Reservation Widget -->
                     <div class="knsl-room-booking-widget">
-                        <form action="#" method="get" onsubmit="event.preventDefault(); alert('Redirecting to checkout for ' + '<?php echo esc_js($current['title']); ?>');">
+                        <form action="<?php echo esc_url(home_url('/search-availability/')); ?>" method="get">
                             <div class="knsl-booking-input-group">
                                 <label for="knslCheckinInput" class="knsl-booking-label"><?php esc_html_e('Check-in Date', 'resort-hotel'); ?></label>
                                 <div class="knsl-booking-input-wrapper">
-                                    <input type="text" id="knslCheckinInput" class="knsl-booking-input" placeholder="<?php esc_attr_e('Check-in Date', 'resort-hotel'); ?>" value="2026-09-24" readonly>
+                                    <input type="text" id="knslCheckinInput" name="check_in" class="knsl-booking-input" placeholder="<?php esc_attr_e('Check-in Date', 'resort-hotel'); ?>" value="2026-09-24">
                                     <svg class="knsl-booking-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                 </div>
                             </div>
@@ -551,7 +551,7 @@ if (is_singular(['room', 'mphb_room_type'])) {
                             <div class="knsl-booking-input-group">
                                 <label for="knslCheckoutInput" class="knsl-booking-label"><?php esc_html_e('Check-out Date', 'resort-hotel'); ?></label>
                                 <div class="knsl-booking-input-wrapper">
-                                    <input type="text" id="knslCheckoutInput" class="knsl-booking-input" placeholder="<?php esc_attr_e('Check-out Date', 'resort-hotel'); ?>" value="2026-09-27" readonly>
+                                    <input type="text" id="knslCheckoutInput" name="check_out" class="knsl-booking-input" placeholder="<?php esc_attr_e('Check-out Date', 'resort-hotel'); ?>" value="2026-09-27">
                                     <svg class="knsl-booking-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                                 </div>
                             </div>
