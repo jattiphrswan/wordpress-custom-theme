@@ -6,7 +6,11 @@
 .knsl-search-page {
     position: relative;
     background-color: #f3fdfd;
+<<<<<<< HEAD
     padding-top: 195px;
+=======
+    padding-top: 150px;
+>>>>>>> 597985713bf7d7fb5281737b98f5fef3d7ca92b1
     padding-bottom: 90px;
     overflow-x: clip;
     overflow-y: visible;
