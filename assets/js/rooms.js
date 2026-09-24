@@ -7,11 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.knsl-rooms-filter .knsl-filter-btn');
     const roomCards = document.querySelectorAll('.knsl-rooms-grid .knsl-room-card');
 
-    if (!filterButtons.length || !roomCards.length) {
-        return;
-    }
-
-    filterButtons.forEach(button => {
+    if (filterButtons.length && roomCards.length) {
+        filterButtons.forEach(button => {
         button.addEventListener('click', function () {
             const filterValue = this.getAttribute('data-filter');
 
@@ -45,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
-    });
+    }
 
     // =========================================================================
     // Rooms Carousel Controller ("Our best rooms" slider)

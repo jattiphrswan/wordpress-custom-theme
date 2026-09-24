@@ -155,7 +155,7 @@ function resort_hotel_scripts() {
         'resort-hotel-rooms-script',
         get_template_directory_uri() . '/assets/js/rooms.js',
         [],
-        '1.0.5',
+        '1.0.6',
         true
     );
 
