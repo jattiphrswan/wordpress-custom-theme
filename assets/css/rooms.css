@@ -741,7 +741,8 @@
     background-color: #f3fdfd;
     padding-top: 130px;
     padding-bottom: 90px;
-    overflow: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--knsl-dark-teal);
 }
@@ -1000,7 +1001,17 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) 380px;
     gap: 50px;
-    align-items: start;
+    align-items: stretch;
+}
+
+.knsl-room-content-col {
+    align-self: start;
+    min-width: 0;
+}
+
+.knsl-room-sidebar-col {
+    position: relative;
+    height: 100%;
 }
 
 /* Section Headings */
@@ -1425,11 +1436,18 @@
 
 /* Right Column: Sticky Sidebar Widgets */
 .knsl-room-sidebar-sticky {
+    position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 115px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 10;
+    transition: top 0.3s ease;
+}
+
+body.admin-bar .knsl-room-sidebar-sticky {
+    top: 147px;
 }
 
 /* 1. Price Card */
@@ -1596,7 +1614,8 @@
 }
 
 @media (max-width: 991px) {
-    .knsl-room-single-page {
+    .knsl-room-single-page,
+    .knsl-single-room-page {
         padding-top: 110px;
     }
 
@@ -1604,8 +1623,13 @@
         grid-template-columns: 1fr;
     }
 
+    .knsl-room-sidebar-col {
+        height: auto;
+    }
+
     .knsl-room-sidebar-sticky {
         position: static;
+        top: auto;
         margin-top: 40px;
     }
 
