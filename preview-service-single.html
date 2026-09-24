@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surfing &ndash; Our Services &ndash; Kinsley Resort Hotel Live Demo</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Theme Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link rel="stylesheet" href="assets/css/cta.css">
+    <link rel="stylesheet" href="assets/css/rooms.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body class="page-template-service-single">
+
+<!-- Floating Island Header Component -->
+<header class="site-header-wrapper">
+    <nav class="site-navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="preview-header.html" class="site-logo">
+            <span class="logo-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                    <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                </svg>
+            </span>
+            <span class="logo-text">Kinsley</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="site-navigation">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="preview-header.html" class="nav-link">
+                        <span>Home</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html">Home 1</a></li>
+                        <li><a href="preview-header.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a href="preview-services.html" class="nav-link is-active">
+                        <span>About</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#about">About Us</a></li>
+                        <li><a href="preview-services.html">Services</a></li>
+                        <li><a href="preview-service-single.html" class="active">Service Single</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                        <li><a href="#menu-1">Menu #1</a></li>
+                        <li><a href="#menu-2">Menu #2</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="404.html">404</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#rooms" class="nav-link">
+                        <span>Rooms</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#deluxe">Deluxe Room</a></li>
+                        <li><a href="preview-header.html#suite">Ocean Suite</a></li>
+                        <li><a href="preview-header.html#penthouse">Luxury Penthouse</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-header.html#blog" class="nav-link">
+                        <span>Blog</span>
+                        <svg class="chevron-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="preview-header.html#news">Hotel News</a></li>
+                        <li><a href="preview-header.html#guide">Travel Guide</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="preview-contact.html" class="nav-link">
+                        <span>Contact</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link">
+                        <span>Shop</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Header Actions: Book Now & Shopping Bag -->
+        <div class="header-actions">
+            <a href="#book" class="btn-book-now">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Book Now</span>
+            </a>
+
+            <a href="#cart" class="cart-button-link" aria-label="View Shopping Bag">
+                <div class="cart-icon-wrap">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge">0</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main id="primary" class="site-main knsl-single-service-page">
+
+    <!-- Ambient Watercolor Splash Backdrops spanning across the page -->
+    <div class="knsl-services-ambient-pat pat-left" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+    <div class="knsl-services-ambient-pat pat-right" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+    <div class="knsl-services-ambient-pat pat-bottom-right" style="background-image: url('assets/images/pat4.png');" aria-hidden="true"></div>
+
+    <!-- Floating Starfish Accents -->
+    <img src="assets/images/pat-1.png" alt="" class="knsl-services-star star-top-center" aria-hidden="true">
+    <img src="assets/images/pat-3.png" alt="" class="knsl-services-star star-mid-left" aria-hidden="true">
+    <img src="assets/images/pat-1.png" alt="" class="knsl-services-star star-bottom-right" aria-hidden="true">
+
+    <!-- 1. Subheader Hero / Breadcrumb Bar ("Surfing" | HOME > SERVICES > SURFING) -->
+    <section class="knsl-single-service-banner">
+        <div class="knsl-single-banner-inner">
+            <h1 class="knsl-single-service-title" id="serviceTitle">Surfing</h1>
+            <div class="knsl-single-breadcrumbs">
+                <a href="preview-header.html">Home</a>
+                <span class="knsl-breadcrumbs-sep">&gt;</span>
+                <a href="preview-services.html">Services</a>
+                <span class="knsl-breadcrumbs-sep">&gt;</span>
+                <span class="knsl-breadcrumbs-current" id="serviceBreadcrumb">SURFING</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Main Two-Column Service Content Island -->
+    <section class="knsl-single-service-section">
+        <div class="knsl-single-service-container">
+            <div class="knsl-single-service-layout">
+
+                <!-- Left Column: Featured Image, Description, Key features & FAQ -->
+                <div class="knsl-single-main-col">
+
+                    <!-- Featured Hero Image -->
+                    <div class="knsl-single-featured-wrap">
+                        <img 
+                            id="serviceFeaturedImg"
+                            src="assets/images/ser/serv1-950x1425.jpg" 
+                            alt="Surfing" 
+                            class="knsl-single-featured-img"
+                        >
+                    </div>
+
+                    <!-- Description of the service -->
+                    <div class="knsl-single-desc-block">
+                        <h2 class="knsl-single-heading">Description of the service</h2>
+                        <div id="serviceDescContainer">
+                            <p class="knsl-single-text">At our hotel we are offering our accommodations choices, including guest room, swimming pools, and beach vacation, situated and adjacent to these services are a grocery store, swimming pool and restaurant with diverse attractions. Our hotel offers surfing lessons and equipment rentals, allowing guests of all levels to enjoy the thrill of riding the waves.</p>
+                            <p class="knsl-single-text">Experience comfort and style in our well-appointed rooms and suites, designed for your every stay. Enjoy a variety of culinary delights at our on-site restaurant, catering to all taste buds and preferences. Our hotel is situated right on the beach, offering stunning ocean views and immediate access to the sandy shores.</p>
+                            <p class="knsl-single-text">Our reception team is available 24/7 to answer your questions, make reservations and ensure your stay is seamless. So everyone who have a high level of guest satisfaction, demonstrating our commitment to service excellence.</p>
+                        </div>
+                    </div>
+
+                    <!-- Key features 6-Item Grid -->
+                    <div class="knsl-single-features-block">
+                        <h2 class="knsl-single-heading">Key features</h2>
+                        <div class="knsl-single-features-grid" id="serviceFeaturesGrid">
+                            <!-- Feature 1: Beachfront Location -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">Beachfront Location</span>
+                            </div>
+
+                            <!-- Feature 2: Luxury Accommodations -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M2 19h20M2 15h20M2 11h20M6 11V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><rect x="5" y="7" width="4" height="4" rx="1"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">Luxury Accommodations</span>
+                            </div>
+
+                            <!-- Feature 3: On-Site Dining -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">On-Site Dining</span>
+                            </div>
+
+                            <!-- Feature 4: Recreational Facilities -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">Recreational Facilities</span>
+                            </div>
+
+                            <!-- Feature 5: Spa and Wellness -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M12 3c-1.5 3-4 6-4 9a4 4 0 0 0 8 0c0-3-2.5-6-4-9Z"/><path d="M4 14c2.5-.5 5 1 6.5 3-1.5 2-4 2.5-6.5 1-2.5-1.5-2.5-3.5 0-4Z"/><path d="M20 14c-2.5-.5-5 1-6.5 3 1.5 2 4 2.5 6.5 1 2.5-1.5 2.5-3.5 0-4Z"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">Spa and Wellness</span>
+                            </div>
+
+                            <!-- Feature 6: Surfing Lessons -->
+                            <div class="knsl-single-feature-card">
+                                <div class="knsl-single-feature-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>
+                                </div>
+                                <span class="knsl-single-feature-label">Surfing Lessons</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="knsl-single-faq-block">
+                        <h2 class="knsl-single-heading">FAQ</h2>
+                        <div class="knsl-single-faq" id="serviceFaqList">
+                            <!-- Accordion 1 -->
+                            <div class="knsl-faq-item is-active">
+                                <button type="button" class="knsl-faq-header" aria-expanded="true">
+                                    <span class="knsl-faq-title">What skill levels are the surfing lessons suitable for?</span>
+                                    <span class="knsl-faq-toggle-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="knsl-faq-body">
+                                    <p class="knsl-faq-content">Our surfing lessons are tailored for all experience levels, from absolute beginners catching their first wave to intermediate surfers looking to refine their technique. Certified professional instructors provide personalized guidance in small groups.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 2 -->
+                            <div class="knsl-faq-item">
+                                <button type="button" class="knsl-faq-header" aria-expanded="false">
+                                    <span class="knsl-faq-title">Is surfing equipment included in the lesson?</span>
+                                    <span class="knsl-faq-toggle-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="knsl-faq-body">
+                                    <p class="knsl-faq-content">Yes! High-quality surfboards, rash guards, wetsuits, and safety gear are all included with every booked lesson. Equipment is also available for independent rental throughout your stay.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 3 -->
+                            <div class="knsl-faq-item">
+                                <button type="button" class="knsl-faq-header" aria-expanded="false">
+                                    <span class="knsl-faq-title">What is the best time of day for surfing lessons?</span>
+                                    <span class="knsl-faq-toggle-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="knsl-faq-body">
+                                    <p class="knsl-faq-content">Morning sessions typically offer the cleanest wave conditions and gentle offshore winds. We schedule sessions around tide and swell forecasts to ensure optimal conditions.</p>
+                                </div>
+                            </div>
+
+                            <!-- Accordion 4 -->
+                            <div class="knsl-faq-item">
+                                <button type="button" class="knsl-faq-header" aria-expanded="false">
+                                    <span class="knsl-faq-title">Do I need to make a reservation in advance?</span>
+                                    <span class="knsl-faq-toggle-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="6 9 12 15 18 9"></polyline>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="knsl-faq-body">
+                                    <p class="knsl-faq-content">We strongly recommend booking at least 24 hours in advance to guarantee instructor availability and optimal tidal timing for your session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Sidebar ("Other services") -->
+                <aside class="knsl-single-sidebar-col">
+                    <div class="knsl-sidebar-widget">
+                        <h3 class="knsl-sidebar-title">Other services</h3>
+                        <div class="knsl-other-services-list" id="otherServicesList">
+                            <!-- Card 1: Swimming Pools -->
+                            <a href="preview-service-single.html?service=swimming-pools" class="knsl-other-service-card" data-service="swimming-pools">
+                                <img 
+                                    src="assets/images/ser/serv4-950x1238.jpg" 
+                                    alt="Swimming Pools" 
+                                    class="knsl-other-service-thumb"
+                                    loading="lazy"
+                                >
+                                <h4 class="knsl-other-service-title">Swimming Pools</h4>
+                            </a>
+
+                            <!-- Card 2: Beach Restaurant -->
+                            <a href="preview-service-single.html?service=beach-restaurant" class="knsl-other-service-card" data-service="beach-restaurant">
+                                <img 
+                                    src="assets/images/ser/serv3-950x1273.jpg" 
+                                    alt="Beach Restaurant" 
+                                    class="knsl-other-service-thumb"
+                                    loading="lazy"
+                                >
+                                <h4 class="knsl-other-service-title">Beach Restaurant</h4>
+                            </a>
+
+                            <!-- Card 3: Beach Vacation -->
+                            <a href="preview-service-single.html?service=beach-vacation" class="knsl-other-service-card" data-service="beach-vacation">
+                                <img 
+                                    src="assets/images/ser/serv2-950x1267.jpg" 
+                                    alt="Beach Vacation" 
+                                    class="knsl-other-service-thumb"
+                                    loading="lazy"
+                                >
+                                <h4 class="knsl-other-service-title">Beach Vacation</h4>
+                            </a>
+
+                            <!-- Card 4: Spa Salon -->
+                            <a href="preview-service-single.html?service=spa-salon" class="knsl-other-service-card" data-service="spa-salon">
+                                <img 
+                                    src="assets/images/ser/service-5-950x1489.jpg" 
+                                    alt="Spa Salon" 
+                                    class="knsl-other-service-thumb"
+                                    loading="lazy"
+                                >
+                                <h4 class="knsl-other-service-title">Spa Salon</h4>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Call to Action Banner ("Do you have any questions? We are available 24/7") -->
+    <section class="knsl-cta-section" id="cta">
+        <div class="knsl-cta-container">
+            <div class="knsl-cta-card">
+                <div class="knsl-cta-badge-wrapper">
+                    <span class="knsl-cta-badge">NEED TO TALK TO US</span>
+                </div>
+
+                <h2 class="knsl-cta-title">
+                    Do you have any questions?<br>
+                    We are available 24/7
+                </h2>
+
+                <div class="knsl-cta-buttons">
+                    <a href="preview-contact.html" class="knsl-cta-btn-primary">
+                        <svg class="knsl-cta-icon" viewBox="0 0 512 512" aria-hidden="true">
+                            <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
+                        </svg>
+                        <span>GET IN TOUCH</span>
+                    </a>
+
+                    <a href="tel:+12345678" class="knsl-cta-btn-secondary">
+                        <svg class="knsl-cta-icon" viewBox="0 0 512 512" aria-hidden="true" style="width: 14px; height: 14px;">
+                            <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.3l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/>
+                        </svg>
+                        <span>+1 234 5678</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Rooms Carousel Section ("DISCOVER" / "We recommend") -->
+    <section class="knsl-rooms-carousel-section" id="rooms-carousel">
+        <div class="knsl-rooms-pat-bg" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+
+        <div class="knsl-rooms-carousel-container">
+            <div class="knsl-rooms-header">
+                <span class="knsl-rooms-badge">DISCOVER</span>
+                <h2 class="knsl-rooms-title">We recommend</h2>
+            </div>
+
+            <div class="knsl-rooms-carousel-wrapper">
+                <div class="knsl-rooms-carousel-track" id="knslRoomsCarouselTrack">
+
+                    <!-- Room 1: Economy classic room -->
+                    <article class="knsl-carousel-card">
+                        <div class="knsl-carousel-card-inner">
+                            <div class="knsl-carousel-card-cover">
+                                <a href="preview-header.html#room-1" aria-label="Economy classic room">
+                                    <img src="assets/images/room/room-demo-1-950x535.jpg" alt="Economy classic room" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="knsl-carousel-specs">
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M5.25,0 C3.522,0 2.1,1.355 2.1,3 L2.1,10.188 C0.885,10.605 0,11.706 0,13 L0,21 L5.25,21 L5.25,19 L15.75,19 L15.75,21 L21,21 L21,13 C21,11.706 20.115,10.605 18.9,10.188 L18.9,3 C18.9,1.355 17.478,0 15.75,0 L5.25,0 Z M5.25,2 L15.75,2 C16.332,2 16.8,2.445 16.8,3 L16.8,10 L14.7,10 L14.7,9 C14.7,7.355 13.278,6 11.55,6 L9.45,6 C7.722,6 6.3,7.355 6.3,9 L6.3,10 L4.2,10 L4.2,3 C4.2,2.445 4.668,2 5.25,2 Z M9.45,8 L11.55,8 C12.132,8 12.6,8.445 12.6,9 L12.6,10 L8.4,10 L8.4,9 C8.4,8.445 8.868,8 9.45,8 Z M3.15,12 L17.85,12 C18.432,12 18.9,12.445 18.9,13 L18.9,19 L17.85,19 L17.85,17 L3.15,17 L3.15,19 L2.1,19 L2.1,13 C2.1,12.445 2.568,12 3.15,12 Z"/>
+                                    </svg>
+                                    <span>Adults: 1</span>
+                                </div>
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M4.375,0 C1.969,0 0,1.969 0,4.375 L0,16.625 C0,19.031 1.969,21 4.375,21 L16.625,21 C19.031,21 21,19.031 21,16.625 L21,4.375 C21,1.969 19.031,0 16.625,0 L4.375,0 Z M4.375,1.75 L16.625,1.75 C18.086,1.75 19.25,2.914 19.25,4.375 L19.25,16.625 C19.25,18.086 18.086,19.25 16.625,19.25 L4.375,19.25 C2.914,19.25 1.75,18.086 1.75,16.625 L1.75,4.375 C1.75,2.914 2.914,1.75 4.375,1.75 Z M7.875,5.25 C6.436,5.25 5.25,6.436 5.25,7.875 L5.25,13.125 C5.25,14.564 6.436,15.75 7.875,15.75 L13.125,15.75 C14.564,15.75 15.75,14.564 15.75,13.125 L15.75,7.875 C15.75,6.436 14.564,5.25 13.125,5.25 L7.875,5.25 Z M7.875,7 L13.125,7 C13.618,7 14,7.382 14,7.875 L14,13.125 C14,13.618 13.618,14 13.125,14 L7.875,14 C7.382,14 7,13.618 7,13.125 L7,7.875 C7,7.382 7.382,7 7.875,7 Z"/>
+                                    </svg>
+                                    <span>Size: 24ft²</span>
+                                </div>
+                            </div>
+                            <div class="knsl-carousel-card-body">
+                                <h3 class="knsl-carousel-card-title">
+                                    <a href="preview-header.html#room-1">Economy classic room</a>
+                                </h3>
+                                <p class="knsl-carousel-card-text">
+                                    Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit aspernatur...
+                                </p>
+                                <div class="knsl-carousel-card-footer">
+                                    <div class="knsl-carousel-price">
+                                        <span class="knsl-price-val">&euro;27</span>
+                                        <span class="knsl-price-lbl">per night</span>
+                                    </div>
+                                    <a href="preview-header.html#room-1" class="knsl-carousel-book-btn" aria-label="Book Economy classic room">
+                                        <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
+                                            <path d="M14 0H4C1.79 0 0 1.79 0 4v15c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm2 19c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v15z"/>
+                                            <circle cx="9" cy="6" r="2"/>
+                                            <path d="M4 16c0-2.67 3.33-4 5-4s5 1.33 5 4v1H4v-1z"/>
+                                        </svg>
+                                        <span>BOOK</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Room 2: Triple classic room -->
+                    <article class="knsl-carousel-card">
+                        <div class="knsl-carousel-card-inner">
+                            <div class="knsl-carousel-card-cover">
+                                <a href="preview-header.html#room-2" aria-label="Triple classic room">
+                                    <img src="assets/images/room/room-demo-3-950x633.jpg" alt="Triple classic room" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="knsl-carousel-specs">
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M5.25,0 C3.522,0 2.1,1.355 2.1,3 L2.1,10.188 C0.885,10.605 0,11.706 0,13 L0,21 L5.25,21 L5.25,19 L15.75,19 L15.75,21 L21,21 L21,13 C21,11.706 20.115,10.605 18.9,10.188 L18.9,3 C18.9,1.355 17.478,0 15.75,0 L5.25,0 Z M5.25,2 L15.75,2 C16.332,2 16.8,2.445 16.8,3 L16.8,10 L14.7,10 L14.7,9 C14.7,7.355 13.278,6 11.55,6 L9.45,6 C7.722,6 6.3,7.355 6.3,9 L6.3,10 L4.2,10 L4.2,3 C4.2,2.445 4.668,2 5.25,2 Z M9.45,8 L11.55,8 C12.132,8 12.6,8.445 12.6,9 L12.6,10 L8.4,10 L8.4,9 C8.4,8.445 8.868,8 9.45,8 Z M3.15,12 L17.85,12 C18.432,12 18.9,12.445 18.9,13 L18.9,19 L17.85,19 L17.85,17 L3.15,17 L3.15,19 L2.1,19 L2.1,13 C2.1,12.445 2.568,12 3.15,12 Z"/>
+                                    </svg>
+                                    <span>Adults: 3</span>
+                                </div>
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M4.375,0 C1.969,0 0,1.969 0,4.375 L0,16.625 C0,19.031 1.969,21 4.375,21 L16.625,21 C19.031,21 21,19.031 21,16.625 L21,4.375 C21,1.969 19.031,0 16.625,0 L4.375,0 Z M4.375,1.75 L16.625,1.75 C18.086,1.75 19.25,2.914 19.25,4.375 L19.25,16.625 C19.25,18.086 18.086,19.25 16.625,19.25 L4.375,19.25 C2.914,19.25 1.75,18.086 1.75,16.625 L1.75,4.375 C1.75,2.914 2.914,1.75 4.375,1.75 Z M7.875,5.25 C6.436,5.25 5.25,6.436 5.25,7.875 L5.25,13.125 C5.25,14.564 6.436,15.75 7.875,15.75 L13.125,15.75 C14.564,15.75 15.75,14.564 15.75,13.125 L15.75,7.875 C15.75,6.436 14.564,5.25 13.125,5.25 L7.875,5.25 Z M7.875,7 L13.125,7 C13.618,7 14,7.382 14,7.875 L14,13.125 C14,13.618 13.618,14 13.125,14 L7.875,14 C7.382,14 7,13.618 7,13.125 L7,7.875 C7,7.382 7.382,7 7.875,7 Z"/>
+                                    </svg>
+                                    <span>Size: 40ft²</span>
+                                </div>
+                            </div>
+                            <div class="knsl-carousel-card-body">
+                                <h3 class="knsl-carousel-card-title">
+                                    <a href="preview-header.html#room-2">Triple classic room</a>
+                                </h3>
+                                <p class="knsl-carousel-card-text">
+                                    Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit aspernatur...
+                                </p>
+                                <div class="knsl-carousel-card-footer">
+                                    <div class="knsl-carousel-price">
+                                        <span class="knsl-price-val">&euro;79</span>
+                                        <span class="knsl-price-lbl">per night</span>
+                                    </div>
+                                    <a href="preview-header.html#room-2" class="knsl-carousel-book-btn" aria-label="Book Triple classic room">
+                                        <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
+                                            <path d="M14 0H4C1.79 0 0 1.79 0 4v15c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm2 19c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v15z"/>
+                                            <circle cx="9" cy="6" r="2"/>
+                                            <path d="M4 16c0-2.67 3.33-4 5-4s5 1.33 5 4v1H4v-1z"/>
+                                        </svg>
+                                        <span>BOOK</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Room 3: Standard room -->
+                    <article class="knsl-carousel-card">
+                        <div class="knsl-carousel-card-inner">
+                            <div class="knsl-carousel-card-cover">
+                                <a href="preview-header.html#room-3" aria-label="Standard room">
+                                    <img src="assets/images/room/room-demo-4-950x633.jpg" alt="Standard room" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="knsl-carousel-specs">
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M5.25,0 C3.522,0 2.1,1.355 2.1,3 L2.1,10.188 C0.885,10.605 0,11.706 0,13 L0,21 L5.25,21 L5.25,19 L15.75,19 L15.75,21 L21,21 L21,13 C21,11.706 20.115,10.605 18.9,10.188 L18.9,3 C18.9,1.355 17.478,0 15.75,0 L5.25,0 Z M5.25,2 L15.75,2 C16.332,2 16.8,2.445 16.8,3 L16.8,10 L14.7,10 L14.7,9 C14.7,7.355 13.278,6 11.55,6 L9.45,6 C7.722,6 6.3,7.355 6.3,9 L6.3,10 L4.2,10 L4.2,3 C4.2,2.445 4.668,2 5.25,2 Z M9.45,8 L11.55,8 C12.132,8 12.6,8.445 12.6,9 L12.6,10 L8.4,10 L8.4,9 C8.4,8.445 8.868,8 9.45,8 Z M3.15,12 L17.85,12 C18.432,12 18.9,12.445 18.9,13 L18.9,19 L17.85,19 L17.85,17 L3.15,17 L3.15,19 L2.1,19 L2.1,13 C2.1,12.445 2.568,12 3.15,12 Z"/>
+                                    </svg>
+                                    <span>Adults: 2</span>
+                                </div>
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M4.375,0 C1.969,0 0,1.969 0,4.375 L0,16.625 C0,19.031 1.969,21 4.375,21 L16.625,21 C19.031,21 21,19.031 21,16.625 L21,4.375 C21,1.969 19.031,0 16.625,0 L4.375,0 Z M4.375,1.75 L16.625,1.75 C18.086,1.75 19.25,2.914 19.25,4.375 L19.25,16.625 C19.25,18.086 18.086,19.25 16.625,19.25 L4.375,19.25 C2.914,19.25 1.75,18.086 1.75,16.625 L1.75,4.375 C1.75,2.914 2.914,1.75 4.375,1.75 Z M7.875,5.25 C6.436,5.25 5.25,6.436 5.25,7.875 L5.25,13.125 C5.25,14.564 6.436,15.75 7.875,15.75 L13.125,15.75 C14.564,15.75 15.75,14.564 15.75,13.125 L15.75,7.875 C15.75,6.436 14.564,5.25 13.125,5.25 L7.875,5.25 Z M7.875,7 L13.125,7 C13.618,7 14,7.382 14,7.875 L14,13.125 C14,13.618 13.618,14 13.125,14 L7.875,14 C7.382,14 7,13.618 7,13.125 L7,7.875 C7,7.382 7.382,7 7.875,7 Z"/>
+                                    </svg>
+                                    <span>Size: 26ft²</span>
+                                </div>
+                            </div>
+                            <div class="knsl-carousel-card-body">
+                                <h3 class="knsl-carousel-card-title">
+                                    <a href="preview-header.html#room-3">Standard room</a>
+                                </h3>
+                                <p class="knsl-carousel-card-text">
+                                    Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit aspernatur...
+                                </p>
+                                <div class="knsl-carousel-card-footer">
+                                    <div class="knsl-carousel-price">
+                                        <span class="knsl-price-val">&euro;79</span>
+                                        <span class="knsl-price-lbl">per night</span>
+                                    </div>
+                                    <a href="preview-header.html#room-3" class="knsl-carousel-book-btn" aria-label="Book Standard room">
+                                        <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
+                                            <path d="M14 0H4C1.79 0 0 1.79 0 4v15c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm2 19c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v15z"/>
+                                            <circle cx="9" cy="6" r="2"/>
+                                            <path d="M4 16c0-2.67 3.33-4 5-4s5 1.33 5 4v1H4v-1z"/>
+                                        </svg>
+                                        <span>BOOK</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Room 4: Deluxe room -->
+                    <article class="knsl-carousel-card">
+                        <div class="knsl-carousel-card-inner">
+                            <div class="knsl-carousel-card-cover">
+                                <a href="preview-header.html#room-4" aria-label="Deluxe room">
+                                    <img src="assets/images/room/room-demo-6-950x633.jpg" alt="Deluxe room" loading="lazy">
+                                </a>
+                            </div>
+                            <div class="knsl-carousel-specs">
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M5.25,0 C3.522,0 2.1,1.355 2.1,3 L2.1,10.188 C0.885,10.605 0,11.706 0,13 L0,21 L5.25,21 L5.25,19 L15.75,19 L15.75,21 L21,21 L21,13 C21,11.706 20.115,10.605 18.9,10.188 L18.9,3 C18.9,1.355 17.478,0 15.75,0 L5.25,0 Z M5.25,2 L15.75,2 C16.332,2 16.8,2.445 16.8,3 L16.8,10 L14.7,10 L14.7,9 C14.7,7.355 13.278,6 11.55,6 L9.45,6 C7.722,6 6.3,7.355 6.3,9 L6.3,10 L4.2,10 L4.2,3 C4.2,2.445 4.668,2 5.25,2 Z M9.45,8 L11.55,8 C12.132,8 12.6,8.445 12.6,9 L12.6,10 L8.4,10 L8.4,9 C8.4,8.445 8.868,8 9.45,8 Z M3.15,12 L17.85,12 C18.432,12 18.9,12.445 18.9,13 L18.9,19 L17.85,19 L17.85,17 L3.15,17 L3.15,19 L2.1,19 L2.1,13 C2.1,12.445 2.568,12 3.15,12 Z"/>
+                                    </svg>
+                                    <span>Adults: 2</span>
+                                </div>
+                                <div class="knsl-carousel-spec-item">
+                                    <svg class="knsl-spec-icon" viewBox="0 0 21 21" aria-hidden="true">
+                                        <path d="M4.375,0 C1.969,0 0,1.969 0,4.375 L0,16.625 C0,19.031 1.969,21 4.375,21 L16.625,21 C19.031,21 21,19.031 21,16.625 L21,4.375 C21,1.969 19.031,0 16.625,0 L4.375,0 Z M4.375,1.75 L16.625,1.75 C18.086,1.75 19.25,2.914 19.25,4.375 L19.25,16.625 C19.25,18.086 18.086,19.25 16.625,19.25 L4.375,19.25 C2.914,19.25 1.75,18.086 1.75,16.625 L1.75,4.375 C1.75,2.914 2.914,1.75 4.375,1.75 Z M7.875,5.25 C6.436,5.25 5.25,6.436 5.25,7.875 L5.25,13.125 C5.25,14.564 6.436,15.75 7.875,15.75 L13.125,15.75 C14.564,15.75 15.75,14.564 15.75,13.125 L15.75,7.875 C15.75,6.436 14.564,5.25 13.125,5.25 L7.875,5.25 Z M7.875,7 L13.125,7 C13.618,7 14,7.382 14,7.875 L14,13.125 C14,13.618 13.618,14 13.125,14 L7.875,14 C7.382,14 7,13.618 7,13.125 L7,7.875 C7,7.382 7.382,7 7.875,7 Z"/>
+                                    </svg>
+                                    <span>Size: 32ft²</span>
+                                </div>
+                            </div>
+                            <div class="knsl-carousel-card-body">
+                                <h3 class="knsl-carousel-card-title">
+                                    <a href="preview-header.html#room-4">Deluxe room</a>
+                                </h3>
+                                <p class="knsl-carousel-card-text">
+                                    Image for cattle earth. May one Which life divide sea. Optio veniam quibusdam fugit aspernatur...
+                                </p>
+                                <div class="knsl-carousel-card-footer">
+                                    <div class="knsl-carousel-price">
+                                        <span class="knsl-price-val">&euro;99</span>
+                                        <span class="knsl-price-lbl">per night</span>
+                                    </div>
+                                    <a href="preview-header.html#room-4" class="knsl-carousel-book-btn" aria-label="Book Deluxe room">
+                                        <svg class="knsl-book-icon" viewBox="0 0 18 23" aria-hidden="true">
+                                            <path d="M14 0H4C1.79 0 0 1.79 0 4v15c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4V4c0-2.21-1.79-4-4-4zm2 19c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v15z"/>
+                                            <circle cx="9" cy="6" r="2"/>
+                                            <path d="M4 16c0-2.67 3.33-4 5-4s5 1.33 5 4v1H4v-1z"/>
+                                        </svg>
+                                        <span>BOOK</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Carousel Pagination & Navigation Controls -->
+            <div class="knsl-rooms-carousel-nav">
+                <div class="knsl-rooms-counter">
+                    <span class="knsl-rooms-current" id="knslRoomsCurrentPage">1</span>
+                    <span class="knsl-rooms-slash">/</span>
+                    <span class="knsl-rooms-total" id="knslRoomsTotalPages">2</span>
+                </div>
+                <div class="knsl-rooms-arrows">
+                    <button type="button" class="knsl-carousel-arrow knsl-prev" id="knslRoomsPrevBtn" aria-label="Previous Rooms">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button type="button" class="knsl-carousel-arrow knsl-next" id="knslRoomsNextBtn" aria-label="Next Rooms">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer Component -->
+<footer class="knsl-footer-section" id="colophon">
+    <div class="knsl-footer-pat-left" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+    <div class="knsl-footer-pat-right" aria-hidden="true" style="background-image: url('assets/images/pat4.png');"></div>
+
+    <div class="knsl-footer-island">
+        <div class="knsl-footer-inner">
+            <div class="knsl-footer-top">
+                <div class="knsl-footer-col-brand">
+                    <a href="preview-header.html" class="knsl-footer-logo">
+                        <span class="logo-circle" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M3 14c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                                <path d="M3 18c2.5-2 4.5-2 7 0s4.5 2 7 0 3.5-1.5 4-1" />
+                                <path d="M6 9c2-2.5 3.5-2.5 5.5 0s3.5 2.5 5.5 0" />
+                            </svg>
+                        </span>
+                        <span class="logo-text">Kinsley</span>
+                    </a>
+
+                    <p class="knsl-newsletter-prompt">Subscribe our newsletter:</p>
+
+                    <form class="knsl-newsletter-form" action="#newsletter" method="post">
+                        <input type="email" name="email" class="knsl-newsletter-input" placeholder="Email" required>
+                        <button type="submit" class="knsl-newsletter-btn" aria-label="Subscribe">
+                            <svg viewBox="0 0 448 512" aria-hidden="true">
+                                <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="knsl-footer-col-nav">
+                    <ul class="knsl-footer-menu">
+                        <li><a href="preview-header.html">Home</a></li>
+                        <li><a href="preview-header.html#about">About Hotel</a></li>
+                        <li><a href="preview-header.html#rooms">Search Rooms</a></li>
+                        <li><a href="preview-contact.html">Contact</a></li>
+                        <li><a href="preview-header.html#blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="knsl-footer-col-legal">
+                    <ul class="knsl-footer-legal-menu">
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms and Conditions</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="knsl-footer-divider">
+
+            <div class="knsl-footer-bottom">
+                <div class="knsl-footer-social-wrap">
+                    <p class="knsl-copyright-text">&copy; Copyright 2026. All Rights Reserved.</p>
+                </div>
+                <div class="knsl-footer-address-col">
+                    <h5 class="knsl-address-title">United States</h5>
+                    <p class="knsl-address-text">Anacapa Hall, Santa Barbara, CA 93117, +51 174 705 812</p>
+                </div>
+                <div class="knsl-footer-address-col">
+                    <h5 class="knsl-address-title">Netherlands</h5>
+                    <p class="knsl-address-text">De Hondert Margen 3, 2678 AC De Lier, +31 174 705 811</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/header.js"></script>
+<script src="assets/js/services.js"></script>
+<script src="assets/js/rooms.js"></script>
+
+<!-- Interactive Service Switcher for Live Demo -->
+<script>
+(function() {
+    const servicesData = {
+        'surfing': {
+            title: 'Surfing',
+            breadcrumb: 'SURFING',
+            image: 'assets/images/ser/serv1-950x1425.jpg',
+            description: [
+                'At our hotel we are offering our accommodations choices, including guest room, swimming pools, and beach vacation, situated and adjacent to these services are a grocery store, swimming pool and restaurant with diverse attractions. Our hotel offers surfing lessons and equipment rentals, allowing guests of all levels to enjoy the thrill of riding the waves.',
+                'Experience comfort and style in our well-appointed rooms and suites, designed for your every stay. Enjoy a variety of culinary delights at our on-site restaurant, catering to all taste buds and preferences. Our hotel is situated right on the beach, offering stunning ocean views and immediate access to the sandy shores.',
+                'Our reception team is available 24/7 to answer your questions, make reservations and ensure your stay is seamless. So everyone who have a high level of guest satisfaction, demonstrating our commitment to service excellence.'
+            ],
+            features: [
+                { title: 'Beachfront Location', icon: 'location' },
+                { title: 'Luxury Accommodations', icon: 'bed' },
+                { title: 'On-Site Dining', icon: 'dining' },
+                { title: 'Recreational Facilities', icon: 'activity' },
+                { title: 'Spa and Wellness', icon: 'spa' },
+                { title: 'Surfing Lessons', icon: 'surfing' }
+            ],
+            faqs: [
+                { q: 'What skill levels are the surfing lessons suitable for?', a: 'Our surfing lessons are tailored for all experience levels, from absolute beginners catching their first wave to intermediate surfers looking to refine their technique. Certified professional instructors provide personalized guidance in small groups.' },
+                { q: 'Is surfing equipment included in the lesson?', a: 'Yes! High-quality surfboards, rash guards, wetsuits, and safety gear are all included with every booked lesson. Equipment is also available for independent rental throughout your stay.' },
+                { q: 'What is the best time of day for surfing lessons?', a: 'Morning sessions typically offer the cleanest wave conditions and gentle offshore winds. We schedule sessions around tide and swell forecasts to ensure optimal conditions.' },
+                { q: 'Do I need to make a reservation in advance?', a: 'We strongly recommend booking at least 24 hours in advance to guarantee instructor availability and optimal tidal timing for your session.' }
+            ],
+            others: [
+                { slug: 'swimming-pools', title: 'Swimming Pools', img: 'assets/images/ser/serv4-950x1238.jpg' },
+                { slug: 'beach-restaurant', title: 'Beach Restaurant', img: 'assets/images/ser/serv3-950x1273.jpg' },
+                { slug: 'beach-vacation', title: 'Beach Vacation', img: 'assets/images/ser/serv2-950x1267.jpg' },
+                { slug: 'spa-salon', title: 'Spa Salon', img: 'assets/images/ser/service-5-950x1489.jpg' }
+            ]
+        },
+        'swimming-pools': {
+            title: 'Swimming Pools',
+            breadcrumb: 'SWIMMING POOLS',
+            image: 'assets/images/ser/serv4-950x1238.jpg',
+            description: [
+                'Dive into absolute relaxation at our pristine resort swimming pools. Designed with crystal-clear waters, heated infinity edges, and panoramic ocean vistas, our pools offer an exquisite oasis under the sun.',
+                'Unwind on plush poolside cabanas with complimentary towel service, refreshing tropical cocktails, and light bites served straight from the pool bar. Dedicated family areas and quiet adult-only zones cater to every desire.',
+                'Lifeguards and poolside concierges ensure a safe and pampered experience throughout the day and evening sunset swim sessions.'
+            ],
+            features: [
+                { title: 'Heated Infinity Pool', icon: 'activity' },
+                { title: 'Poolside Cabana Service', icon: 'bed' },
+                { title: 'Cocktail Pool Bar', icon: 'dining' },
+                { title: 'Adults & Family Zones', icon: 'location' },
+                { title: 'Spa Hydrotherapy', icon: 'spa' },
+                { title: 'Sunset Evening Sessions', icon: 'surfing' }
+            ],
+            faqs: [
+                { q: 'What are the swimming pool opening hours?', a: 'The resort pools are open daily from 7:00 AM until 10:00 PM. Evening swim sessions feature ambient underwater lighting and poolside music.' },
+                { q: 'Are cabanas available for reservation?', a: 'Yes, private poolside cabanas can be reserved via the concierge desk or online booking with optional champagne and fresh fruit amenities.' }
+            ],
+            others: [
+                { slug: 'surfing', title: 'Surfing', img: 'assets/images/ser/serv1-950x1425.jpg' },
+                { slug: 'beach-restaurant', title: 'Beach Restaurant', img: 'assets/images/ser/serv3-950x1273.jpg' },
+                { slug: 'beach-vacation', title: 'Beach Vacation', img: 'assets/images/ser/serv2-950x1267.jpg' },
+                { slug: 'spa-salon', title: 'Spa Salon', img: 'assets/images/ser/service-5-950x1489.jpg' }
+            ]
+        },
+        'beach-restaurant': {
+            title: 'Beach Restaurant',
+            breadcrumb: 'BEACH RESTAURANT',
+            image: 'assets/images/ser/serv3-950x1273.jpg',
+            description: [
+                'Savor exquisite culinary creations with the soft sea breeze and the sound of waves lapping against the shore. Our beachfront restaurant blends locally caught seafood with artisanal Mediterranean flavors.',
+                'Open for sunrise breakfast, leisurely beach lunches, and romantic candlelit dinners under the stars. Pair every dish with award-winning vintages curated by our master sommelier.',
+                'Private beachfront tables and custom event catering are available upon request to celebrate your most memorable milestones.'
+            ],
+            features: [
+                { title: 'Oceanfront Terrace', icon: 'location' },
+                { title: 'Fresh Catch of the Day', icon: 'dining' },
+                { title: 'Curated Wine Cellar', icon: 'activity' },
+                { title: 'Private Sunset Dinners', icon: 'bed' },
+                { title: 'Live Acoustic Sessions', icon: 'spa' },
+                { title: 'Seasonal Farm-to-Table', icon: 'surfing' }
+            ],
+            faqs: [
+                { q: 'Do I need a reservation for dinner?', a: 'While walk-ins are welcome for lunch, reservations are highly recommended for dinner, particularly for beachfront sunset seating.' },
+                { q: 'Are vegetarian and vegan options available?', a: 'Yes, our executive chef prepares comprehensive plant-based and gluten-free menus crafted with fresh organic produce.' }
+            ],
+            others: [
+                { slug: 'surfing', title: 'Surfing', img: 'assets/images/ser/serv1-950x1425.jpg' },
+                { slug: 'swimming-pools', title: 'Swimming Pools', img: 'assets/images/ser/serv4-950x1238.jpg' },
+                { slug: 'beach-vacation', title: 'Beach Vacation', img: 'assets/images/ser/serv2-950x1267.jpg' },
+                { slug: 'gym', title: 'Gym', img: 'assets/images/ser/service-6-950x1473.jpg' }
+            ]
+        }
+    };
+
+    function getSvg(icon) {
+        if (icon === 'location') return '<svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>';
+        if (icon === 'bed') return '<svg viewBox="0 0 24 24"><path d="M2 19h20M2 15h20M2 11h20M6 11V7a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"/><rect x="5" y="7" width="4" height="4" rx="1"/></svg>';
+        if (icon === 'dining') return '<svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>';
+        if (icon === 'activity') return '<svg viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>';
+        if (icon === 'spa') return '<svg viewBox="0 0 24 24"><path d="M12 3c-1.5 3-4 6-4 9a4 4 0 0 0 8 0c0-3-2.5-6-4-9Z"/><path d="M4 14c2.5-.5 5 1 6.5 3-1.5 2-4 2.5-6.5 1-2.5-1.5-2.5-3.5 0-4Z"/><path d="M20 14c-2.5-.5-5 1-6.5 3 1.5 2 4 2.5 6.5 1 2.5-1.5 2.5-3.5 0-4Z"/></svg>';
+        return '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"/></svg>';
+    }
+
+    function renderService(key) {
+        const data = servicesData[key] || servicesData['surfing'];
+        document.title = data.title + ' – Our Services – Kinsley Resort Hotel Live Demo';
+        
+        const titleEl = document.getElementById('serviceTitle');
+        const bcEl = document.getElementById('serviceBreadcrumb');
+        const imgEl = document.getElementById('serviceFeaturedImg');
+        const descEl = document.getElementById('serviceDescContainer');
+        const featEl = document.getElementById('serviceFeaturesGrid');
+        const faqEl = document.getElementById('serviceFaqList');
+        const othersEl = document.getElementById('otherServicesList');
+
+        if (titleEl) titleEl.textContent = data.title;
+        if (bcEl) bcEl.textContent = data.breadcrumb;
+        if (imgEl) {
+            imgEl.src = data.image;
+            imgEl.alt = data.title;
+        }
+
+        if (descEl && data.description) {
+            descEl.innerHTML = data.description.map(p => `<p class="knsl-single-text">${p}</p>`).join('');
+        }
+
+        if (featEl && data.features) {
+            featEl.innerHTML = data.features.map(f => `
+                <div class="knsl-single-feature-card">
+                    <div class="knsl-single-feature-icon" aria-hidden="true">${getSvg(f.icon)}</div>
+                    <span class="knsl-single-feature-label">${f.title}</span>
+                </div>
+            `).join('');
+        }
+
+        if (faqEl && data.faqs) {
+            faqEl.innerHTML = data.faqs.map((faq, idx) => `
+                <div class="knsl-faq-item ${idx === 0 ? 'is-active' : ''}">
+                    <button type="button" class="knsl-faq-header" aria-expanded="${idx === 0 ? 'true' : 'false'}">
+                        <span class="knsl-faq-title">${faq.q}</span>
+                        <span class="knsl-faq-toggle-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="knsl-faq-body">
+                        <p class="knsl-faq-content">${faq.a}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Re-bind FAQ toggles
+            faqEl.querySelectorAll('.knsl-faq-item').forEach(item => {
+                const header = item.querySelector('.knsl-faq-header');
+                if (!header) return;
+                header.addEventListener('click', () => {
+                    const isActive = item.classList.contains('is-active');
+                    faqEl.querySelectorAll('.knsl-faq-item').forEach(sib => {
+                        sib.classList.remove('is-active');
+                        const b = sib.querySelector('.knsl-faq-header');
+                        if (b) b.setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isActive) {
+                        item.classList.add('is-active');
+                        header.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+        }
+
+        if (othersEl && data.others) {
+            othersEl.innerHTML = data.others.map(o => `
+                <a href="preview-service-single.html?service=${o.slug}" class="knsl-other-service-card" data-service="${o.slug}">
+                    <img src="${o.img}" alt="${o.title}" class="knsl-other-service-thumb" loading="lazy">
+                    <h4 class="knsl-other-service-title">${o.title}</h4>
+                </a>
+            `).join('');
+
+            // Bind click to switch in place
+            othersEl.querySelectorAll('.knsl-other-service-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const s = card.getAttribute('data-service');
+                    history.pushState(null, '', `?service=${s}`);
+                    renderService(s);
+                    window.scrollTo({ top: 120, behavior: 'smooth' });
+                });
+            });
+        }
+    }
+
+    // Check query string
+    const params = new URLSearchParams(window.location.search);
+    const initialService = params.get('service') || 'surfing';
+    if (initialService !== 'surfing') {
+        renderService(initialService);
+    } else {
+        // Just bind other services
+        const othersEl = document.getElementById('otherServicesList');
+        if (othersEl) {
+            othersEl.querySelectorAll('.knsl-other-service-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const s = card.getAttribute('data-service');
+                    history.pushState(null, '', `?service=${s}`);
+                    renderService(s);
+                    window.scrollTo({ top: 120, behavior: 'smooth' });
+                });
+            });
+        }
+    }
+})();
+</script>
+
+</body>
+</html>

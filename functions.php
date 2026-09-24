@@ -57,7 +57,7 @@ function resort_hotel_scripts() {
         'resort-hotel-services',
         get_template_directory_uri() . '/assets/css/services.css',
         ['resort-hotel-style'],
-        '1.0.5'
+        '1.0.6'
     );
 
     // Features stylesheet
@@ -176,5 +176,52 @@ function resort_hotel_scripts() {
         '1.0.0',
         true
     );
+
+    // Services JS (FAQ Accordion & Service Interactions)
+    wp_enqueue_script(
+        'resort-hotel-services-script',
+        get_template_directory_uri() . '/assets/js/services.js',
+        [],
+        '1.0.6',
+        true
+    );
 }
 add_action('wp_enqueue_scripts', 'resort_hotel_scripts');
+
+/**
+ * Register Custom Post Types (Service)
+ */
+function resort_hotel_register_post_types() {
+    register_post_type('service', [
+        'labels' => [
+            'name'               => __('Services', 'resort-hotel'),
+            'singular_name'      => __('Service', 'resort-hotel'),
+            'menu_name'          => __('Services', 'resort-hotel'),
+            'name_admin_bar'     => __('Service', 'resort-hotel'),
+            'add_new'            => __('Add New', 'resort-hotel'),
+            'add_new_item'       => __('Add New Service', 'resort-hotel'),
+            'new_item'           => __('New Service', 'resort-hotel'),
+            'edit_item'          => __('Edit Service', 'resort-hotel'),
+            'view_item'          => __('View Service', 'resort-hotel'),
+            'all_items'          => __('All Services', 'resort-hotel'),
+            'search_items'       => __('Search Services', 'resort-hotel'),
+            'not_found'          => __('No services found.', 'resort-hotel'),
+            'not_found_in_trash' => __('No services found in Trash.', 'resort-hotel'),
+        ],
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => ['slug' => 'service'],
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => 6,
+        'menu_icon'          => 'dashicons-palmtree',
+        'supports'           => ['title', 'editor', 'thumbnail', 'excerpt'],
+        'show_in_rest'       => true,
+    ]);
+}
+add_action('init', 'resort_hotel_register_post_types');
+

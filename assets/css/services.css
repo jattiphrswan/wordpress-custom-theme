@@ -625,3 +625,415 @@ body, .site-main {
     }
 }
 
+/* ==========================================================================
+   8. Single Service Detail Page Styles (Surfing & Services)
+   ========================================================================== */
+
+.knsl-single-service-page {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #eef7f8;
+    min-height: 100vh;
+}
+
+/* Subheader Hero / Breadcrumb Bar */
+.knsl-single-service-banner {
+    position: relative;
+    width: 100%;
+    padding: 145px 20px 35px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.knsl-single-banner-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.knsl-single-service-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(38px, 4.5vw, 56px);
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    letter-spacing: -0.025em;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* Breadcrumbs (HOME > SERVICES > SURFING) */
+.knsl-single-breadcrumbs {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--knsl-muted-teal);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.knsl-single-breadcrumbs a {
+    color: var(--knsl-muted-teal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.knsl-single-breadcrumbs a:hover {
+    color: var(--knsl-dark-teal);
+}
+
+.knsl-single-breadcrumbs .knsl-breadcrumbs-sep {
+    color: #92b4c1;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.knsl-single-breadcrumbs .knsl-breadcrumbs-current {
+    color: var(--knsl-dark-teal);
+}
+
+/* Main Two-Column Section */
+.knsl-single-service-section {
+    position: relative;
+    padding: 10px 20px 60px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.knsl-single-service-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.knsl-single-service-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    gap: 45px;
+    align-items: start;
+}
+
+/* Left Column: Featured Media & Content */
+.knsl-single-main-col {
+    width: 100%;
+    min-width: 0;
+}
+
+/* Featured Hero Image */
+.knsl-single-featured-wrap {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(32, 79, 94, 0.08);
+    background-color: #ffffff;
+    position: relative;
+}
+
+.knsl-single-featured-img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-single-featured-wrap:hover .knsl-single-featured-img {
+    transform: scale(1.025);
+}
+
+/* Headings */
+.knsl-single-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    letter-spacing: -0.015em;
+    margin: 38px 0 18px 0;
+    line-height: 1.3;
+}
+
+/* Paragraphs */
+.knsl-single-text {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.85;
+    color: #506e7b;
+    margin: 0 0 18px 0;
+    font-weight: 400;
+}
+
+/* Key Features 3x2 Grid */
+.knsl-single-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.knsl-single-feature-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 4px 16px rgba(32, 79, 94, 0.04);
+    border: 1px solid rgba(32, 79, 94, 0.05);
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-single-feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(32, 79, 94, 0.09);
+    border-color: rgba(35, 188, 236, 0.3);
+}
+
+.knsl-single-feature-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e2f5f8;
+    color: #23bcec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.knsl-single-feature-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+}
+
+.knsl-single-feature-card:hover .knsl-single-feature-icon {
+    background: #23bcec;
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.knsl-single-feature-label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin: 0;
+    line-height: 1.35;
+    white-space: nowrap;
+}
+
+/* FAQ Accordion */
+.knsl-single-faq {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.knsl-faq-item {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 14px rgba(32, 79, 94, 0.04);
+    border: 1px solid rgba(32, 79, 94, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.knsl-faq-item.is-active {
+    border-color: rgba(35, 188, 236, 0.35);
+    box-shadow: 0 8px 24px rgba(32, 79, 94, 0.08);
+}
+
+.knsl-faq-header {
+    width: 100%;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    gap: 16px;
+    font-family: inherit;
+    transition: background 0.2s ease;
+}
+
+.knsl-faq-header:hover {
+    background-color: rgba(238, 247, 248, 0.5);
+}
+
+.knsl-faq-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+.knsl-faq-item.is-active .knsl-faq-title {
+    color: #23bcec;
+}
+
+.knsl-faq-toggle-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #eef7f8;
+    color: var(--knsl-dark-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.knsl-faq-toggle-icon svg {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.knsl-faq-item.is-active .knsl-faq-toggle-icon {
+    background: #23bcec;
+    color: #ffffff;
+    transform: rotate(180deg);
+}
+
+.knsl-faq-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0, 0, 0.3642, 1), padding 0.35s ease;
+    padding: 0 22px;
+}
+
+.knsl-faq-item.is-active .knsl-faq-body {
+    max-height: 260px;
+    padding: 0 22px 20px;
+}
+
+.knsl-faq-content {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #506e7b;
+    margin: 0;
+}
+
+/* Right Sidebar: Other Services */
+.knsl-single-sidebar-col {
+    position: sticky;
+    top: 100px;
+}
+
+.knsl-sidebar-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--knsl-dark-teal);
+    letter-spacing: -0.015em;
+    margin: 0 0 20px 0;
+}
+
+.knsl-other-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.knsl-other-service-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 12px 14px;
+    box-shadow: 0 4px 18px rgba(32, 79, 94, 0.05);
+    border: 1px solid rgba(32, 79, 94, 0.04);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0, 0, 0.3642, 1);
+}
+
+.knsl-other-service-card:hover {
+    transform: translateX(4px);
+    box-shadow: 0 8px 24px rgba(32, 79, 94, 0.1);
+    border-color: rgba(35, 188, 236, 0.25);
+}
+
+.knsl-other-service-thumb {
+    width: 84px;
+    height: 72px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+    transition: transform 0.4s ease;
+}
+
+.knsl-other-service-card:hover .knsl-other-service-thumb {
+    transform: scale(1.05);
+}
+
+.knsl-other-service-title {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--knsl-dark-teal);
+    margin: 0;
+    line-height: 1.35;
+    transition: color 0.25s ease;
+}
+
+.knsl-other-service-card:hover .knsl-other-service-title {
+    color: #23bcec;
+}
+
+/* Responsive Queries */
+@media (max-width: 1024px) {
+    .knsl-single-service-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .knsl-single-sidebar-col {
+        position: static;
+        max-width: 500px;
+    }
+    .knsl-single-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .knsl-single-service-banner {
+        padding: 120px 20px 25px;
+    }
+    .knsl-single-featured-img {
+        height: 320px;
+    }
+    .knsl-single-features-grid {
+        grid-template-columns: 1fr;
+    }
+    .knsl-single-feature-label {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .knsl-single-featured-img {
+        height: 240px;
+    }
+}
+
+

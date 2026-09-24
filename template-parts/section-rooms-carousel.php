@@ -14,8 +14,8 @@
     <div class="knsl-rooms-carousel-container">
         <!-- Section Header -->
         <div class="knsl-rooms-header">
-            <span class="knsl-rooms-badge"><?php esc_html_e('Rooms', 'resort-hotel'); ?></span>
-            <h2 class="knsl-rooms-title"><?php esc_html_e('Our best rooms', 'resort-hotel'); ?></h2>
+            <span class="knsl-rooms-badge"><?php echo esc_html(!empty($args['badge']) ? $args['badge'] : __('Rooms', 'resort-hotel')); ?></span>
+            <h2 class="knsl-rooms-title"><?php echo esc_html(!empty($args['title']) ? $args['title'] : __('Our best rooms', 'resort-hotel')); ?></h2>
         </div>
 
         <!-- Carousel Wrapper & Track -->
